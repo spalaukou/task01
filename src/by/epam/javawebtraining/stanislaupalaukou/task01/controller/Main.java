@@ -1,6 +1,7 @@
 package by.epam.javawebtraining.stanislaupalaukou.task01.controller;
 
 
+import by.epam.javawebtraining.stanislaupalaukou.task01.model.comparator.VehiclePriceComparator;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.container.Parking;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.Car;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.Truck;
@@ -35,5 +36,8 @@ public class Main {
 
         Printable printer = PrinterCreator.create(PrinterType.CONSOLE);
         printer.print(parking);
+
+        //comparator
+
     }
 }

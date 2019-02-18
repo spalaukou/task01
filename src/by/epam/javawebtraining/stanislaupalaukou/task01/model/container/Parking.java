@@ -68,6 +68,10 @@ public class Parking {
         return flag;
     }
 
+    public void vehiclePriceComparator(Vehicle[] vehicles) {
+        //
+    }
+
 
     @Override
     public boolean equals(Object o) {
