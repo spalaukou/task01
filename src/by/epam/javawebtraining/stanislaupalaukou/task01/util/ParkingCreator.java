@@ -10,11 +10,11 @@ import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.Vehicle;
 
 public class ParkingCreator {
 
-  public static Parking create(Vehicle[] vehicles) {
-    if(vehicles == null) {
-      return null;
-    }
+    public static Parking create(Vehicle[] vehicles) {
+        if (vehicles == null) {
+            return null;
+        }
 
-    return new Parking(vehicles);
-  }
+        return new Parking(vehicles);
+    }
 }

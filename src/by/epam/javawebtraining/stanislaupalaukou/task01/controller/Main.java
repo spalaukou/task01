@@ -18,15 +18,19 @@ import by.epam.javawebtraining.stanislaupalaukou.task01.view.PrinterType;
 public class Main {
     public static void main(String[] args) {
 
+        //TODO: Factory to create vehicles
         Vehicle car = new Car("Mercedes", 35000, 4, 350);
-        Vehicle truck = new Truck("MAN", 60000, "cabover", 20_000);
+        Vehicle truck = new Truck("MAN", 60000, "Cabover", 20_000);
         Vehicle car2 = new Car("Audi", 10000, 4, 350);
 
         Vehicle[] vehicles = {car};
 
         Parking parking = ParkingCreator.create(vehicles);
+
         parking.addVehicle(car2);
+        parking.removeVehicle(car2);
         parking.addVehicle(truck);
+        parking.removeVehicle(truck);
 
 
 
