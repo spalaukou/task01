@@ -10,7 +10,7 @@ import java.util.Arrays;
  */
 
 public class Parking {
-  private Vehicle[] vehicles;
+  private Vehicle[] vehicles = {};
 
   public Parking() {}
 
@@ -29,17 +29,16 @@ public class Parking {
   }
 
   public void addVehicle(Vehicle vehicle) {
-    Vehicle[] newVehicles = new Vehicle[vehicles.length + 1];
-      if(vehicle != null) {
-        for(int i = 0; i < vehicles.length; i++){
-          if(vehicle.equals(vehicles[i])){
-            break;
-          } else {
-            newVehicles[i] = vehicles[i];
-          }
-        }
-        vehicles[vehicles.length] = vehicle;
+    if(vehicle != null) {
+      Vehicle[] newVehicles = new Vehicle[vehicles.length + 1];
+
+      for(int i = 0; i < vehicles.length; i++) {
+        newVehicles[i] = vehicles[i];
       }
+
+      newVehicles[vehicles.length] = vehicle;
+      vehicles = newVehicles;
+    }
   }
 
   public void removeVehicle(Vehicle vehicle) {
@@ -50,6 +49,11 @@ public class Parking {
       }
       newVehicles[i] = vehicles[i];
     }
+  }
+
+  private boolean isOnPlace(Vehicle vehicle) {
+
+    return false;
   }
 
 
@@ -72,7 +76,7 @@ public class Parking {
       return "There is no vehicles in the parking lot";
     }
     return "Parking {" +
-            "vehicles = " + Arrays.toString(vehicles) +
+            Arrays.toString(vehicles) +
             '}';
   }
 }

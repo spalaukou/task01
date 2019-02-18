@@ -5,6 +5,10 @@ import by.epam.javawebtraining.stanislaupalaukou.task01.model.container.Parking;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.Car;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.Truck;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.Vehicle;
+import by.epam.javawebtraining.stanislaupalaukou.task01.util.ParkingCreator;
+import by.epam.javawebtraining.stanislaupalaukou.task01.util.PrinterCreator;
+import by.epam.javawebtraining.stanislaupalaukou.task01.view.Printable;
+import by.epam.javawebtraining.stanislaupalaukou.task01.view.PrinterType;
 
 /**
  * @author Stanislau Palaukou on 14.02.2019
@@ -16,9 +20,17 @@ public class Main {
 
         Vehicle car = new Car("Mercedes", 35000, 4, 350);
         Vehicle truck = new Truck("MAN", 60000, "cabover", 20_000);
+        Vehicle car2 = new Car("Audi", 10000, 4, 350);
 
-        Parking parking = new Parking();
-        parking.addVehicle(car);
-        System.out.println(parking);
+        Vehicle[] vehicles = {car};
+
+        Parking parking = ParkingCreator.create(vehicles);
+        parking.addVehicle(car2);
+        parking.addVehicle(truck);
+
+
+
+        Printable printer = PrinterCreator.create(PrinterType.CONSOLE);
+        printer.print(parking);
     }
 }
