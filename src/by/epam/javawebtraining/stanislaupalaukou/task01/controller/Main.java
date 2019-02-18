@@ -33,7 +33,6 @@ public class Main {
         parking.removeVehicle(truck);
 
 
-
         Printable printer = PrinterCreator.create(PrinterType.CONSOLE);
         printer.print(parking);
     }
