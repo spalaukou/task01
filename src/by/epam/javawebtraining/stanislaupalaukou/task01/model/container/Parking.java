@@ -1,8 +1,10 @@
 package by.epam.javawebtraining.stanislaupalaukou.task01.model.container;
 
+import by.epam.javawebtraining.stanislaupalaukou.task01.model.comparator.VehiclePriceComparator;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.Vehicle;
 
 import java.util.Arrays;
+import java.util.Comparator;
 
 /**
  * @author Stanislau Palaukou on 14.02.2019
@@ -57,6 +59,13 @@ public class Parking {
         }
     }
 
+
+    public void vehiclePriceComparator(Vehicle[] vehicles) {
+        VehiclePriceComparator vehiclePriceComparator = new VehiclePriceComparator();
+        Arrays.sort(vehicles, vehiclePriceComparator);
+    }
+
+
     private boolean isOnPlace(Vehicle vehicle) {
         boolean flag = false;
         for (int i = 0; i < vehicles.length; i++) {
@@ -66,10 +75,6 @@ public class Parking {
             }
         }
         return flag;
-    }
-
-    public void vehiclePriceComparator(Vehicle[] vehicles) {
-        //
     }
 
 

@@ -6,10 +6,13 @@ import by.epam.javawebtraining.stanislaupalaukou.task01.model.container.Parking;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.Car;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.Truck;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.Vehicle;
+import by.epam.javawebtraining.stanislaupalaukou.task01.util.DataReader;
 import by.epam.javawebtraining.stanislaupalaukou.task01.util.ParkingCreator;
 import by.epam.javawebtraining.stanislaupalaukou.task01.util.PrinterCreator;
 import by.epam.javawebtraining.stanislaupalaukou.task01.view.Printable;
 import by.epam.javawebtraining.stanislaupalaukou.task01.view.PrinterType;
+
+import java.io.FileNotFoundException;
 
 /**
  * @author Stanislau Palaukou on 14.02.2019
@@ -17,7 +20,7 @@ import by.epam.javawebtraining.stanislaupalaukou.task01.view.PrinterType;
  */
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws FileNotFoundException {
 
         //TODO: Factory to create vehicles
         Vehicle car = new Car("Mercedes", 35000, 4, 350);
@@ -29,15 +32,20 @@ public class Main {
         Parking parking = ParkingCreator.create(vehicles);
 
         parking.addVehicle(car2);
-        parking.removeVehicle(car2);
+        //parking.removeVehicle(car2);
         parking.addVehicle(truck);
-        parking.removeVehicle(truck);
+        //parking.removeVehicle(truck);
 
 
         Printable printer = PrinterCreator.create(PrinterType.CONSOLE);
         printer.print(parking);
 
-        //comparator
+        parking.vehiclePriceComparator(vehicles);
+        printer.print(parking);
 
+        DataReader dataReader = new DataReader();
+
+
+        //parking = dataReader.readFileStrings();
     }
 }
