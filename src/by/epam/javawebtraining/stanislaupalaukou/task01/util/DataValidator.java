@@ -9,16 +9,18 @@ import java.util.List;
  */
 
 public class DataValidator {
-  public final String DIGIT_PATTERN = "(car|truck)(,\\s*\\w+)+";
-  static List<String> validLines = new ArrayList<>();
 
-  public List<String> validateStrings(List<String> originalLines) {
-    for(String originalString : originalLines) {
-      if(originalString.matches(DIGIT_PATTERN)) {
-        String[] line = ArrayCreator.stringSplit(originalString);
-        validLines.add(originalString);
-      }
+    public final String DIGIT_PATTERN = "(car|truck)(,\\s*\\w+)+";
+
+    private static List<String> validLines = new ArrayList<>();
+
+    public List<String> validateStrings(List<String> originalLines) {
+        for (String originalString : originalLines) {
+            if (originalString.matches(DIGIT_PATTERN)) {
+                //String[] line = ArrayCreator.stringSplit(originalString);
+                validLines.add(originalString);
+            }
+        }
+        return validLines;
     }
-    return validLines;
-  }
 }

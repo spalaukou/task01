@@ -10,22 +10,24 @@ import java.util.List;
  */
 
 public class DataReader {
-  private final static String SEPARATOR = File.separator;
-  private final static String path = "input" + SEPARATOR + "inputData.txt";
-  private static List<String> linesArray = new ArrayList<>();
 
-  public List<String> readFileStrings() throws FileNotFoundException {
-    try (BufferedReader br = new BufferedReader(new FileReader(path))) {
-      String currentLine;
-      while ((currentLine = br.readLine()) != null) {
-        String trimmedLine = currentLine.trim();
-        linesArray.add(trimmedLine);
-      }
-    } catch (FileNotFoundException e) {
-      System.out.println("File not found exception." + e);
-    } catch (IOException e) {
-      System.out.println("General I/O exception." + e);
+    private final static String SEPARATOR = File.separator;
+    private final static String path = "input" + SEPARATOR + "inputData.txt";
+    private static List<String> linesArray = new ArrayList<>();
+
+    public List<String> readFileStrings() throws FileNotFoundException {
+
+        try (BufferedReader br = new BufferedReader(new FileReader(path))) {
+            String currentLine;
+            while ((currentLine = br.readLine()) != null) {
+                linesArray.add(currentLine.trim());
+            }
+        } catch (FileNotFoundException e) {
+            System.out.println("File not found exception." + e);
+        } catch (IOException e) {
+            System.out.println("General I/O exception." + e);
+        }
+
+        return linesArray;
     }
-    return linesArray;
-  }
 }

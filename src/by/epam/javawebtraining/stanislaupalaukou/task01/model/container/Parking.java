@@ -5,6 +5,9 @@ import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.Vehicle;
 
 import java.util.Arrays;
 import java.util.Comparator;
+import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 /**
  * @author Stanislau Palaukou on 14.02.2019
@@ -12,12 +15,14 @@ import java.util.Comparator;
  */
 
 public class Parking {
-    private Vehicle[] vehicles = {};
+
+    private Vehicle[] vehicles;
 
     public Parking() {
+        vehicles = new Vehicle[0];
     }
 
-    public Parking(Vehicle... vehicle) {
+    public Parking(Vehicle[] vehicle) {
         this.vehicles = vehicle;
     }
 
@@ -45,7 +50,7 @@ public class Parking {
     }
 
     public void removeVehicle(Vehicle vehicle) {
-        if(vehicle != null && isOnPlace(vehicle)){
+        if(vehicle != null){
             Vehicle[] newVehicles = new Vehicle[vehicles.length - 1];
 
             for(int i = 0, j = 0; i < vehicles.length; i++, j++) {
@@ -59,13 +64,6 @@ public class Parking {
         }
     }
 
-
-    public void vehiclePriceComparator(Vehicle[] vehicles) {
-        VehiclePriceComparator vehiclePriceComparator = new VehiclePriceComparator();
-        Arrays.sort(vehicles, vehiclePriceComparator);
-    }
-
-
     private boolean isOnPlace(Vehicle vehicle) {
         boolean flag = false;
         for (int i = 0; i < vehicles.length; i++) {
@@ -76,6 +74,15 @@ public class Parking {
         }
         return flag;
     }
+
+     /*public Vehicle[] sortArray(Vehicle[] vehicles) {
+        List<Vehicle> list = Stream.of(vehicles)
+                .sorted(Comparator.comparingInt(Vehicle::getPrice)
+                        .thenComparing(Vehicle::getName))
+                .collect(Collectors.toList());
+
+        return list.toArray(vehicles);
+    }*/
 
 
     @Override
@@ -100,4 +107,6 @@ public class Parking {
                 Arrays.toString(vehicles) +
                 '}';
     }
+
+
 }

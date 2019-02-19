@@ -18,6 +18,7 @@ public class Car extends PassengerTransport {
         this.trunkCapacity = trunkVolume;
     }
 
+
     public int getTrunkCapacity() {
         return trunkCapacity;
     }
