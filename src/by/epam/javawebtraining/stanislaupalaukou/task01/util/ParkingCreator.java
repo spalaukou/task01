@@ -1,6 +1,7 @@
 package by.epam.javawebtraining.stanislaupalaukou.task01.util;
 
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.container.Parking;
+import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.Vehicle;
 
 import java.util.List;
 
@@ -13,6 +14,10 @@ public class ParkingCreator {
 
     public static Parking create() {
         return new Parking();
+    }
+
+    public static Parking create(Vehicle[] vehicles) {
+        return new Parking(vehicles);
     }
 
     /*public static Parking create(Vehicle[] vehicles) {

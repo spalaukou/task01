@@ -11,7 +11,6 @@ import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.Vehicle;
 public class VehicleFinder {
 
   public static Vehicle findTheCheapestVehicle(Parking parking) {
-
     Vehicle theCheapest = parking.getVehicles()[0];
     for (int i = 0; i < parking.getVehicles().length; i++) {
       if (parking.getVehicles()[i].getPrice() < theCheapest.getPrice()) {
