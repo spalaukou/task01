@@ -1,4 +1,4 @@
-package by.epam.javawebtraining.stanislaupalaukou.task01.util;
+package by.epam.javawebtraining.stanislaupalaukou.task01.model.logic;
 
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.comparator.VehiclePriceComparator;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.Vehicle;

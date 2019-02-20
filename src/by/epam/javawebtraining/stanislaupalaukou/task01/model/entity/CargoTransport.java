@@ -43,6 +43,6 @@ public abstract class CargoTransport extends Vehicle {
     @Override
     public String toString() {
         return super.toString() +
-                ", cargoType=" + cargoType;
+                ", cargoType = " + cargoType;
     }
 }
