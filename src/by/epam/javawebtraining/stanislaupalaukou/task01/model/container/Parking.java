@@ -1,14 +1,11 @@
 package by.epam.javawebtraining.stanislaupalaukou.task01.model.container;
 
-import by.epam.javawebtraining.stanislaupalaukou.task01.model.comparator.VehiclePriceComparator;
+import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.PassengerTransport;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.Vehicle;
+import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.ParkingIsEmptyException;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.VehicleNotFoundException;
 
 import java.util.Arrays;
-import java.util.Comparator;
-import java.util.List;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 /**
  * @author Stanislau Palaukou on 14.02.2019
@@ -37,6 +34,26 @@ public class Parking {
         }
     }
 
+    public int totalPrice() {
+        int totalPrice = 0;
+        for(Vehicle vehicle : vehicles) {
+            totalPrice += vehicle.getPrice();
+        }
+        return totalPrice;
+    }
+
+    public int totalSeats() {
+        int totalSeats = 0;
+        for(Vehicle vehicle : vehicles) {
+            try {
+                totalSeats += ((PassengerTransport) vehicle).getSeatsNumber();
+            } catch (ClassCastException e) {
+                System.out.println("Vehicle is not passenger: " + vehicle);
+            }
+        }
+        return totalSeats;
+    }
+
     public void addVehicle(Vehicle vehicle) {
         if (vehicle != null && !isOnPlace(vehicle)) {
             Vehicle[] newVehicles = new Vehicle[vehicles.length + 1];
@@ -52,21 +69,24 @@ public class Parking {
 
     public void removeVehicle(Vehicle vehicle) {
         try {
-            if (vehicle != null && isOnPlace(vehicle)) {
-                Vehicle[] newVehicles = new Vehicle[vehicles.length - 1];
-
-                for (int i = 0, j = 0; i < vehicles.length; i++, j++) {
-                    if (!vehicle.equals(vehicles[i])) {
-                        newVehicles[j] = vehicles[i];
-                    } else {
-                        j--;
+            if (vehicles != null && vehicles.length != 0) {
+                if (vehicle != null && isOnPlace(vehicle)) {
+                    Vehicle[] newVehicles = new Vehicle[vehicles.length - 1];
+                    for (int i = 0, j = 0; i < vehicles.length; i++, j++) {
+                        if (!vehicle.equals(vehicles[i])) {
+                            newVehicles[j] = vehicles[i];
+                        } else {
+                            j--;
+                        }
                     }
+                    vehicles = newVehicles;
+                } else {
+                    throw new VehicleNotFoundException("Vehicle not found: " + vehicle);
                 }
-                vehicles = newVehicles;
             } else {
-                throw new VehicleNotFoundException("Vehicle not found: " + vehicle);
+                throw new ParkingIsEmptyException("Parking is empty");
             }
-        } catch (VehicleNotFoundException e) {
+        } catch (ParkingIsEmptyException | VehicleNotFoundException e) {
             e.printStackTrace();
         }
     }
@@ -81,16 +101,6 @@ public class Parking {
         }
         return flag;
     }
-
-     /*public Vehicle[] sortArray(Vehicle[] vehicles) {
-        List<Vehicle> list = Stream.of(vehicles)
-                .sorted(Comparator.comparingInt(Vehicle::getPrice)
-                        .thenComparing(Vehicle::getName))
-                .collect(Collectors.toList());
-
-        return list.toArray(vehicles);
-    }*/
-
 
     @Override
     public boolean equals(Object o) {
@@ -113,6 +123,4 @@ public class Parking {
         return "Parking " +
                 Arrays.toString(vehicles);
     }
-
-
 }

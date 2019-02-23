@@ -7,5 +7,5 @@ package by.epam.javawebtraining.stanislaupalaukou.task01.view;
 
 public enum PrinterType {
     CONSOLE,
-    FILE;
+    FILE
 }

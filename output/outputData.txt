@@ -1,0 +1,10 @@
+The cheapest vehicle on parking: Car {name = Audi, price = 25000, seatsNumber = 4, trunkCapacity = 350}
+Parking [Car {name = Mercedes, price = 35000, seatsNumber = 4, trunkCapacity = 350}, Car {name = Audi, price = 25000, seatsNumber = 4, trunkCapacity = 350}, Truck {name = Iveco, price = 60000, cargoType = Cabover, cargoCapacity = 20000}]
+Parking [Car {name = Audi, price = 25000, seatsNumber = 4, trunkCapacity = 350}, Car {name = Mercedes, price = 35000, seatsNumber = 4, trunkCapacity = 350}, Truck {name = Iveco, price = 60000, cargoType = Cabover, cargoCapacity = 20000}]
+Parking [Car {name = Audi, price = 25000, seatsNumber = 4, trunkCapacity = 350}, Truck {name = Iveco, price = 60000, cargoType = Cabover, cargoCapacity = 20000}, Car {name = Mercedes, price = 35000, seatsNumber = 4, trunkCapacity = 350}]
+Parking [Car {name = Audi, price = 25000, seatsNumber = 4, trunkCapacity = 350}, Truck {name = Iveco, price = 60000, cargoType = Cabover, cargoCapacity = 20000}, Car {name = Mercedes, price = 35000, seatsNumber = 4, trunkCapacity = 350}]
+Total price of all vehicles: 120000
+Total seats of all vehicles: 8
+The dearest vehicle on parking: Optional[Truck {name = Iveco, price = 60000, cargoType = Cabover, cargoCapacity = 20000}]
+The dearest vehicle on parking: Truck {name = Iveco, price = 60000, cargoType = Cabover, cargoCapacity = 20000}
+The cheapest vehicle on parking: Car {name = Audi, price = 25000, seatsNumber = 4, trunkCapacity = 350}

@@ -9,6 +9,12 @@ import java.util.Objects;
 
 public class Car extends PassengerTransport {
 
+    public enum bodyType {
+        SEDAN,
+        HATCHBACK,
+        COUPE
+    }
+
     private int trunkCapacity;
 
     public Car() {}

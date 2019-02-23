@@ -9,6 +9,11 @@ import java.util.Objects;
 
 public class Truck extends CargoTransport {
 
+    public enum bodyType {
+        CABOVER,
+        SLEEPER
+    }
+
     private int cargoCapacity;
 
     public Truck() {}
