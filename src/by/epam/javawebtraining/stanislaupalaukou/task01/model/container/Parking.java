@@ -2,6 +2,7 @@ package by.epam.javawebtraining.stanislaupalaukou.task01.model.container;
 
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.comparator.VehiclePriceComparator;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.Vehicle;
+import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.VehicleNotFoundException;
 
 import java.util.Arrays;
 import java.util.Comparator;
@@ -50,17 +51,23 @@ public class Parking {
     }
 
     public void removeVehicle(Vehicle vehicle) {
-        if(vehicle != null){
-            Vehicle[] newVehicles = new Vehicle[vehicles.length - 1];
+        try {
+            if (vehicle != null && isOnPlace(vehicle)) {
+                Vehicle[] newVehicles = new Vehicle[vehicles.length - 1];
 
-            for(int i = 0, j = 0; i < vehicles.length; i++, j++) {
-                if(!vehicle.equals(vehicles[i])) {
-                    newVehicles[j] = vehicles[i];
-                } else {
-                    j--;
+                for (int i = 0, j = 0; i < vehicles.length; i++, j++) {
+                    if (!vehicle.equals(vehicles[i])) {
+                        newVehicles[j] = vehicles[i];
+                    } else {
+                        j--;
+                    }
                 }
+                vehicles = newVehicles;
+            } else {
+                throw new VehicleNotFoundException("Vehicle not found: " + vehicle);
             }
-            vehicles = newVehicles;
+        } catch (VehicleNotFoundException e) {
+            e.printStackTrace();
         }
     }
 
@@ -103,9 +110,8 @@ public class Parking {
         if (vehicles == null) {
             return "There is no vehicles in the parking lot";
         }
-        return "Parking {" +
-                Arrays.toString(vehicles) +
-                '}';
+        return "Parking " +
+                Arrays.toString(vehicles);
     }
 
 

@@ -5,6 +5,7 @@ import by.epam.javawebtraining.stanislaupalaukou.task01.model.container.Parking;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.Car;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.Truck;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.Vehicle;
+import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.VehicleNotFoundException;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.logic.VehicleFinder;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.logic.VehicleSorter;
 import by.epam.javawebtraining.stanislaupalaukou.task01.util.*;
@@ -21,7 +22,7 @@ import java.util.stream.Stream;
  */
 
 public class Main {
-    public static void main(String[] args) throws FileNotFoundException {
+    public static void main(String[] args) {
 
        /* Parking parking = ParkingCreator.create();
 
@@ -45,13 +46,12 @@ public class Main {
         Parking parking = ParkingCreator.create();
 
         parking.addVehicle(car);
-        parking.addVehicle(car3);
+        parking.removeVehicle(null);
+        /*parking.addVehicle(car3);
         parking.addVehicle(car2);
-        //parking.removeVehicle(car2);
         parking.addVehicle(truck);
-        parking.addVehicle(car4);
+        parking.addVehicle(car4);*/
 
-        //parking.removeVehicle(truck);
 
         Printable printer = PrinterCreator.create(PrinterType.CONSOLE);
         printer.print(parking);
