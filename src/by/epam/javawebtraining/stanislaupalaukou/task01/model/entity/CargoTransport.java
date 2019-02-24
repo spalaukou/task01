@@ -18,11 +18,11 @@ public abstract class CargoTransport extends Vehicle {
         this.cargoCapacity = cargoCapacity;
     }
 
-    public int getWheelsNumber() {
+    public int getCargoCapacity() {
         return cargoCapacity;
     }
 
-    public void setWheelsNumber(int wheelsNumber) {
+    public void setCargoCapacity(int wheelsNumber) {
         this.cargoCapacity = wheelsNumber;
     }
 

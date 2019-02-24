@@ -2,7 +2,6 @@ package by.epam.javawebtraining.stanislaupalaukou.model.container;
 
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.container.Parking;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.Car;
-import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.Truck;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.Vehicle;
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
