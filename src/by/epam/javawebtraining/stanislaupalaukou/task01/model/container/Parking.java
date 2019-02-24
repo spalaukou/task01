@@ -1,6 +1,5 @@
 package by.epam.javawebtraining.stanislaupalaukou.task01.model.container;
 
-import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.PassengerTransport;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.Vehicle;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.ParkingIsEmptyException;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.VehicleNotFoundException;

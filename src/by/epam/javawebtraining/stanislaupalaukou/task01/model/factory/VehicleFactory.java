@@ -31,8 +31,4 @@ public class VehicleFactory {
         }
         return toReturn;
     }
-
-    /*public static Car createCar(String name, int price, int seatsNumber, int trunkVolume) {
-        return new Car(name, price, seatsNumber, trunkVolume);
-    }*/
 }
