@@ -70,15 +70,15 @@ public class Parking {
         }
     }
 
-    private boolean isOnPlace(Vehicle vehicle) {
-        boolean flag = false;
-        for (int i = 0; i < vehicles.length; i++) {
-            if (vehicle.equals(vehicles[i])) {
-                flag = true;
-                break;
+    public boolean isOnPlace(Vehicle vehicle) {
+        if(vehicle != null) {
+            for (int i = 0; i < vehicles.length; i++) {
+                if (vehicle.equals(vehicles[i])) {
+                    return true;
+                }
             }
         }
-        return flag;
+        return false;
     }
 
     @Override
