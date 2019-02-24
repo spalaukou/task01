@@ -2,6 +2,7 @@ package by.epam.javawebtraining.stanislaupalaukou.task01.model.logic;
 
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.container.Parking;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.Vehicle;
+import org.apache.log4j.Logger;
 
 /**
  * @author Stanislau Palaukou on 20.02.2019
@@ -9,6 +10,8 @@ import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.Vehicle;
  */
 
 public class VehicleFinder {
+
+  private static final Logger logger = Logger.getLogger(VehicleFinder.class);
 
   public static Vehicle findTheCheapestVehicle(Parking parking) {
     Vehicle theCheapest = null;
@@ -20,6 +23,7 @@ public class VehicleFinder {
         }
       }
     }
+    logger.info("The cheapest vehicle has been found");
     return theCheapest;
   }
 
@@ -34,6 +38,7 @@ public class VehicleFinder {
 
       }
     }
+    logger.info("The dearest vehicle has been found");
     return theDearest;
   }
 }

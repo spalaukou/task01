@@ -4,6 +4,7 @@ import by.epam.javawebtraining.stanislaupalaukou.task01.view.ConsolePrinter;
 import by.epam.javawebtraining.stanislaupalaukou.task01.view.FilePrinter;
 import by.epam.javawebtraining.stanislaupalaukou.task01.view.Printable;
 import by.epam.javawebtraining.stanislaupalaukou.task01.view.PrinterType;
+import org.apache.log4j.Logger;
 
 /**
  * @author Stanislau Palaukou on 18.02.2019
@@ -11,6 +12,9 @@ import by.epam.javawebtraining.stanislaupalaukou.task01.view.PrinterType;
  */
 
 public class PrinterCreator {
+
+  private static final Logger logger = Logger.getLogger(PrinterCreator.class);
+
   public static Printable create(PrinterType printerType) {
     Printable printer = null;
 
@@ -23,7 +27,7 @@ public class PrinterCreator {
         printer = new ConsolePrinter();
         break;
     }
-
+    logger.info("Printer has been created.");
     return printer;
   }
 }

@@ -3,6 +3,7 @@ package by.epam.javawebtraining.stanislaupalaukou.task01.model.container;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.Vehicle;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.ParkingIsEmptyException;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.VehicleNotFoundException;
+import org.apache.log4j.Logger;
 
 import java.util.Arrays;
 
@@ -12,6 +13,8 @@ import java.util.Arrays;
  */
 
 public class Parking {
+
+    private static final Logger logger = Logger.getLogger(Parking.class);
 
     private Vehicle[] vehicles;
 
@@ -60,12 +63,15 @@ public class Parking {
                     }
                     vehicles = newVehicles;
                 } else {
+                    logger.info("VehicleNotFoundException has been thrown.");
                     throw new VehicleNotFoundException("Vehicle not found: " + vehicle);
                 }
             } else {
+                logger.info("ParkingIsEmptyException has been thrown.");
                 throw new ParkingIsEmptyException("Parking is empty");
             }
         } catch (ParkingIsEmptyException | VehicleNotFoundException e) {
+            logger.info("Exception has been catched", e);
             e.printStackTrace();
         }
     }

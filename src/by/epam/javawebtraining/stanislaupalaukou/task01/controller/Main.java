@@ -10,6 +10,7 @@ import by.epam.javawebtraining.stanislaupalaukou.task01.model.logic.VehicleSorte
 import by.epam.javawebtraining.stanislaupalaukou.task01.util.*;
 import by.epam.javawebtraining.stanislaupalaukou.task01.view.Printable;
 import by.epam.javawebtraining.stanislaupalaukou.task01.view.PrinterType;
+import org.apache.log4j.Logger;
 
 import java.util.Comparator;
 import java.util.List;
@@ -21,7 +22,11 @@ import java.util.stream.Stream;
  */
 
 public class Main {
+
+    private static final Logger logger = Logger.getLogger(Main.class);
+
     public static void main(String[] args) {
+        logger.info("App has been launched.");
 
         Printable printer = PrinterCreator.create(PrinterType.CONSOLE);
 
@@ -96,5 +101,7 @@ public class Main {
         parking.removeVehicle(car1);
 
         printer.print("The dearest vehicle on parking: " + VehicleFinder.findTheDearestVehicle(parking));
+
+        logger.info("App has been completed successfully.");
     }
 }

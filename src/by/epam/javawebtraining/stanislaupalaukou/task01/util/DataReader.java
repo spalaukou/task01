@@ -1,5 +1,7 @@
 package by.epam.javawebtraining.stanislaupalaukou.task01.util;
 
+import org.apache.log4j.Logger;
+
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -10,6 +12,8 @@ import java.util.List;
  */
 
 public class DataReader {
+
+    private static final Logger logger = Logger.getLogger(DataReader.class);
 
     private final static String SEPARATOR = File.separator;
     private final static String path = "input" + SEPARATOR + "inputData.txt";
@@ -22,9 +26,12 @@ public class DataReader {
             while ((currentLine = br.readLine()) != null) {
                 linesArray.add(currentLine.trim());
             }
+            logger.info("File has been read.");
         } catch (FileNotFoundException e) {
+            logger.warn("File not found exception.", e);
             System.out.println("File not found exception." + e);
         } catch (IOException e) {
+            logger.warn("General I/O exception.", e);
             System.out.println("General I/O exception." + e);
         }
 

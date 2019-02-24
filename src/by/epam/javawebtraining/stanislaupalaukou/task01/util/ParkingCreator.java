@@ -4,6 +4,7 @@ import by.epam.javawebtraining.stanislaupalaukou.task01.model.container.Parking;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.Vehicle;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.VehicleTypes;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.factory.VehicleFactory;
+import org.apache.log4j.Logger;
 
 import java.util.List;
 
@@ -13,6 +14,8 @@ import java.util.List;
  */
 
 public class ParkingCreator {
+
+    private static final Logger logger = Logger.getLogger(ParkingCreator.class);
 
     public static Parking create() {
         return new Parking();
@@ -33,6 +36,7 @@ public class ParkingCreator {
                 }
             }
         }
+        logger.info("Parking has been created.");
         return parking;
     }
 }

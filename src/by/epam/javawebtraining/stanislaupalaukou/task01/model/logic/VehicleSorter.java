@@ -2,6 +2,7 @@ package by.epam.javawebtraining.stanislaupalaukou.task01.model.logic;
 
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.comparator.VehiclePriceComparator;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.Vehicle;
+import org.apache.log4j.Logger;
 
 import java.util.Comparator;
 
@@ -11,6 +12,8 @@ import java.util.Comparator;
  */
 
 public class VehicleSorter {
+
+    private static final Logger logger = Logger.getLogger(VehicleSorter.class);
 
     public static Vehicle[] sort(Vehicle[] vehicles, Comparator<Vehicle> comparator) {
         Vehicle[] newVehicles = vehicles;
@@ -34,6 +37,7 @@ public class VehicleSorter {
             Comparator vehiclePriceComparator = new VehiclePriceComparator();
             newVehicles = sort(newVehicles, vehiclePriceComparator);
         }
+        logger.info("Vehiles have been sorted by price.");
         return newVehicles;
     }
 
@@ -42,6 +46,7 @@ public class VehicleSorter {
         if(vehicles != null) {
             sort(newVehicles, Comparator.comparing(Vehicle::getName));
         }
+        logger.info("Vehiles have been sorted by name.");
         return newVehicles;
     }
 
@@ -50,6 +55,7 @@ public class VehicleSorter {
         if (vehicles != null) {
             sort(newVehicles, Comparator.comparing(Vehicle::getName).thenComparing(Vehicle::getPrice));
         }
+        logger.info("Vehiles have been sorted by name and then by price.");
         return newVehicles;
     }
 

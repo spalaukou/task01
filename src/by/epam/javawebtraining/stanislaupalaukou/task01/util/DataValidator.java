@@ -1,5 +1,7 @@
 package by.epam.javawebtraining.stanislaupalaukou.task01.util;
 
+import org.apache.log4j.Logger;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -10,6 +12,8 @@ import java.util.List;
 
 public class DataValidator {
 
+    private static final Logger logger = Logger.getLogger(DataValidator.class);
+
     public final String DIGIT_PATTERN = "(\\s*\\w+\\s*){5}";
 
     private static List<String> validLines = new ArrayList<>();
@@ -17,10 +21,10 @@ public class DataValidator {
     public List<String> validateStrings(List<String> originalLines) {
         for (String originalString : originalLines) {
             if (originalString.matches(DIGIT_PATTERN)) {
-                //String[] line = ArrayCreator.stringSplit(originalString);
                 validLines.add(originalString);
             }
         }
+        logger.info("Lines were checked.");
         return validLines;
     }
 
