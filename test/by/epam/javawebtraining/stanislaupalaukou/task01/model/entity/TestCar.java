@@ -1,4 +1,4 @@
-package by.epam.javawebtraining.stanislaupalaukou.model.entity;
+package by.epam.javawebtraining.stanislaupalaukou.task01.model.entity;
 
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.Car;
 import org.testng.Assert;
