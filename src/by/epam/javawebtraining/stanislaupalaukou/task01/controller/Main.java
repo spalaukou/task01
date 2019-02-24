@@ -5,12 +5,14 @@ import by.epam.javawebtraining.stanislaupalaukou.task01.model.container.Parking;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.Car;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.Truck;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.Vehicle;
+import by.epam.javawebtraining.stanislaupalaukou.task01.model.logic.VehicleCalculator;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.logic.VehicleFinder;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.logic.VehicleSorter;
 import by.epam.javawebtraining.stanislaupalaukou.task01.util.*;
 import by.epam.javawebtraining.stanislaupalaukou.task01.view.Printable;
 import by.epam.javawebtraining.stanislaupalaukou.task01.view.PrinterType;
 
+import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Stream;
@@ -70,15 +72,15 @@ public class Main {
         printer.print(parking);
 
         //Finding total price of all vehicles on parking lot
-        printer.print("Total price of all vehicles: " + parking.totalPrice());
+        printer.print("Total price of all vehicles: " + VehicleCalculator.totalPrice(parking));
 
         //Finding total seats of all vehicles on parking lot
-        printer.print("Total seats of all vehicles: " + parking.totalSeats());
+        printer.print("Total seats of all vehicles: " + VehicleCalculator.totalSeats(parking));
 
         //Finding vehicles by critical properties
         printer.print("The dearest vehicle on parking: " + Stream.of(parking.getVehicles()).max(Comparator
                 .comparing(Vehicle::getPrice)));
-        printer.print("The dearest vehicle on parking: " + VehicleFinder.findDearestVehicle(parking));
+        printer.print("The dearest vehicle on parking: " + VehicleFinder.findTheDearestVehicle(parking));
         printer.print("The cheapest vehicle on parking: " + VehicleFinder.findTheCheapestVehicle(parking));
 
         //Removing all vehicles from the parking and demonstrating ParkingIsEmptyException
@@ -94,5 +96,7 @@ public class Main {
         parking.removeVehicle(new Car("Citroen", 5_000, 4, Car.BodyType.HATCHBACK));
         printer.print(parking);
         parking.removeVehicle(car1);
+
+        printer.print("The dearest vehicle on parking: " + VehicleFinder.findTheDearestVehicle(parking));
     }
 }

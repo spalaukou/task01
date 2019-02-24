@@ -34,26 +34,6 @@ public class Parking {
         }
     }
 
-    public int totalPrice() {
-        int totalPrice = 0;
-        for(Vehicle vehicle : vehicles) {
-            totalPrice += vehicle.getPrice();
-        }
-        return totalPrice;
-    }
-
-    public int totalSeats() {
-        int totalSeats = 0;
-        for(Vehicle vehicle : vehicles) {
-            try {
-                totalSeats += ((PassengerTransport) vehicle).getSeatsNumber();
-            } catch (ClassCastException e) {
-                System.out.println("Vehicle is not passenger: " + vehicle);
-            }
-        }
-        return totalSeats;
-    }
-
     public void addVehicle(Vehicle vehicle) {
         if (vehicle != null && !isOnPlace(vehicle)) {
             Vehicle[] newVehicles = new Vehicle[vehicles.length + 1];

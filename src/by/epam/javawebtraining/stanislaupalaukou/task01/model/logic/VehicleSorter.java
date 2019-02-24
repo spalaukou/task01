@@ -12,28 +12,45 @@ import java.util.Comparator;
 
 public class VehicleSorter {
 
-    public static void sort(Vehicle[] vehicles, Comparator<Vehicle> comparator) {
-        for(int i = 0; i < vehicles.length; i++) {
-            for(int j = i + 1; j < vehicles.length; j++) {
-                if(comparator.compare(vehicles[i], vehicles[j]) > 0) {
-                    Vehicle temp = vehicles[i];
-                    vehicles[i] = vehicles[j];
-                    vehicles[j] = temp;
+    public static Vehicle[] sort(Vehicle[] vehicles, Comparator<Vehicle> comparator) {
+        Vehicle[] newVehicles = vehicles;
+        if(vehicles != null) {
+            for (int i = 0; i < vehicles.length; i++) {
+                for (int j = i + 1; j < vehicles.length; j++) {
+                    if (comparator.compare(vehicles[i], vehicles[j]) > 0) {
+                        Vehicle temp = vehicles[i];
+                        vehicles[i] = vehicles[j];
+                        vehicles[j] = temp;
+                    }
                 }
             }
         }
+        return newVehicles;
     }
 
-    public static void sortByPrice(Vehicle[] vehicles) {
-        Comparator vehiclePriceComparator = new VehiclePriceComparator();
-        sort(vehicles, vehiclePriceComparator);
+    public static Vehicle[] sortByPrice(Vehicle[] vehicles) {
+        Vehicle[] newVehicles = vehicles;
+        if(vehicles != null) {
+            Comparator vehiclePriceComparator = new VehiclePriceComparator();
+            newVehicles = sort(newVehicles, vehiclePriceComparator);
+        }
+        return newVehicles;
     }
 
-    public static void sortByName(Vehicle[] vehicles) {
-        sort(vehicles, Comparator.comparing(Vehicle::getName));
+    public static Vehicle[] sortByName(Vehicle[] vehicles) {
+        Vehicle[] newVehicles = vehicles;
+        if(vehicles != null) {
+            sort(newVehicles, Comparator.comparing(Vehicle::getName));
+        }
+        return newVehicles;
     }
 
-    public static void sortByNameByPrice(Vehicle[] vehicles) {
-        sort(vehicles, Comparator.comparing(Vehicle::getName).thenComparing(Vehicle::getPrice));
+    public static Vehicle[] sortByNameByPrice(Vehicle[] vehicles) {
+        Vehicle[] newVehicles = vehicles;
+        if (vehicles != null) {
+            sort(newVehicles, Comparator.comparing(Vehicle::getName).thenComparing(Vehicle::getPrice));
+        }
+        return newVehicles;
     }
+
 }

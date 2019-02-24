@@ -11,23 +11,29 @@ import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.Vehicle;
 public class VehicleFinder {
 
   public static Vehicle findTheCheapestVehicle(Parking parking) {
-    Vehicle theCheapest = parking.getVehicles()[0];
-    for (int i = 0; i < parking.getVehicles().length; i++) {
-      if (parking.getVehicles()[i].getPrice() < theCheapest.getPrice()) {
-        theCheapest = parking.getVehicles()[i];
+    Vehicle theCheapest = null;
+    if(parking != null && parking.getVehicles() != null && parking.getVehicles().length != 0) {
+      theCheapest = parking.getVehicles()[0];
+      for (int i = 0; i < parking.getVehicles().length; i++) {
+        if (parking.getVehicles()[i].getPrice() < theCheapest.getPrice()) {
+          theCheapest = parking.getVehicles()[i];
+        }
       }
     }
     return theCheapest;
   }
 
-  public static Vehicle findDearestVehicle(Parking parking) {
-    Vehicle dearest = parking.getVehicles()[0];
-    for (int i = 0; i < parking.getVehicles().length; i++) {
-      if (parking.getVehicles()[i].getPrice() > dearest.getPrice()) {
-        dearest = parking.getVehicles()[i];
-      }
+  public static Vehicle findTheDearestVehicle(Parking parking) {
+    Vehicle theDearest = null;
+    if(parking != null && parking.getVehicles() != null && parking.getVehicles().length != 0) {
+      theDearest = parking.getVehicles()[0];
+      for (int i = 0; i < parking.getVehicles().length; i++) {
+        if (parking.getVehicles()[i].getPrice() > theDearest.getPrice()) {
+          theDearest = parking.getVehicles()[i];
+        }
 
+      }
     }
-    return dearest;
+    return theDearest;
   }
 }
