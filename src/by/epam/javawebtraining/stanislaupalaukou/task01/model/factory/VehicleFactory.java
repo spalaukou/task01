@@ -12,24 +12,27 @@ import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.VehicleType
 
 public class VehicleFactory {
 
-    public Vehicle createVehicle(VehicleTypes type, String[] vehicleFields) {
-
-        switch(type){
-
+    public static Vehicle createVehicle(VehicleTypes type, String name, int price, int localField, String bodyTypeString) {
+        Vehicle toReturn = null;
+        switch (type) {
             case CAR:
-                return new Car();
-
+                for (Car.BodyType bodyType : Car.BodyType.values()) {
+                    if(bodyTypeString.toUpperCase().equals(bodyType.name())) {
+                        toReturn = new Car(name, price, localField, bodyType);
+                    }
+                }
             case TRUCK:
-                return new Truck();
-
-                default:
-                    System.out.println("Wrong vehicle type");
+                for (Truck.BodyType bodyType : Truck.BodyType.values()) {
+                    if(bodyTypeString.toUpperCase().equals(bodyType.name())) {
+                        toReturn = new Truck(name, price, localField, bodyType);
+                    }
+                }
+            default:
         }
-
-        return null;
+        return toReturn;
     }
 
-    public static Car createCar(String name, int price, int seatsNumber, int trunkVolume) {
+    /*public static Car createCar(String name, int price, int seatsNumber, int trunkVolume) {
         return new Car(name, price, seatsNumber, trunkVolume);
-    }
+    }*/
 }

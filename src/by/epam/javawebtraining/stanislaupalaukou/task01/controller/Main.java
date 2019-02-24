@@ -12,6 +12,7 @@ import by.epam.javawebtraining.stanislaupalaukou.task01.view.Printable;
 import by.epam.javawebtraining.stanislaupalaukou.task01.view.PrinterType;
 
 import java.util.Comparator;
+import java.util.List;
 import java.util.stream.Stream;
 
 /**
@@ -22,48 +23,40 @@ import java.util.stream.Stream;
 public class Main {
     public static void main(String[] args) {
 
-       /* Parking parking = ParkingCreator.create();
+        Printable printer = PrinterCreator.create(PrinterType.CONSOLE);
 
+        //Reading file
         DataReader dataReader = new DataReader();
         List<String> listString = dataReader.readFileStrings();
+        printer.print(listString);
 
-        System.out.println(listString);
-
+        //Validating strings
         DataValidator dataValidator = new DataValidator();
         List<String> validLines = dataValidator.validateStrings(listString);
+        printer.print(validLines);
 
-        System.out.println(validLines);*/
+        //Filling parking with factory
+        Parking parking = ParkingCreator.create(validLines);
 
-        //TODO: Factory to create vehicles
-        //Creating vehicles
-        Vehicle car = new Car("Mercedes", 35_000, 4, 350);
-        Vehicle truck = new Truck("Iveco", 60_000, "Cabover", 20_000);
-        Vehicle car2 = new Car("Citroen", 10_000, 4, 350);
-        Vehicle car3 = new Car("Audi", 25_000, 4, 350);
-        Vehicle car4 = new Car("Citroen", 5_000, 4, 350);
+        printer.print(parking);
 
-        //Creating container for vehicles
-        Parking parking = ParkingCreator.create();
-
-        //Demonstration of ParkingIsEmptyException
-        parking.removeVehicle(truck);
-
-        //Adding vehicle to parking
-        parking.addVehicle(car);
+        //Adding vehicles to parking from app
+        Vehicle car1 = new Car("BMW", 66_000, 4, Car.BodyType.SEDAN);
+        Vehicle car2 = new Car("Renault", 15_000, 4, Car.BodyType.SEDAN);
+        Vehicle car3 = new Car("Volkswagen", 20_000, 4, Car.BodyType.COUPE);
+        Vehicle car4 = new Car("Skoda", 18_000, 4, Car.BodyType.HATCHBACK);
+        Vehicle truck = new Truck("Volvo", 80_000, 30_000, Truck.BodyType.CABOVER);
 
         //Demonstration of VehicleNotFoundException
         parking.removeVehicle(truck);
 
-        parking.addVehicle(car3);
-        parking.addVehicle(truck);
-
-        /*parking.addVehicle(car3);
+        //Adding vehicles to parking
+        parking.addVehicle(car1);
         parking.addVehicle(car2);
+        parking.addVehicle(car3);
+        parking.addVehicle(car4);
         parking.addVehicle(truck);
-        parking.addVehicle(car4);*/
 
-
-        Printable printer = PrinterCreator.create(PrinterType.CONSOLE);
         printer.print(parking);
 
         //Sorting vehicles
@@ -88,5 +81,18 @@ public class Main {
         printer.print("The dearest vehicle on parking: " + VehicleFinder.findDearestVehicle(parking));
         printer.print("The cheapest vehicle on parking: " + VehicleFinder.findTheCheapestVehicle(parking));
 
+        //Removing all vehicles from the parking and demonstrating ParkingIsEmptyException
+        parking.removeVehicle(car1);
+        parking.removeVehicle(car2);
+        parking.removeVehicle(car3);
+        parking.removeVehicle(car4);
+        parking.removeVehicle(truck);
+        parking.removeVehicle(new Car("Mercedes", 35_000, 4, Car.BodyType.COUPE));
+        parking.removeVehicle(new Car("Audi", 25_000, 4, Car.BodyType.COUPE));
+        parking.removeVehicle(new Truck("Kenworth", 60_000, 20_000, Truck.BodyType.SLEEPER));
+        parking.removeVehicle(new Car("Citroen", 10_000, 4, Car.BodyType.SEDAN));
+        parking.removeVehicle(new Car("Citroen", 5_000, 4, Car.BodyType.HATCHBACK));
+        printer.print(parking);
+        parking.removeVehicle(car1);
     }
 }

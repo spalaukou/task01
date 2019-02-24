@@ -10,7 +10,7 @@ import java.util.List;
 
 public class DataValidator {
 
-    public final String DIGIT_PATTERN = "(car|truck)(,\\s*\\w+)+";
+    public final String DIGIT_PATTERN = "(\\s*\\w+\\s*){5}";
 
     private static List<String> validLines = new ArrayList<>();
 
@@ -23,4 +23,5 @@ public class DataValidator {
         }
         return validLines;
     }
+
 }

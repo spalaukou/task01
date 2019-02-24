@@ -9,28 +9,26 @@ import java.util.Objects;
 
 public class Truck extends CargoTransport {
 
-    public enum bodyType {
+    private BodyType bodyType;
+
+    public enum BodyType {
         CABOVER,
         SLEEPER
     }
 
-    private int cargoCapacity;
-
     public Truck() {}
 
-    public Truck(String name, int price, String type, int cargoCapacity) {
-        super(name, price, type);
-        this.cargoCapacity = cargoCapacity;
+    public Truck(String name, int price, int cargoCapacity, BodyType bodyType) {
+        super(name, price, cargoCapacity);
+        this.bodyType = bodyType;
     }
 
-    public int getCargoCapacity() {
-        return cargoCapacity;
+    public BodyType getBodyType() {
+        return bodyType;
     }
 
-    public void setCargoCapacity(int cargoCapacity) {
-        if(cargoCapacity > 0) {
-            this.cargoCapacity = cargoCapacity;
-        }
+    public void setBodyType(BodyType bodyType) {
+        this.bodyType = bodyType;
     }
 
     @Override
@@ -39,18 +37,18 @@ public class Truck extends CargoTransport {
         if (o == null || getClass() != o.getClass()) return false;
         if (!super.equals(o)) return false;
         Truck truck = (Truck) o;
-        return cargoCapacity == truck.cargoCapacity;
+        return bodyType == truck.bodyType;
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(super.hashCode(), cargoCapacity);
+        return Objects.hash(super.hashCode(), bodyType);
     }
 
     @Override
     public String toString() {
         return "Truck {" + super.toString() +
-                ", cargoCapacity = " + cargoCapacity +
+                ", bodyType = " + bodyType +
                 '}';
     }
 }

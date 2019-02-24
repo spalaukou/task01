@@ -7,5 +7,5 @@ package by.epam.javawebtraining.stanislaupalaukou.task01.model.entity;
 
 public enum VehicleTypes {
     CAR,
-    TRUCK;
+    TRUCK
 }

@@ -9,21 +9,21 @@ import java.util.Objects;
 
 public abstract class CargoTransport extends Vehicle {
 
-    private String cargoType;
+    private int cargoCapacity;
 
     public CargoTransport() {}
 
-    public CargoTransport(String name, int price, String type) {
+    public CargoTransport(String name, int price, int cargoCapacity) {
         super(name, price);
-        this.cargoType = type;
+        this.cargoCapacity = cargoCapacity;
     }
 
-    public String getCargoType() {
-        return cargoType;
+    public int getWheelsNumber() {
+        return cargoCapacity;
     }
 
-    public void setCargoType(String cargoType) {
-        this.cargoType = cargoType;
+    public void setWheelsNumber(int wheelsNumber) {
+        this.cargoCapacity = wheelsNumber;
     }
 
     @Override
@@ -32,17 +32,17 @@ public abstract class CargoTransport extends Vehicle {
         if (o == null || getClass() != o.getClass()) return false;
         if (!super.equals(o)) return false;
         CargoTransport that = (CargoTransport) o;
-        return cargoType.equals(that.cargoType);
+        return cargoCapacity == that.cargoCapacity;
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(super.hashCode(), cargoType);
+        return Objects.hash(super.hashCode(), cargoCapacity);
     }
 
     @Override
     public String toString() {
         return super.toString() +
-                ", cargoType = " + cargoType;
+                ", cargoCapacity = " + cargoCapacity;
     }
 }

@@ -2,6 +2,8 @@ package by.epam.javawebtraining.stanislaupalaukou.task01.util;
 
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.container.Parking;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.Vehicle;
+import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.VehicleTypes;
+import by.epam.javawebtraining.stanislaupalaukou.task01.model.factory.VehicleFactory;
 
 import java.util.List;
 
@@ -20,35 +22,17 @@ public class ParkingCreator {
         return new Parking(vehicles);
     }
 
-    /*public static Parking create(Vehicle[] vehicles) {
-        if (vehicles == null) {
-            return null;
-        }
-
-        return new Parking(vehicles);
-    }*/
-
     public static Parking create(List<String> validLines) {
+        Parking parking = new Parking();
         for (String validString : validLines) {
-            String[] line = ArrayCreator.stringSplit(validString);
-            String isType = line[0];
-            int vehicleFieldsQuantity = 5;
-            /*if (line.length > vehicleFieldsQuantity) {
-                int[] dataNumbers = new int[line.length - 1];
-                for (int i = 1; i < line.length; i++) {
-                    dataNumbers[i - 1] = Integer.parseInt(line[i]);
+            String[] splitted = validString.split(" ");
+            for(VehicleTypes type : VehicleTypes.values()) {
+                if(splitted[0].toUpperCase().equals(type.name())) {
+                    parking.addVehicle(VehicleFactory.createVehicle(type, splitted[1], Integer.parseInt(splitted[2])
+                            , Integer.parseInt(splitted[3]), splitted[4].toUpperCase()));
                 }
-                for (TariffTypes type : TariffTypes.values()) {
-                    if (isType.toUpperCase().equals(type.name())) {
-                        TariffFactory tariffFactory = new TariffFactory();
-                        Tariff newTariff = tariffFactory.createTariff(type, dataNumbers);
-                        if(newTariff != null) {
-                            company.add(newTariff);
-                        }
-                    }
-                }
-            }*/
+            }
         }
-        return new Parking();
+        return parking;
     }
 }

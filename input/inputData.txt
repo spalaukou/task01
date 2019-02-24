@@ -1,5 +1,7 @@
-car, Mercedes, 35000, 4, 350
-carr, adl,23,234,4
-truck,iveco,265000,truck,10000
-truck, MAN, 60000, Cabover, 20000
-car, Audi, 10000, 4, 350
+Car Mercedes 35000 4 coupe
+TRuCK Kenworth 60000 20000 SlEePeR
+           CAR Citroen 10000 4 SEDAN
+CAR Audi 25000 4 COUPE
+invalid string
+CAR Citroen 5000 4 HATCHBACK
+0dks

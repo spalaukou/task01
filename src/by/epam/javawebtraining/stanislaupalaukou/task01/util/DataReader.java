@@ -15,7 +15,7 @@ public class DataReader {
     private final static String path = "input" + SEPARATOR + "inputData.txt";
     private static List<String> linesArray = new ArrayList<>();
 
-    public List<String> readFileStrings() throws FileNotFoundException {
+    public List<String> readFileStrings() {
 
         try (BufferedReader br = new BufferedReader(new FileReader(path))) {
             String currentLine;
