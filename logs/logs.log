@@ -40,3 +40,27 @@ by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.ParkingIsEmptyE
 	at by.epam.javawebtraining.stanislaupalaukou.task01.controller.Main.main(Main.java:101)
 2019-02-24 22:51:18 INFO  VehicleFinder:41 - The dearest vehicle has been found
 2019-02-24 22:51:18 INFO  Main:105 - App has been completed successfully.
+2019-02-25 11:00:50 INFO  Main:29 - App has been launched.
+2019-02-25 11:00:50 INFO  PrinterCreator:30 - Printer has been created.
+2019-02-25 11:00:50 INFO  DataReader:29 - File has been read.
+2019-02-25 11:00:50 INFO  DataValidator:27 - Lines were checked.
+2019-02-25 11:00:50 INFO  ParkingCreator:39 - Parking has been created.
+2019-02-25 11:00:50 INFO  Parking:66 - VehicleNotFoundException has been thrown.
+2019-02-25 11:00:50 INFO  Parking:74 - Exception has been catched
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.VehicleNotFoundException: Vehicle not found: Truck {name = Volvo, price = 80000, cargoCapacity = 30000, bodyType = CABOVER}
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.container.Parking.removeVehicle(Parking.java:67)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.controller.Main.main(Main.java:56)
+2019-02-25 11:00:50 INFO  VehicleSorter:40 - Vehiles have been sorted by price.
+2019-02-25 11:00:50 INFO  VehicleSorter:49 - Vehiles have been sorted by name.
+2019-02-25 11:00:50 INFO  VehicleSorter:58 - Vehiles have been sorted by name and then by price.
+2019-02-25 11:00:55 INFO  VehicleCalculator:24 - Total price has been calculated.
+2019-02-25 11:00:55 INFO  VehicleCalculator:39 - Total seats has been calculated.
+2019-02-25 11:00:55 INFO  VehicleFinder:41 - The dearest vehicle has been found
+2019-02-25 11:00:55 INFO  VehicleFinder:26 - The cheapest vehicle has been found
+2019-02-25 11:00:55 INFO  Parking:70 - ParkingIsEmptyException has been thrown.
+2019-02-25 11:00:55 INFO  Parking:74 - Exception has been catched
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.ParkingIsEmptyException: Parking is empty
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.container.Parking.removeVehicle(Parking.java:71)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.controller.Main.main(Main.java:101)
+2019-02-25 11:00:55 INFO  VehicleFinder:41 - The dearest vehicle has been found
+2019-02-25 11:00:55 INFO  Main:105 - App has been completed successfully.
