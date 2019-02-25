@@ -3,6 +3,9 @@ package by.epam.javawebtraining.stanislaupalaukou.task01.model.entity;
 import java.util.Objects;
 
 /**
+ * The entity class includes base fields
+ * and methods of all the trucks.
+ *
  * @author Stanislau Palaukou on 17.02.2019
  * @project Task 01
  */
@@ -11,6 +14,9 @@ public class Truck extends CargoTransport {
 
     private BodyType bodyType;
 
+    /**
+     * The entity class of trucks' body types.
+     */
     public enum BodyType {
         CABOVER,
         SLEEPER

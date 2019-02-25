@@ -4,6 +4,12 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 /**
+ * The view class implements Printable Interface
+ * and prints Object (which is received as param
+ * in included method) in File.
+ *
+ * @see Printable
+ *
  * @author Stanislau Palaukou on 17.02.2019
  * @project Task 01
  */

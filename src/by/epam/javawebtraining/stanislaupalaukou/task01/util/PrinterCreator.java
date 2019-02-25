@@ -7,6 +7,12 @@ import by.epam.javawebtraining.stanislaupalaukou.task01.view.PrinterType;
 import org.apache.log4j.Logger;
 
 /**
+ * The util class creates Printer by
+ * the Printer Type, which is received as param
+ * in included method.
+ *
+ * @see PrinterType
+ *
  * @author Stanislau Palaukou on 18.02.2019
  * @project Task 01
  */
