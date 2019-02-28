@@ -3,16 +3,19 @@ package by.epam.javawebtraining.stanislaupalaukou.task01.model.container;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.container.Parking;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.Car;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.Vehicle;
+import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.VehicleNotFoundException;
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+
+import static org.testng.Assert.assertEquals;
 
 /**
  * @author Stanislau Palaukou on 24.02.2019
  * @project Task 01
  */
 
-public class TestParking {
+public class ParkingTest {
     private Vehicle car1;
     private Vehicle car2;
     private Vehicle car3;
@@ -23,7 +26,7 @@ public class TestParking {
     private Parking parking1;
 
     @BeforeTest
-    public void setVehicles() {
+    public void setUpVehicles() {
         car1 = new Car("BMW", 66_000, 4, Car.BodyType.SEDAN);
         car2 = new Car("Renault", 15_000, 4, Car.BodyType.SEDAN);
         car3 = new Car("Volkswagen", 20_000, 4, Car.BodyType.COUPE);
@@ -35,7 +38,7 @@ public class TestParking {
     }
 
     @Test
-    public void testConstructorParking() {
+    public void testConstructor() {
         Parking parking2 = new Parking(null);
 
         Vehicle[] expected1 = vehicles1;
@@ -44,8 +47,16 @@ public class TestParking {
         Vehicle[] expected2 = null;
         Vehicle[] actual2 = parking2.getVehicles();
 
-        Assert.assertEquals(expected1, actual1);
-        Assert.assertEquals(expected2, actual2);
+        assertEquals(expected1, actual1);
+        assertEquals(expected2, actual2);
+    }
+
+    @Test
+    public void testDefaultConstructor() {
+        Parking actual = new Parking();
+        Parking expected = new Parking(new Vehicle[0]);
+
+        assertEquals(expected, actual);
     }
 
     @Test
@@ -55,7 +66,17 @@ public class TestParking {
         Parking parking = new Parking(vehicles1);
         Vehicle[] actual = parking.getVehicles();
 
-        Assert.assertEquals(expected, actual);
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    public void testSetVehicles() {
+        Parking actualParking = new Parking();
+        Vehicle[] expected = vehicles1;
+        actualParking.setVehicles(vehicles1);
+        Vehicle[] actual = actualParking.getVehicles();
+
+        assertEquals(expected, actual);
     }
 
     @Test
@@ -65,17 +86,32 @@ public class TestParking {
 
         actual.addVehicle(car3);
 
-        Assert.assertEquals(expected, actual);
+        assertEquals(expected, actual);
     }
 
     @Test
     public void testRemoveVehicle() {
-        Parking expected1 = new Parking(vehicles1);
+        Parking expected = new Parking(vehicles1);
         Parking actual = new Parking(vehicles2);
 
         actual.removeVehicle(car3);
 
-        Assert.assertEquals(expected1, actual);
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    public void testRemoveVehicleVehicleNotFoundException() {
+        Parking actual = new Parking(vehicles1);
+        actual.removeVehicle(car3);
+    }
+
+    @Test
+    public void testRemoveParkingIsEmptyException() {
+        Parking actual = new Parking(vehicles1);
+        actual.removeVehicle(car3);
+        actual.removeVehicle(car2);
+        actual.removeVehicle(car1);
+        actual.removeVehicle(car1);
     }
 
     /*@Test
