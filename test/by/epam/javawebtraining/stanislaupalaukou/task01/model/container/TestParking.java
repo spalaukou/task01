@@ -78,7 +78,7 @@ public class TestParking {
         Assert.assertEquals(expected1, actual);
     }
 
-    @Test
+    /*@Test
     public void testIsOnPlace() {
         boolean actual1 = parking1.isOnPlace(car1);
         boolean actual2 = parking1.isOnPlace(car3);
@@ -87,5 +87,5 @@ public class TestParking {
         Assert.assertTrue(actual1);
         Assert.assertFalse(actual2);
         Assert.assertFalse(actual3);
-    }
+    }*/
 }

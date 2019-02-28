@@ -14,7 +14,7 @@ import java.util.Comparator;
  * @project Task 01
  */
 
-public class TestVehiclePriceComparator {
+public class VehiclePriceComparatorTest {
     private Vehicle car1;
     private Vehicle car2;
 
