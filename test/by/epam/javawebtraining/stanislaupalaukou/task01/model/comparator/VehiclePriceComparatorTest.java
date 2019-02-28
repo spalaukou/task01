@@ -1,6 +1,5 @@
 package by.epam.javawebtraining.stanislaupalaukou.task01.model.comparator;
 
-import by.epam.javawebtraining.stanislaupalaukou.task01.model.comparator.VehiclePriceComparator;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.Car;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.Vehicle;
 import org.testng.Assert;
@@ -14,12 +13,12 @@ import java.util.Comparator;
  * @project Task 01
  */
 
-public class TestVehiclePriceComparator {
+public class VehiclePriceComparatorTest {
     private Vehicle car1;
     private Vehicle car2;
 
     @BeforeTest
-    public void createVehicles() {
+    public void setupVehicles() {
         car1 = new Car("BMW", 66_000, 4, Car.BodyType.SEDAN);
         car2 = new Car("Renault", 15_000, 4, Car.BodyType.SEDAN);
     }

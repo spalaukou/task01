@@ -1,6 +1,5 @@
 package by.epam.javawebtraining.stanislaupalaukou.task01.model.container;
 
-import by.epam.javawebtraining.stanislaupalaukou.task01.model.container.Parking;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.Car;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.Vehicle;
 import org.testng.Assert;
@@ -12,7 +11,7 @@ import org.testng.annotations.Test;
  * @project Task 01
  */
 
-public class TestParking {
+public class ParkingTest {
     private Vehicle car1;
     private Vehicle car2;
     private Vehicle car3;
@@ -23,7 +22,7 @@ public class TestParking {
     private Parking parking1;
 
     @BeforeTest
-    public void setVehicles() {
+    public void setupVehicles() {
         car1 = new Car("BMW", 66_000, 4, Car.BodyType.SEDAN);
         car2 = new Car("Renault", 15_000, 4, Car.BodyType.SEDAN);
         car3 = new Car("Volkswagen", 20_000, 4, Car.BodyType.COUPE);

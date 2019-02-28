@@ -76,10 +76,10 @@ public class Parking {
         }
     }
 
-    public boolean isOnPlace(Vehicle vehicle) {
+    boolean isOnPlace(Vehicle vehicle) {
         if(vehicle != null) {
-            for (int i = 0; i < vehicles.length; i++) {
-                if (vehicle.equals(vehicles[i])) {
+            for (Vehicle vehicleItem : vehicles) {
+                if (vehicle.equals(vehicleItem)) {
                     return true;
                 }
             }
