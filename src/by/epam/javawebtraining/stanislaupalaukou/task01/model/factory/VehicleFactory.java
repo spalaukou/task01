@@ -3,16 +3,31 @@ package by.epam.javawebtraining.stanislaupalaukou.task01.model.factory;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.Car;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.Truck;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.Vehicle;
-import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.VehicleTypes;
+import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.VehicleType;
 
 /**
+ * The Vehicle Factory class implements a Factory Design Pattern
+ * (one of the Creational Design Patterns) and creates
+ * various types of Vehicles.
+ *
  * @author Stanislau Palaukou on 19.02.2019
  * @project Task 01
  */
 
 public class VehicleFactory {
 
-    public static Vehicle createVehicle(VehicleTypes type, String name, int price, int localField, String bodyTypeString) {
+    /**
+     * Method receives list of parameters and returns vehicle
+     * object appropriate type.
+     *
+     * @param type
+     * @param name
+     * @param price
+     * @param localField
+     * @param bodyTypeString
+     * @return
+     */
+    public static Vehicle createVehicle(VehicleType type, String name, int price, int localField, String bodyTypeString) {
         Vehicle toReturn = null;
         switch (type) {
             case CAR:

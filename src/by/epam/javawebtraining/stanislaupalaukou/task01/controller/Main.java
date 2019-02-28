@@ -17,6 +17,9 @@ import java.util.List;
 import java.util.stream.Stream;
 
 /**
+ * The program represents the hierarchy of vehicles
+ * including cargo and passenger vehicles, located in the parking lot.
+ *
  * @author Stanislau Palaukou on 14.02.2019
  * @project Task 01
  */
@@ -75,16 +78,16 @@ public class Main {
         printer.print(parking);
 
         //Finding total price of all vehicles on parking lot
-        printer.print("Total price of all vehicles: " + VehicleCalculator.totalPrice(parking));
+        printer.print("Total price of all the vehicles: " + VehicleCalculator.totalPrice(parking));
 
         //Finding total seats of all vehicles on parking lot
-        printer.print("Total seats of all vehicles: " + VehicleCalculator.totalSeats(parking));
+        printer.print("Total seats of all the vehicles: " + VehicleCalculator.totalSeats(parking));
 
         //Finding vehicles by critical properties
-        printer.print("The dearest vehicle on parking: " + Stream.of(parking.getVehicles()).max(Comparator
+        printer.print("The dearest vehicle in the parking lot: " + Stream.of(parking.getVehicles()).max(Comparator
                 .comparing(Vehicle::getPrice)));
-        printer.print("The dearest vehicle on parking: " + VehicleFinder.findTheDearestVehicle(parking));
-        printer.print("The cheapest vehicle on parking: " + VehicleFinder.findTheCheapestVehicle(parking));
+        printer.print("The dearest vehicle in the parking lot: " + VehicleFinder.findTheDearestVehicle(parking));
+        printer.print("The cheapest vehicle in the parking lot: " + VehicleFinder.findTheCheapestVehicle(parking));
 
         //Removing all vehicles from the parking and demonstrating ParkingIsEmptyException
         parking.removeVehicle(car1);
@@ -100,7 +103,7 @@ public class Main {
         printer.print(parking);
         parking.removeVehicle(car1);
 
-        printer.print("The dearest vehicle on parking: " + VehicleFinder.findTheDearestVehicle(parking));
+        printer.print("The dearest vehicle in the parking lot: " + VehicleFinder.findTheDearestVehicle(parking));
 
         logger.info("App has been completed successfully.");
     }

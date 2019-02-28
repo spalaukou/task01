@@ -2,13 +2,18 @@ package by.epam.javawebtraining.stanislaupalaukou.task01.util;
 
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.container.Parking;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.Vehicle;
-import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.VehicleTypes;
+import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.VehicleType;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.factory.VehicleFactory;
 import org.apache.log4j.Logger;
 
 import java.util.List;
 
 /**
+ * The util class creates Parking of Vehicles,
+ * uses Vehicle Factory.
+ *
+ * @see VehicleFactory
+ *
  * @author Stanislau Palaukou on 18.02.2019
  * @project Task 01
  */
@@ -29,7 +34,7 @@ public class ParkingCreator {
         Parking parking = new Parking();
         for (String validString : validLines) {
             String[] splitted = validString.split(" ");
-            for(VehicleTypes type : VehicleTypes.values()) {
+            for(VehicleType type : VehicleType.values()) {
                 if(splitted[0].toUpperCase().equals(type.name())) {
                     parking.addVehicle(VehicleFactory.createVehicle(type, splitted[1], Integer.parseInt(splitted[2])
                             , Integer.parseInt(splitted[3]), splitted[4].toUpperCase()));

@@ -3,6 +3,9 @@ package by.epam.javawebtraining.stanislaupalaukou.task01.model.entity;
 import java.util.Objects;
 
 /**
+ * The abstract entity class includes base fields
+ * and methods of all the vehicles.
+ *
  * @author Stanislau Palaukou on 14.02.2019
  * @project Task 01
  */

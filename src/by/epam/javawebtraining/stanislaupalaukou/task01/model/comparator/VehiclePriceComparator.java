@@ -5,6 +5,9 @@ import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.Vehicle;
 import java.util.Comparator;
 
 /**
+ *The comparator class implements Comparator
+ * and compare two vehicles by their price.
+ *
  * @author Stanislau Palaukou on 19.02.2019
  * @project Task 01
  */

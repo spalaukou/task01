@@ -7,6 +7,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * The util class reads *.txt file and adds
+ * read lines to List.
+ *
  * @author Stanislau Palaukou on 19.02.2019
  * @project Task 01
  */

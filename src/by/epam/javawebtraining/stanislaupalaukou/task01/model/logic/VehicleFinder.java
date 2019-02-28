@@ -5,6 +5,9 @@ import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.Vehicle;
 import org.apache.log4j.Logger;
 
 /**
+ * The logic class finds Vehicles in
+ * the parking lot by extreme params.
+ *
  * @author Stanislau Palaukou on 20.02.2019
  * @project Task 01
  */
@@ -13,6 +16,13 @@ public class VehicleFinder {
 
   private static final Logger logger = Logger.getLogger(VehicleFinder.class);
 
+  /**
+   * The method finds the cheapest Vehicle
+   * in the parking lot, which is passed as param.
+   *
+   * @param parking
+   * @return
+   */
   public static Vehicle findTheCheapestVehicle(Parking parking) {
     Vehicle theCheapest = null;
     if(parking != null && parking.getVehicles() != null && parking.getVehicles().length != 0) {
@@ -27,6 +37,13 @@ public class VehicleFinder {
     return theCheapest;
   }
 
+  /**
+   * The method finds the dearest Vehicle
+   * in the parking lot, which is passed as param.
+   *
+   * @param parking
+   * @return
+   */
   public static Vehicle findTheDearestVehicle(Parking parking) {
     Vehicle theDearest = null;
     if(parking != null && parking.getVehicles() != null && parking.getVehicles().length != 0) {

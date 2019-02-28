@@ -1,6 +1,10 @@
 package by.epam.javawebtraining.stanislaupalaukou.task01.model.exception;
 
 /**
+ * The class describes conditions of not found
+ * vehicle in the parking lot, that a reasonable
+ * application might want to catch.
+ *
  * @author Stanislau Palaukou on 23.02.2019
  * @project Task 01
  */
