@@ -4,7 +4,6 @@ import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.P
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.Car;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.Truck;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.Vehicle;
-import by.epam.javawebtraining.stanislaupalaukou.task01.model.factory.VehicleFactory;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.logic.VehicleCalculator;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.logic.VehicleFinder;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.logic.VehicleSorter;

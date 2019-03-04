@@ -3,5 +3,7 @@ TRuCK Kenworth 60000 20000 SlEePeR
            CAR Citroen 10000 4 SEDAN
 CAR Audi 25000 4 COUPE
 invalid string
+
+null
 CAR Citroen 5000 4 HATCHBACK
 0dks
