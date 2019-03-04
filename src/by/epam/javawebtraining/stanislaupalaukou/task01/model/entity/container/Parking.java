@@ -74,7 +74,7 @@ public class Parking {
                 throw new ParkingIsEmptyException("Parking is empty");
             }
         } catch (ParkingIsEmptyException | VehicleNotFoundException e) {
-            logger.info("Exception has been catched", e);
+            logger.info("Exception has been caught", e);
             e.printStackTrace();
         }
     }
