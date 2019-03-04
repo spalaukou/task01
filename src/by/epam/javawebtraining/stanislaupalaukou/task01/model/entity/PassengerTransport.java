@@ -26,7 +26,7 @@ public abstract class PassengerTransport extends Vehicle {
     }
 
     public void setSeatsNumber(int seatsNumber) {
-        if(seatsNumber > 1) {
+        if(seatsNumber > 0) {
             this.seatsNumber = seatsNumber;
         }
     }

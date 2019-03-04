@@ -18,8 +18,10 @@ public abstract class Vehicle {
     public Vehicle(){}
 
     public Vehicle(String name, int price) {
-        this.name = name;
-        this.price = price;
+        if(name != null && price > 0) {
+            this.name = name;
+            this.price = price;
+        }
     }
 
     public String getName() {

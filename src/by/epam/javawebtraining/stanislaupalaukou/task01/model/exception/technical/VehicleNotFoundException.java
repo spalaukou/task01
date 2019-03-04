@@ -1,4 +1,6 @@
-package by.epam.javawebtraining.stanislaupalaukou.task01.model.exception;
+package by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.technical;
+
+import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.TaskException;
 
 /**
  * The class describes conditions of not found
@@ -9,7 +11,7 @@ package by.epam.javawebtraining.stanislaupalaukou.task01.model.exception;
  * @project Task 01
  */
 
-public class VehicleNotFoundException extends Exception {
+public class VehicleNotFoundException extends TaskException {
 
     public VehicleNotFoundException() {
         super();

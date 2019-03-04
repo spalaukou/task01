@@ -25,8 +25,10 @@ public abstract class CargoTransport extends Vehicle {
         return cargoCapacity;
     }
 
-    public void setCargoCapacity(int wheelsNumber) {
-        this.cargoCapacity = wheelsNumber;
+    public void setCargoCapacity(int cargoCapacity) {
+        if(cargoCapacity > 0) {
+            this.cargoCapacity = cargoCapacity;
+        }
     }
 
     @Override

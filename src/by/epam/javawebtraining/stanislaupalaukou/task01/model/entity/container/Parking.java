@@ -1,13 +1,16 @@
-package by.epam.javawebtraining.stanislaupalaukou.task01.model.container;
+package by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container;
 
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.Vehicle;
-import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.ParkingIsEmptyException;
-import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.VehicleNotFoundException;
+import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.technical.ParkingIsEmptyException;
+import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.technical.VehicleNotFoundException;
 import org.apache.log4j.Logger;
 
 import java.util.Arrays;
 
 /**
+ * The entity container class includes an array of vehicles
+ * and can add and remove vehicles from it.
+ *
  * @author Stanislau Palaukou on 14.02.2019
  * @project Task 01
  */

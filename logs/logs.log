@@ -23,8 +23,8 @@
 2019-02-24 22:51:18 INFO  ParkingCreator:39 - Parking has been created.
 2019-02-24 22:51:18 INFO  Parking:66 - VehicleNotFoundException has been thrown.
 2019-02-24 22:51:18 INFO  Parking:74 - Exception has been catched
-by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.VehicleNotFoundException: Vehicle not found: Truck {name = Volvo, price = 80000, cargoCapacity = 30000, bodyType = CABOVER}
-	at by.epam.javawebtraining.stanislaupalaukou.task01.model.container.Parking.removeVehicle(Parking.java:67)
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.technical.VehicleNotFoundException: Vehicle not found: Truck {name = Volvo, price = 80000, cargoCapacity = 30000, bodyType = CABOVER}
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:67)
 	at by.epam.javawebtraining.stanislaupalaukou.task01.controller.Main.main(Main.java:56)
 2019-02-24 22:51:18 INFO  VehicleSorter:40 - Vehiles have been sorted by price.
 2019-02-24 22:51:18 INFO  VehicleSorter:49 - Vehiles have been sorted by name.
@@ -35,8 +35,8 @@ by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.VehicleNotFound
 2019-02-24 22:51:18 INFO  VehicleFinder:26 - The cheapest vehicle has been found
 2019-02-24 22:51:18 INFO  Parking:70 - ParkingIsEmptyException has been thrown.
 2019-02-24 22:51:18 INFO  Parking:74 - Exception has been catched
-by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.ParkingIsEmptyException: Parking is empty
-	at by.epam.javawebtraining.stanislaupalaukou.task01.model.container.Parking.removeVehicle(Parking.java:71)
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.technical.ParkingIsEmptyException: Parking is empty
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:71)
 	at by.epam.javawebtraining.stanislaupalaukou.task01.controller.Main.main(Main.java:101)
 2019-02-24 22:51:18 INFO  VehicleFinder:41 - The dearest vehicle has been found
 2019-02-24 22:51:18 INFO  Main:105 - App has been completed successfully.
@@ -47,8 +47,8 @@ by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.ParkingIsEmptyE
 2019-02-25 11:00:50 INFO  ParkingCreator:39 - Parking has been created.
 2019-02-25 11:00:50 INFO  Parking:66 - VehicleNotFoundException has been thrown.
 2019-02-25 11:00:50 INFO  Parking:74 - Exception has been catched
-by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.VehicleNotFoundException: Vehicle not found: Truck {name = Volvo, price = 80000, cargoCapacity = 30000, bodyType = CABOVER}
-	at by.epam.javawebtraining.stanislaupalaukou.task01.model.container.Parking.removeVehicle(Parking.java:67)
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.technical.VehicleNotFoundException: Vehicle not found: Truck {name = Volvo, price = 80000, cargoCapacity = 30000, bodyType = CABOVER}
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:67)
 	at by.epam.javawebtraining.stanislaupalaukou.task01.controller.Main.main(Main.java:56)
 2019-02-25 11:00:50 INFO  VehicleSorter:40 - Vehiles have been sorted by price.
 2019-02-25 11:00:50 INFO  VehicleSorter:49 - Vehiles have been sorted by name.
@@ -59,16 +59,16 @@ by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.VehicleNotFound
 2019-02-25 11:00:55 INFO  VehicleFinder:26 - The cheapest vehicle has been found
 2019-02-25 11:00:55 INFO  Parking:70 - ParkingIsEmptyException has been thrown.
 2019-02-25 11:00:55 INFO  Parking:74 - Exception has been catched
-by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.ParkingIsEmptyException: Parking is empty
-	at by.epam.javawebtraining.stanislaupalaukou.task01.model.container.Parking.removeVehicle(Parking.java:71)
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.technical.ParkingIsEmptyException: Parking is empty
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:71)
 	at by.epam.javawebtraining.stanislaupalaukou.task01.controller.Main.main(Main.java:101)
 2019-02-25 11:00:55 INFO  VehicleFinder:41 - The dearest vehicle has been found
 2019-02-25 11:00:55 INFO  Main:105 - App has been completed successfully.
 2019-02-28 22:53:29 INFO  Parking:84 - VehicleNotFoundException has been thrown.
 2019-02-28 22:53:29 INFO  Parking:92 - Exception has been caught
-by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.VehicleNotFoundException: Vehicle not found: Car {name = Volkswagen, price = 20000, seatsNumber = 4, bodyType = COUPE}
-	at by.epam.javawebtraining.stanislaupalaukou.task01.model.container.Parking.removeVehicle(Parking.java:85)
-	at by.epam.javawebtraining.stanislaupalaukou.task01.model.container.ParkingTest.testRemoveVehicleVehicleNotFoundException(ParkingTest.java:105)
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.technical.VehicleNotFoundException: Vehicle not found: Car {name = Volkswagen, price = 20000, seatsNumber = 4, bodyType = COUPE}
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:85)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.ParkingTest.testRemoveVehicleVehicleNotFoundException(ParkingTest.java:105)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -95,9 +95,9 @@ by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.VehicleNotFound
 	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
 2019-02-28 22:55:24 INFO  Parking:84 - VehicleNotFoundException has been thrown.
 2019-02-28 22:55:24 INFO  Parking:92 - Exception has been caught
-by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.VehicleNotFoundException: Vehicle not found: Car {name = Volkswagen, price = 20000, seatsNumber = 4, bodyType = COUPE}
-	at by.epam.javawebtraining.stanislaupalaukou.task01.model.container.Parking.removeVehicle(Parking.java:85)
-	at by.epam.javawebtraining.stanislaupalaukou.task01.model.container.ParkingTest.testRemoveVehicleVehicleNotFoundException(ParkingTest.java:105)
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.technical.VehicleNotFoundException: Vehicle not found: Car {name = Volkswagen, price = 20000, seatsNumber = 4, bodyType = COUPE}
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:85)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.ParkingTest.testRemoveVehicleVehicleNotFoundException(ParkingTest.java:105)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -124,9 +124,9 @@ by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.VehicleNotFound
 	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
 2019-02-28 22:55:40 INFO  Parking:84 - VehicleNotFoundException has been thrown.
 2019-02-28 22:55:40 INFO  Parking:92 - Exception has been caught
-by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.VehicleNotFoundException: Vehicle not found: Car {name = Volkswagen, price = 20000, seatsNumber = 4, bodyType = COUPE}
-	at by.epam.javawebtraining.stanislaupalaukou.task01.model.container.Parking.removeVehicle(Parking.java:85)
-	at by.epam.javawebtraining.stanislaupalaukou.task01.model.container.ParkingTest.testRemoveVehicleVehicleNotFoundException(ParkingTest.java:105)
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.technical.VehicleNotFoundException: Vehicle not found: Car {name = Volkswagen, price = 20000, seatsNumber = 4, bodyType = COUPE}
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:85)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.ParkingTest.testRemoveVehicleVehicleNotFoundException(ParkingTest.java:105)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -153,9 +153,9 @@ by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.VehicleNotFound
 	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
 2019-02-28 22:56:32 INFO  Parking:84 - VehicleNotFoundException has been thrown.
 2019-02-28 22:56:32 INFO  Parking:92 - Exception has been caught
-by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.VehicleNotFoundException: Vehicle not found: Car {name = Volkswagen, price = 20000, seatsNumber = 4, bodyType = COUPE}
-	at by.epam.javawebtraining.stanislaupalaukou.task01.model.container.Parking.removeVehicle(Parking.java:85)
-	at by.epam.javawebtraining.stanislaupalaukou.task01.model.container.ParkingTest.testRemoveParkingIsEmptyException(ParkingTest.java:111)
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.technical.VehicleNotFoundException: Vehicle not found: Car {name = Volkswagen, price = 20000, seatsNumber = 4, bodyType = COUPE}
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:85)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.ParkingTest.testRemoveParkingIsEmptyException(ParkingTest.java:111)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -182,9 +182,9 @@ by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.VehicleNotFound
 	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
 2019-02-28 22:56:32 INFO  Parking:88 - ParkingIsEmptyException has been thrown.
 2019-02-28 22:56:32 INFO  Parking:92 - Exception has been caught
-by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.ParkingIsEmptyException: Parking is empty
-	at by.epam.javawebtraining.stanislaupalaukou.task01.model.container.Parking.removeVehicle(Parking.java:89)
-	at by.epam.javawebtraining.stanislaupalaukou.task01.model.container.ParkingTest.testRemoveParkingIsEmptyException(ParkingTest.java:114)
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.technical.ParkingIsEmptyException: Parking is empty
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:89)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.ParkingTest.testRemoveParkingIsEmptyException(ParkingTest.java:114)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -211,9 +211,9 @@ by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.ParkingIsEmptyE
 	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
 2019-02-28 22:56:42 INFO  Parking:84 - VehicleNotFoundException has been thrown.
 2019-02-28 22:56:42 INFO  Parking:92 - Exception has been caught
-by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.VehicleNotFoundException: Vehicle not found: Car {name = Volkswagen, price = 20000, seatsNumber = 4, bodyType = COUPE}
-	at by.epam.javawebtraining.stanislaupalaukou.task01.model.container.Parking.removeVehicle(Parking.java:85)
-	at by.epam.javawebtraining.stanislaupalaukou.task01.model.container.ParkingTest.testRemoveParkingIsEmptyException(ParkingTest.java:111)
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.technical.VehicleNotFoundException: Vehicle not found: Car {name = Volkswagen, price = 20000, seatsNumber = 4, bodyType = COUPE}
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:85)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.ParkingTest.testRemoveParkingIsEmptyException(ParkingTest.java:111)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -240,9 +240,9 @@ by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.VehicleNotFound
 	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
 2019-02-28 22:56:42 INFO  Parking:88 - ParkingIsEmptyException has been thrown.
 2019-02-28 22:56:42 INFO  Parking:92 - Exception has been caught
-by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.ParkingIsEmptyException: Parking is empty
-	at by.epam.javawebtraining.stanislaupalaukou.task01.model.container.Parking.removeVehicle(Parking.java:89)
-	at by.epam.javawebtraining.stanislaupalaukou.task01.model.container.ParkingTest.testRemoveParkingIsEmptyException(ParkingTest.java:114)
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.technical.ParkingIsEmptyException: Parking is empty
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:89)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.ParkingTest.testRemoveParkingIsEmptyException(ParkingTest.java:114)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -269,9 +269,9 @@ by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.ParkingIsEmptyE
 	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
 2019-02-28 22:56:42 INFO  Parking:84 - VehicleNotFoundException has been thrown.
 2019-02-28 22:56:42 INFO  Parking:92 - Exception has been caught
-by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.VehicleNotFoundException: Vehicle not found: Car {name = Volkswagen, price = 20000, seatsNumber = 4, bodyType = COUPE}
-	at by.epam.javawebtraining.stanislaupalaukou.task01.model.container.Parking.removeVehicle(Parking.java:85)
-	at by.epam.javawebtraining.stanislaupalaukou.task01.model.container.ParkingTest.testRemoveVehicleVehicleNotFoundException(ParkingTest.java:105)
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.technical.VehicleNotFoundException: Vehicle not found: Car {name = Volkswagen, price = 20000, seatsNumber = 4, bodyType = COUPE}
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:85)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.ParkingTest.testRemoveVehicleVehicleNotFoundException(ParkingTest.java:105)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)

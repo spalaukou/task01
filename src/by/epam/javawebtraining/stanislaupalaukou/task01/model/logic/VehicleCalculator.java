@@ -1,6 +1,6 @@
 package by.epam.javawebtraining.stanislaupalaukou.task01.model.logic;
 
-import by.epam.javawebtraining.stanislaupalaukou.task01.model.container.Parking;
+import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.PassengerTransport;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.Vehicle;
 import org.apache.log4j.Logger;

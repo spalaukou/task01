@@ -1,10 +1,7 @@
-package by.epam.javawebtraining.stanislaupalaukou.task01.model.container;
+package by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container;
 
-import by.epam.javawebtraining.stanislaupalaukou.task01.model.container.Parking;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.Car;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.Vehicle;
-import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.VehicleNotFoundException;
-import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
