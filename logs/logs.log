@@ -296,3 +296,84 @@ by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.technical.Vehic
 	at org.testng.TestNG.run(TestNG.java:1017)
 	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
 	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+2019-03-04 13:06:21 INFO  Main:32 - App has been launched.
+2019-03-04 13:06:21 INFO  PrinterCreator:36 - Printer has been created.
+2019-03-04 13:06:21 INFO  DataReader:32 - File has been read.
+2019-03-04 13:06:21 INFO  DataValidator:30 - Lines were checked.
+2019-03-04 13:06:21 INFO  ParkingCreator:44 - Parking has been created.
+2019-03-04 13:06:21 INFO  Parking:69 - VehicleNotFoundException has been thrown.
+2019-03-04 13:06:21 INFO  Parking:77 - Exception has been catched
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.technical.VehicleNotFoundException: Vehicle not found: Truck {name = Volvo, price = 80000, cargoCapacity = 30000, bodyType = CABOVER}
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:70)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.controller.Main.main(Main.java:59)
+2019-03-04 13:06:21 INFO  VehicleSorter:60 - Vehicles have been sorted by price.
+2019-03-04 13:06:21 INFO  VehicleSorter:78 - Vehicles have been sorted by name.
+2019-03-04 13:06:21 INFO  VehicleSorter:97 - Vehiles have been sorted by name and then by price.
+2019-03-04 13:06:21 INFO  VehicleCalculator:33 - Total price has been calculated.
+2019-03-04 13:06:21 INFO  VehicleCalculator:55 - Total seats has been calculated.
+2019-03-04 13:06:21 INFO  VehicleFinder:58 - The dearest vehicle has been found
+2019-03-04 13:06:21 INFO  VehicleFinder:36 - The cheapest vehicle has been found
+2019-03-04 13:06:21 INFO  Parking:73 - ParkingIsEmptyException has been thrown.
+2019-03-04 13:06:21 INFO  Parking:77 - Exception has been catched
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.technical.ParkingIsEmptyException: Parking is empty
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:74)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.controller.Main.main(Main.java:104)
+2019-03-04 13:06:21 INFO  VehicleFinder:58 - The dearest vehicle has been found
+2019-03-04 13:06:21 INFO  Main:108 - App has been completed successfully.
+2019-03-04 13:11:00 INFO  Main:32 - App has been launched.
+2019-03-04 13:11:00 INFO  PrinterCreator:36 - Printer has been created.
+2019-03-04 13:11:00 INFO  DataReader:32 - File has been read.
+2019-03-04 13:11:00 INFO  DataValidator:30 - Lines were checked.
+2019-03-04 13:11:00 INFO  ParkingCreator:44 - Parking has been created.
+2019-03-04 13:11:01 INFO  Parking:69 - VehicleNotFoundException has been thrown.
+2019-03-04 13:11:01 INFO  Parking:77 - Exception has been catched
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.technical.VehicleNotFoundException: Vehicle not found: Truck {name = Volvo, price = 80000, cargoCapacity = 30000, bodyType = CABOVER}
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:70)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.controller.Main.main(Main.java:59)
+2019-03-04 13:11:01 INFO  VehicleSorter:60 - Vehicles have been sorted by price.
+2019-03-04 13:11:01 INFO  VehicleSorter:78 - Vehicles have been sorted by name.
+2019-03-04 13:11:01 INFO  VehicleSorter:97 - Vehiles have been sorted by name and then by price.
+2019-03-04 13:11:01 INFO  VehicleCalculator:33 - Total price has been calculated.
+2019-03-04 13:11:01 INFO  VehicleCalculator:55 - Total seats has been calculated.
+2019-03-04 13:11:01 INFO  VehicleFinder:58 - The dearest vehicle has been found
+2019-03-04 13:11:01 INFO  VehicleFinder:36 - The cheapest vehicle has been found
+2019-03-04 13:11:01 INFO  Parking:73 - ParkingIsEmptyException has been thrown.
+2019-03-04 13:11:01 INFO  Parking:77 - Exception has been catched
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.technical.ParkingIsEmptyException: Parking is empty
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:74)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.controller.Main.main(Main.java:105)
+2019-03-04 13:11:01 INFO  VehicleFinder:58 - The dearest vehicle has been found
+2019-03-04 13:11:01 INFO  Main:109 - App has been completed successfully.
+2019-03-04 13:11:13 INFO  Main:32 - App has been launched.
+2019-03-04 13:11:13 INFO  PrinterCreator:36 - Printer has been created.
+2019-03-04 13:11:13 INFO  DataReader:32 - File has been read.
+2019-03-04 13:11:13 INFO  DataValidator:30 - Lines were checked.
+2019-03-04 13:11:13 INFO  ParkingCreator:44 - Parking has been created.
+2019-03-04 13:11:13 INFO  Parking:69 - VehicleNotFoundException has been thrown.
+2019-03-04 13:11:13 INFO  Parking:77 - Exception has been catched
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.technical.VehicleNotFoundException: Vehicle not found: Truck {name = Volvo, price = 80000, cargoCapacity = 30000, bodyType = CABOVER}
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:70)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.controller.Main.main(Main.java:59)
+2019-03-04 13:11:13 INFO  VehicleSorter:60 - Vehicles have been sorted by price.
+2019-03-04 13:11:13 INFO  VehicleSorter:78 - Vehicles have been sorted by name.
+2019-03-04 13:11:13 INFO  VehicleSorter:97 - Vehiles have been sorted by name and then by price.
+2019-03-04 13:11:13 INFO  VehicleCalculator:33 - Total price has been calculated.
+2019-03-04 13:11:13 INFO  VehicleCalculator:55 - Total seats has been calculated.
+2019-03-04 13:11:13 INFO  VehicleFinder:58 - The dearest vehicle has been found
+2019-03-04 13:11:13 INFO  VehicleFinder:36 - The cheapest vehicle has been found
+2019-03-04 13:11:13 INFO  Parking:73 - ParkingIsEmptyException has been thrown.
+2019-03-04 13:11:13 INFO  Parking:77 - Exception has been catched
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.technical.ParkingIsEmptyException: Parking is empty
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:74)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.controller.Main.main(Main.java:104)
+2019-03-04 13:11:14 INFO  VehicleFinder:58 - The dearest vehicle has been found
+2019-03-04 13:11:14 INFO  Main:111 - App has been completed successfully.
+2019-03-04 13:24:14 INFO  VehicleSorter:78 - Vehicles have been sorted by name.
+2019-03-04 13:24:14 INFO  VehicleSorter:97 - Vehiles have been sorted by name and then by price.
+2019-03-04 13:24:14 INFO  VehicleSorter:97 - Vehiles have been sorted by name and then by price.
+2019-03-04 13:24:14 INFO  VehicleSorter:97 - Vehiles have been sorted by name and then by price.
+2019-03-04 13:24:14 INFO  VehicleSorter:78 - Vehicles have been sorted by name.
+2019-03-04 13:24:14 INFO  VehicleSorter:78 - Vehicles have been sorted by name.
+2019-03-04 13:24:14 INFO  VehicleSorter:60 - Vehicles have been sorted by price.
+2019-03-04 13:24:14 INFO  VehicleSorter:60 - Vehicles have been sorted by price.
+2019-03-04 13:24:14 INFO  VehicleSorter:60 - Vehicles have been sorted by price.

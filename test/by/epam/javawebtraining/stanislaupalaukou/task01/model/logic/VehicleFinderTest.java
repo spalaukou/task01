@@ -13,7 +13,7 @@ import org.testng.annotations.Test;
  * @project Task 01
  */
 
-public class TestVehicleFinder {
+public class VehicleFinderTest {
     private Parking parking1;
     private Parking parking2;
     private Parking parking3;
@@ -24,7 +24,7 @@ public class TestVehicleFinder {
     private Vehicle truck;
 
     @BeforeTest
-    public void setParking() {
+    public void setUpParking() {
         car1 = new Car("BMW", 66_000, 4, Car.BodyType.SEDAN);
         car2 = new Car("Renault", 15_000, 4, Car.BodyType.SEDAN);
         car3 = new Car("Volkswagen", 20_000, 4, Car.BodyType.COUPE);
@@ -41,33 +41,49 @@ public class TestVehicleFinder {
 
     @Test
     public void testFindTheCheapestVehicle() {
-        Vehicle expected1 = car2;
-        Vehicle actual1 = VehicleFinder.findTheCheapestVehicle(parking1);
+        Vehicle expected = car2;
+        Vehicle actual = VehicleFinder.findTheCheapestVehicle(parking1);
 
-        Vehicle expected2 = null;
-        Vehicle actual2 = VehicleFinder.findTheCheapestVehicle(parking2);
+        Assert.assertEquals(expected, actual);
+    }
 
-        Vehicle expected3 = null;
-        Vehicle actual3 = VehicleFinder.findTheCheapestVehicle(parking3);
+    @Test
+    public void testFindTheCheapestVehicleParkingIsEmpty() {
+        Vehicle expected = null;
+        Vehicle actual = VehicleFinder.findTheCheapestVehicle(parking2);
 
-        Assert.assertEquals(expected1, actual1);
-        Assert.assertEquals(expected2, actual2);
-        Assert.assertEquals(expected3, actual3);
+        Assert.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void testFindTheCheapestVehicleParkingIsNull() {
+        Vehicle expected = null;
+        Vehicle actual = VehicleFinder.findTheCheapestVehicle(parking3);
+
+        Assert.assertEquals(expected, actual);
     }
 
     @Test
     public void testFindTheDearestVehicle() {
-        Vehicle expected1 = truck;
-        Vehicle actual1 = VehicleFinder.findTheDearestVehicle(parking1);
+        Vehicle expected = truck;
+        Vehicle actual = VehicleFinder.findTheDearestVehicle(parking1);
 
-        Vehicle expected2 = null;
-        Vehicle actual2 = VehicleFinder.findTheDearestVehicle(parking2);
+        Assert.assertEquals(expected, actual);
+    }
 
-        Vehicle expected3 = null;
-        Vehicle actual3 = VehicleFinder.findTheDearestVehicle(parking3);
+    @Test
+    public void testFindTheDearestVehicleParkingIsEmpty() {
+        Vehicle expected = null;
+        Vehicle actual = VehicleFinder.findTheDearestVehicle(parking2);
 
-        Assert.assertEquals(expected1, actual1);
-        Assert.assertEquals(expected2, actual2);
-        Assert.assertEquals(expected3, actual3);
+        Assert.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void testFindTheDearestVehicleParkinIsNull() {
+        Vehicle expected = null;
+        Vehicle actual = VehicleFinder.findTheDearestVehicle(parking3);
+
+        Assert.assertEquals(expected, actual);
     }
 }

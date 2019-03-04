@@ -1,6 +1,5 @@
 package by.epam.javawebtraining.stanislaupalaukou.task01.model.entity;
 
-import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.Car;
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -10,11 +9,11 @@ import org.testng.annotations.Test;
  * @project Task 01
  */
 
-public class TestCar {
+public class CarTest {
     private Car car;
 
     @BeforeTest
-    public void setCar() {
+    public void setUpCar() {
         car = new Car ("BMW", 66_000, 4, Car.BodyType.SEDAN);
     }
 
