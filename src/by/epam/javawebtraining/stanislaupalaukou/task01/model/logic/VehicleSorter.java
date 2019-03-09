@@ -1,5 +1,6 @@
 package by.epam.javawebtraining.stanislaupalaukou.task01.model.logic;
 
+import by.epam.javawebtraining.stanislaupalaukou.task01.model.comparator.VehicleNameComparator;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.comparator.VehiclePriceComparator;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.Vehicle;
 import org.apache.log4j.Logger;
@@ -54,7 +55,7 @@ public class VehicleSorter {
     public static Vehicle[] sortByPrice(Vehicle[] vehicles) {
         Vehicle[] newVehicles = vehicles;
         if(vehicles != null) {
-            Comparator vehiclePriceComparator = new VehiclePriceComparator();
+            Comparator<Vehicle> vehiclePriceComparator = new VehiclePriceComparator();
             newVehicles = sort(newVehicles, vehiclePriceComparator);
         }
         logger.info("Vehicles have been sorted by price.");
@@ -73,7 +74,10 @@ public class VehicleSorter {
     public static Vehicle[] sortByName(Vehicle[] vehicles) {
         Vehicle[] newVehicles = vehicles;
         if(vehicles != null) {
-            sort(newVehicles, Comparator.comparing(Vehicle::getName));
+//            sort(newVehicles, Comparator.comparing(Vehicle::getName));
+
+            Comparator<Vehicle> vehicleNameComparator = new VehicleNameComparator();
+            sort(newVehicles, vehicleNameComparator);
         }
         logger.info("Vehicles have been sorted by name.");
         return newVehicles;
@@ -92,7 +96,11 @@ public class VehicleSorter {
     public static Vehicle[] sortByNameByPrice(Vehicle[] vehicles) {
         Vehicle[] newVehicles = vehicles;
         if (vehicles != null) {
-            sort(newVehicles, Comparator.comparing(Vehicle::getName).thenComparing(Vehicle::getPrice));
+            Comparator<Vehicle> vehicleNameComparator = new VehicleNameComparator();
+            Comparator<Vehicle> vehiclePriceComparator = new VehicleNameComparator();
+            sort(newVehicles, vehicleNameComparator.thenComparing(vehiclePriceComparator));
+
+//            sort(newVehicles, Comparator.comparing(Vehicle::getName).thenComparing(Vehicle::getPrice));
         }
         logger.info("Vehiles have been sorted by name and then by price.");
         return newVehicles;
