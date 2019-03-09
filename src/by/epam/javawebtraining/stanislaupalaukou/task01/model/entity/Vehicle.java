@@ -24,6 +24,11 @@ public abstract class Vehicle {
         }
     }
 
+    public Vehicle(Vehicle vehicle) {
+        this.name = vehicle.name;
+        this.price = vehicle.price;
+    }
+
     public String getName() {
         return name;
     }

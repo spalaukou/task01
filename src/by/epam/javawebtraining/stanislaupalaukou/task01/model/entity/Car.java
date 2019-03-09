@@ -30,6 +30,10 @@ public class Car extends PassengerTransport {
         this.bodyType = bodyType;
     }
 
+    public Car(Car car) {
+        this(car.getName(), car.getPrice(), car.getSeatsNumber(), car.getBodyType());
+    }
+
     public BodyType getBodyType() {
         return bodyType;
     }

@@ -29,6 +29,10 @@ public class Truck extends CargoTransport {
         this.bodyType = bodyType;
     }
 
+    public Truck(Truck truck) {
+        this(truck.getName(), truck.getPrice(), truck.getCargoCapacity(), truck.getBodyType());
+    }
+
     public BodyType getBodyType() {
         return bodyType;
     }

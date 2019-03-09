@@ -21,6 +21,10 @@ public abstract class PassengerTransport extends Vehicle {
         this.seatsNumber = seatsNumber;
     }
 
+    public PassengerTransport(PassengerTransport passengerTransport) {
+        this(passengerTransport.getName(), passengerTransport.getPrice(), passengerTransport.getSeatsNumber());
+    }
+
     public int getSeatsNumber() {
         return seatsNumber;
     }

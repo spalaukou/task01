@@ -29,6 +29,10 @@ public class Parking {
         this.vehicles = vehicle;
     }
 
+    public Parking(Parking parking) {
+        this.vehicles = parking.vehicles;
+    }
+
     public Vehicle[] getVehicles() {
         return vehicles;
     }

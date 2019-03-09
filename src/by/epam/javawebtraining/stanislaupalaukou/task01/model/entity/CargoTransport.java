@@ -21,6 +21,10 @@ public abstract class CargoTransport extends Vehicle {
         this.cargoCapacity = cargoCapacity;
     }
 
+    public CargoTransport(CargoTransport cargoTransport) {
+        this(cargoTransport.getName(), cargoTransport.getPrice(), cargoTransport.cargoCapacity);
+    }
+
     public int getCargoCapacity() {
         return cargoCapacity;
     }
