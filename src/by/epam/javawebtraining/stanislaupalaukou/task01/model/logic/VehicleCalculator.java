@@ -1,5 +1,6 @@
 package by.epam.javawebtraining.stanislaupalaukou.task01.model.logic;
 
+import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.Car;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.PassengerTransport;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.Vehicle;
@@ -45,11 +46,17 @@ public class VehicleCalculator {
         int totalSeats = 0;
         if(parking != null) {
             for (Vehicle vehicle : parking.getVehicles()) {
-                try {
+                if(vehicle.getClass() == Car.class) {
                     totalSeats += ((PassengerTransport) vehicle).getSeatsNumber();
-                } catch (ClassCastException e) {
-                    System.out.println("Vehicle is not passenger: " + vehicle);
                 }
+
+//                //Calculating totalSeats with catching ClassCastException - not for using
+//                try {
+//                    totalSeats += ((PassengerTransport) vehicle).getSeatsNumber();
+//                } catch (ClassCastException e) {
+//                    System.out.println("Vehicle is not passenger: " + vehicle);
+//                }
+
             }
         }
         logger.info("Total seats has been calculated.");

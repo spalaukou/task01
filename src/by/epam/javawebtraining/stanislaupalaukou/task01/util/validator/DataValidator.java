@@ -1,4 +1,4 @@
-package by.epam.javawebtraining.stanislaupalaukou.task01.util;
+package by.epam.javawebtraining.stanislaupalaukou.task01.util.validator;
 
 import org.apache.log4j.Logger;
 

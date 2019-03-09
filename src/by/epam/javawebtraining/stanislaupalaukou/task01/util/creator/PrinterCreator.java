@@ -1,4 +1,4 @@
-package by.epam.javawebtraining.stanislaupalaukou.task01.util;
+package by.epam.javawebtraining.stanislaupalaukou.task01.util.creator;
 
 import by.epam.javawebtraining.stanislaupalaukou.task01.view.ConsolePrinter;
 import by.epam.javawebtraining.stanislaupalaukou.task01.view.FilePrinter;

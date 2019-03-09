@@ -1,9 +1,10 @@
-package by.epam.javawebtraining.stanislaupalaukou.task01.model.factory;
+package by.epam.javawebtraining.stanislaupalaukou.task01.factory;
 
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.Car;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.Truck;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.Vehicle;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.VehicleType;
+import by.epam.javawebtraining.stanislaupalaukou.task01.util.factory.VehicleFactory;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

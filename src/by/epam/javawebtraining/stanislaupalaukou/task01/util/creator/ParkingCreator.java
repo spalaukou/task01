@@ -1,9 +1,9 @@
-package by.epam.javawebtraining.stanislaupalaukou.task01.util;
+package by.epam.javawebtraining.stanislaupalaukou.task01.util.creator;
 
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.Vehicle;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.VehicleType;
-import by.epam.javawebtraining.stanislaupalaukou.task01.model.factory.VehicleFactory;
+import by.epam.javawebtraining.stanislaupalaukou.task01.util.factory.VehicleFactory;
 import org.apache.log4j.Logger;
 
 import java.util.List;
@@ -12,7 +12,7 @@ import java.util.List;
  * The util class creates Parking of Vehicles,
  * uses Vehicle Factory.
  *
- * @see VehicleFactory
+ * @see
  *
  * @author Stanislau Palaukou on 18.02.2019
  * @project Task 01

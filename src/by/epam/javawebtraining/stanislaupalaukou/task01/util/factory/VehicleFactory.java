@@ -1,4 +1,4 @@
-package by.epam.javawebtraining.stanislaupalaukou.task01.model.factory;
+package by.epam.javawebtraining.stanislaupalaukou.task01.util.factory;
 
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.Car;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.Truck;
