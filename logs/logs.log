@@ -949,3 +949,77 @@ by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.Parking
 	at by.epam.javawebtraining.stanislaupalaukou.task01.controller.Main.main(Main.java:115)
 2019-03-10 12:35:31 INFO  VehicleFinder:67 - The dearest vehicle has been found
 2019-03-10 12:35:31 INFO  Main:119 - App has been completed successfully.
+2019-03-10 20:05:25 INFO  Main:39 - App has been launched.
+2019-03-10 20:05:25 INFO  PrinterCreator:36 - Printer has been created.
+2019-03-10 20:05:25 INFO  DataReader:35 - File has been read.
+2019-03-10 20:05:25 INFO  DataValidator:34 - Lines were checked.
+2019-03-10 20:05:25 INFO  ParkingCreator:49 - Parking has been created.
+2019-03-10 20:05:25 INFO  Parking:83 - ParkingIsEmptyException has been thrown.
+2019-03-10 20:05:25 INFO  Parking:87 - Exception has been caught
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.ParkingIsEmptyException: Parking is empty
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:84)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.controller.Main.main(Main.java:71)
+2019-03-10 20:05:25 INFO  VehicleSorter:61 - Vehicles have been sorted by price.
+2019-03-10 20:05:25 INFO  VehicleSorter:82 - Vehicles have been sorted by name.
+2019-03-10 20:05:25 INFO  VehicleSorter:105 - Vehiles have been sorted by name and then by price.
+2019-03-10 20:05:25 INFO  VehicleCalculator:38 - Total price has been calculated.
+2019-03-10 20:05:25 INFO  VehicleCalculator:69 - Total seats has been calculated.
+2019-03-10 20:05:25 INFO  VehicleFinder:67 - The dearest vehicle has been found
+2019-03-10 20:05:25 INFO  VehicleFinder:41 - The cheapest vehicle has been found
+2019-03-10 20:05:25 INFO  Parking:83 - ParkingIsEmptyException has been thrown.
+2019-03-10 20:05:25 INFO  Parking:87 - Exception has been caught
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.ParkingIsEmptyException: Parking is empty
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:84)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.controller.Main.main(Main.java:105)
+2019-03-10 20:05:25 INFO  Parking:83 - ParkingIsEmptyException has been thrown.
+2019-03-10 20:05:25 INFO  Parking:87 - Exception has been caught
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.ParkingIsEmptyException: Parking is empty
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:84)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.controller.Main.main(Main.java:106)
+2019-03-10 20:05:25 INFO  Parking:83 - ParkingIsEmptyException has been thrown.
+2019-03-10 20:05:25 INFO  Parking:87 - Exception has been caught
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.ParkingIsEmptyException: Parking is empty
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:84)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.controller.Main.main(Main.java:107)
+2019-03-10 20:05:25 INFO  Parking:83 - ParkingIsEmptyException has been thrown.
+2019-03-10 20:05:25 INFO  Parking:87 - Exception has been caught
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.ParkingIsEmptyException: Parking is empty
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:84)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.controller.Main.main(Main.java:108)
+2019-03-10 20:05:25 INFO  Parking:83 - ParkingIsEmptyException has been thrown.
+2019-03-10 20:05:25 INFO  Parking:87 - Exception has been caught
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.ParkingIsEmptyException: Parking is empty
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:84)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.controller.Main.main(Main.java:109)
+2019-03-10 20:05:25 INFO  Parking:83 - ParkingIsEmptyException has been thrown.
+2019-03-10 20:05:25 INFO  Parking:87 - Exception has been caught
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.ParkingIsEmptyException: Parking is empty
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:84)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.controller.Main.main(Main.java:110)
+2019-03-10 20:05:25 INFO  Parking:83 - ParkingIsEmptyException has been thrown.
+2019-03-10 20:05:25 INFO  Parking:87 - Exception has been caught
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.ParkingIsEmptyException: Parking is empty
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:84)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.controller.Main.main(Main.java:111)
+2019-03-10 20:05:25 INFO  Parking:83 - ParkingIsEmptyException has been thrown.
+2019-03-10 20:05:25 INFO  Parking:87 - Exception has been caught
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.ParkingIsEmptyException: Parking is empty
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:84)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.controller.Main.main(Main.java:112)
+2019-03-10 20:05:25 INFO  Parking:83 - ParkingIsEmptyException has been thrown.
+2019-03-10 20:05:25 INFO  Parking:87 - Exception has been caught
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.ParkingIsEmptyException: Parking is empty
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:84)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.controller.Main.main(Main.java:113)
+2019-03-10 20:05:25 INFO  Parking:83 - ParkingIsEmptyException has been thrown.
+2019-03-10 20:05:25 INFO  Parking:87 - Exception has been caught
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.ParkingIsEmptyException: Parking is empty
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:84)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.controller.Main.main(Main.java:114)
+2019-03-10 20:05:25 INFO  Parking:83 - ParkingIsEmptyException has been thrown.
+2019-03-10 20:05:25 INFO  Parking:87 - Exception has been caught
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.ParkingIsEmptyException: Parking is empty
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:84)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.controller.Main.main(Main.java:116)
+2019-03-10 20:05:25 INFO  VehicleFinder:67 - The dearest vehicle has been found
+2019-03-10 20:05:25 INFO  Main:120 - App has been completed successfully.

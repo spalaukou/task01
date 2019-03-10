@@ -22,7 +22,7 @@ public class DataReader {
     private static final Logger logger = Logger.getLogger(DataReader.class);
 
     private final static String SEPARATOR = File.separator;
-    private final static String path = "input" + SEPARATOR + "inputDat.txt";
+    private final static String path = "input" + SEPARATOR + "inputData.txt";
     private static List<String> linesArray = new ArrayList<>();
 
     public List<String> readFileStrings() throws TechnicalException {
