@@ -60,7 +60,6 @@ public class Main {
             Parking parking = ParkingCreator.create(validLines);
 
             printer.print(parking);
-
             //Adding vehicles to parking from app
             Vehicle car1 = CarCreator.create("BMW", 66_000, 4, Car.BodyType.SEDAN);
             Vehicle car2 = CarCreator.create("Renault", 15_000, 4, Car.BodyType.SEDAN);
@@ -81,13 +80,13 @@ public class Main {
             printer.print(parking);
 
             //Sorting vehicles
-            VehicleSorter.sortByPrice(parking.getVehicles());
+            VehicleSorter.sortByPrice(parking);
             printer.print(parking);
 
-            VehicleSorter.sortByName(parking.getVehicles());
+            VehicleSorter.sortByName(parking);
             printer.print(parking);
 
-            VehicleSorter.sortByNameByPrice(parking.getVehicles());
+            VehicleSorter.sortByNameByPrice(parking);
             printer.print(parking);
 
             //Finding total price of all vehicles on parking lot

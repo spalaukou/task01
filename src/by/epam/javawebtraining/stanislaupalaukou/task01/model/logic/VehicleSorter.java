@@ -3,6 +3,8 @@ package by.epam.javawebtraining.stanislaupalaukou.task01.model.logic;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.comparator.VehicleNameComparator;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.comparator.VehiclePriceComparator;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.Vehicle;
+import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking;
+import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.NullParkingException;
 import org.apache.log4j.Logger;
 
 import java.util.Comparator;
@@ -62,6 +64,18 @@ public class VehicleSorter {
         return newVehicles;
     }
 
+    public static void sortByPrice(Parking parking) throws NullParkingException {
+        if (parking == null) {
+            throw new NullParkingException();
+        }
+        Vehicle[] newVehicles = parking.getVehicles();
+
+        Comparator<Vehicle> vehiclePriceComparator = new VehiclePriceComparator();
+        newVehicles = sort(newVehicles, vehiclePriceComparator);
+
+        logger.info("Parking has been sorted by price.");
+    }
+
     /**
      * The method sorts array of vehicles (which is
      * received as param) by name, uses the unified method sort.
@@ -81,6 +95,16 @@ public class VehicleSorter {
         }
         logger.info("Vehicles have been sorted by name.");
         return newVehicles;
+    }
+
+    public static void sortByName(Parking parking) throws NullParkingException {
+        if (parking == null) {
+            throw new NullParkingException();
+        }
+        Vehicle[] newVehicles = parking.getVehicles();
+        Comparator<Vehicle> vehicleNameComparator = new VehicleNameComparator();
+        sort(newVehicles, vehicleNameComparator);
+        logger.info("Parking has been sorted by name.");
     }
 
     /**
@@ -104,6 +128,18 @@ public class VehicleSorter {
         }
         logger.info("Vehiles have been sorted by name and then by price.");
         return newVehicles;
+    }
+
+    public static void sortByNameByPrice(Parking parking) throws NullParkingException {
+        if (parking == null) {
+            throw new NullParkingException();
+        }
+        Vehicle[] newVehicles = parking.getVehicles();
+        Comparator<Vehicle> vehicleNameComparator = new VehicleNameComparator();
+        Comparator<Vehicle> vehiclePriceComparator = new VehiclePriceComparator();
+        sort(newVehicles, vehicleNameComparator.thenComparing(vehiclePriceComparator));
+
+        logger.info("Vehiles have been sorted by name and then by price.");
     }
 
 }

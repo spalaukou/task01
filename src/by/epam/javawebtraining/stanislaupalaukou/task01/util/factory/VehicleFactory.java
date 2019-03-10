@@ -33,9 +33,9 @@ public class VehicleFactory {
             SeatsNumberException, CarBodyTypeException,
             CargoCapacityException, TruckBodyTypeException {
 
-        if (type == null) {
+        /*if (type == null) {
             throw new VehicleTypeException();
-        }
+        }*/
 
         Vehicle toReturn = null;
         switch (type) {

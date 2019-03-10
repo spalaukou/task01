@@ -1,10 +1,7 @@
 package by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container;
 
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.Vehicle;
-import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.NullParkingException;
-import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.NullVehicleException;
-import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.ParkingIsEmptyException;
-import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.VehicleNotFoundException;
+import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.*;
 import org.apache.log4j.Logger;
 
 import java.util.Arrays;
@@ -17,7 +14,7 @@ import java.util.Arrays;
  * @project Task 01
  */
 
-public class Parking {
+public class Parking implements AbstractParking<Vehicle[]> {
 
     private static final Logger logger = Logger.getLogger(Parking.class);
 
@@ -27,7 +24,10 @@ public class Parking {
         vehicles = new Vehicle[0];
     }
 
-    public Parking(Vehicle[] vehicle) {
+    public Parking(Vehicle[] vehicle) throws VehicleArrayException {
+        if (vehicle == null) {
+            throw new VehicleArrayException();
+        }
         this.vehicles = vehicle;
     }
 
@@ -35,10 +35,12 @@ public class Parking {
         this.vehicles = parking.vehicles;
     }
 
+    @Override
     public Vehicle[] getVehicles() {
         return vehicles;
     }
 
+    @Override
     public void setVehicles(Vehicle[] vehicles) throws NullParkingException {
         if (vehicles == null) {
             throw new NullParkingException();
@@ -47,10 +49,11 @@ public class Parking {
         }
     }
 
+    @Override
     public void addVehicle(Vehicle vehicle) throws NullVehicleException {
         if (vehicle == null) {
             throw new NullVehicleException();
-        } else if (isOnPlace(vehicle)) {
+        } else if (!isOnPlace(vehicle)) {
             Vehicle[] newVehicles = new Vehicle[vehicles.length + 1];
 
             for (int i = 0; i < vehicles.length; i++) {
@@ -62,6 +65,7 @@ public class Parking {
         }
     }
 
+    @Override
     public void removeVehicle(Vehicle vehicle) {
         try {
             if (vehicles != null && vehicles.length != 0) {
