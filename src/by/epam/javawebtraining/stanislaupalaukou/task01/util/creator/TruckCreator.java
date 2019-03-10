@@ -19,9 +19,9 @@ public abstract class TruckCreator {
         return new Truck();
     }
 
-    public static Truck create(String name, int price, int seatsNumber, Truck.BodyType bodyType)
+    public static Truck create(String name, int price, int cargoCapacity, Truck.BodyType bodyType)
             throws TruckBodyTypeException, VehiclePriceException, CargoCapacityException, VehicleNameException {
 
-        return new Truck(name, price, seatsNumber, bodyType);
+        return new Truck(name, price, cargoCapacity, bodyType);
     }
 }
