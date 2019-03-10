@@ -1,5 +1,10 @@
 package by.epam.javawebtraining.stanislaupalaukou.task01.model.entity;
 
+import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.CarBodyTypeException;
+import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.SeatsNumberException;
+import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.VehicleNameException;
+import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.VehiclePriceException;
+
 import java.util.Objects;
 
 /**
@@ -25,12 +30,17 @@ public class Car extends PassengerTransport {
 
     public Car() {}
 
-    public Car(String name, int price, int seatsNumber, BodyType bodyType) {
+    public Car(String name, int price, int seatsNumber, BodyType bodyType)
+            throws SeatsNumberException, VehiclePriceException, VehicleNameException, CarBodyTypeException {
         super(name, price, seatsNumber);
+        if (bodyType == null) {
+            throw new CarBodyTypeException();
+        }
         this.bodyType = bodyType;
     }
 
-    public Car(Car car) {
+    public Car(Car car)
+            throws SeatsNumberException, VehiclePriceException, VehicleNameException, CarBodyTypeException {
         this(car.getName(), car.getPrice(), car.getSeatsNumber(), car.getBodyType());
     }
 
@@ -38,7 +48,10 @@ public class Car extends PassengerTransport {
         return bodyType;
     }
 
-    public void setBodyType(BodyType bodyType) {
+    public void setBodyType(BodyType bodyType) throws CarBodyTypeException {
+        if (bodyType == null) {
+            throw new CarBodyTypeException();
+        }
         this.bodyType = bodyType;
     }
 

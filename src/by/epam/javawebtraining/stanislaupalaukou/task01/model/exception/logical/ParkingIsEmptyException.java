@@ -1,6 +1,4 @@
-package by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.technical;
-
-import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.TaskException;
+package by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical;
 
 /**
  * The class describes conditions of empty parking
@@ -10,7 +8,7 @@ import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.TaskExce
  * @project Task 01
  */
 
-public class ParkingIsEmptyException extends TaskException {
+public class ParkingIsEmptyException extends LogicalException {
 
     public ParkingIsEmptyException() {
         super();

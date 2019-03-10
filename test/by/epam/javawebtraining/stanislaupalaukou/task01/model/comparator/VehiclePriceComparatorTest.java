@@ -2,6 +2,10 @@ package by.epam.javawebtraining.stanislaupalaukou.task01.model.comparator;
 
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.Car;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.Vehicle;
+import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.CarBodyTypeException;
+import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.SeatsNumberException;
+import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.VehicleNameException;
+import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.VehiclePriceException;
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -18,7 +22,8 @@ public class VehiclePriceComparatorTest {
     private Vehicle car2;
 
     @BeforeTest
-    public void setupVehicles() {
+    public void setupVehicles()
+            throws SeatsNumberException, VehiclePriceException, VehicleNameException, CarBodyTypeException {
         car1 = new Car("BMW", 66_000, 4, Car.BodyType.SEDAN);
         car2 = new Car("Renault", 15_000, 4, Car.BodyType.SEDAN);
     }

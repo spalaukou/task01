@@ -1,5 +1,8 @@
 package by.epam.javawebtraining.stanislaupalaukou.task01.util.reader;
 
+import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.technical.InvalidFilePathException;
+import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.technical.InvalidIOException;
+import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.technical.TechnicalException;
 import org.apache.log4j.Logger;
 
 import java.io.*;
@@ -19,10 +22,10 @@ public class DataReader {
     private static final Logger logger = Logger.getLogger(DataReader.class);
 
     private final static String SEPARATOR = File.separator;
-    private final static String path = "input" + SEPARATOR + "inputData.txt";
+    private final static String path = "input" + SEPARATOR + "inputDat.txt";
     private static List<String> linesArray = new ArrayList<>();
 
-    public List<String> readFileStrings() {
+    public List<String> readFileStrings() throws TechnicalException {
 
         try (BufferedReader br = new BufferedReader(new FileReader(path))) {
             String currentLine;
@@ -33,9 +36,11 @@ public class DataReader {
         } catch (FileNotFoundException e) {
             logger.warn("File not found exception.", e);
             System.out.println("File not found exception." + e);
+            throw new InvalidFilePathException(e);
         } catch (IOException e) {
             logger.warn("General I/O exception.", e);
             System.out.println("General I/O exception." + e);
+            throw new InvalidIOException(e);
         }
 
         return linesArray;

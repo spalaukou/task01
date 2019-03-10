@@ -1,5 +1,9 @@
 package by.epam.javawebtraining.stanislaupalaukou.task01.model.entity;
 
+import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.CargoCapacityException;
+import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.TruckBodyTypeException;
+import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.VehicleNameException;
+import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.VehiclePriceException;
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -13,7 +17,8 @@ public class TruckTest {
     private Truck truck;
 
     @BeforeTest
-    public void setUpTruck() {
+    public void setUpTruck()
+            throws TruckBodyTypeException, VehiclePriceException, CargoCapacityException, VehicleNameException {
         truck = new Truck ("Volvo", 80_000, 30_000, Truck.BodyType.CABOVER);
     }
 
@@ -36,7 +41,7 @@ public class TruckTest {
     }
 
     @Test
-    public void testSetBodyType() {
+    public void testSetBodyType() throws TruckBodyTypeException {
         Truck.BodyType expectedBodyType = Truck.BodyType.SLEEPER;
 
         truck.setBodyType(Truck.BodyType.SLEEPER);

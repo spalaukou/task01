@@ -1,5 +1,9 @@
 package by.epam.javawebtraining.stanislaupalaukou.task01.model.entity;
 
+import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.SeatsNumberException;
+import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.VehicleNameException;
+import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.VehiclePriceException;
+
 import java.util.Objects;
 
 /**
@@ -16,12 +20,17 @@ public abstract class PassengerTransport extends Vehicle {
 
     public PassengerTransport() {}
 
-    public PassengerTransport(String name, int price, int seatsNumber) {
+    public PassengerTransport(String name, int price, int seatsNumber)
+            throws SeatsNumberException, VehicleNameException, VehiclePriceException {
         super(name, price);
+        if (seatsNumber <= 0) {
+            throw new SeatsNumberException();
+        }
         this.seatsNumber = seatsNumber;
     }
 
-    public PassengerTransport(PassengerTransport passengerTransport) {
+    public PassengerTransport(PassengerTransport passengerTransport)
+            throws SeatsNumberException, VehiclePriceException, VehicleNameException {
         this(passengerTransport.getName(), passengerTransport.getPrice(), passengerTransport.getSeatsNumber());
     }
 
@@ -29,10 +38,11 @@ public abstract class PassengerTransport extends Vehicle {
         return seatsNumber;
     }
 
-    public void setSeatsNumber(int seatsNumber) {
-        if(seatsNumber > 0) {
-            this.seatsNumber = seatsNumber;
+    public void setSeatsNumber(int seatsNumber) throws SeatsNumberException {
+        if(seatsNumber <= 0) {
+            throw new SeatsNumberException();
         }
+        this.seatsNumber = seatsNumber;
     }
 
     @Override

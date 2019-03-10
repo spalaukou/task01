@@ -1,5 +1,10 @@
 package by.epam.javawebtraining.stanislaupalaukou.task01.model.entity;
 
+import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.CargoCapacityException;
+import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.TruckBodyTypeException;
+import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.VehicleNameException;
+import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.VehiclePriceException;
+
 import java.util.Objects;
 
 /**
@@ -24,12 +29,17 @@ public class Truck extends CargoTransport {
 
     public Truck() {}
 
-    public Truck(String name, int price, int cargoCapacity, BodyType bodyType) {
+    public Truck(String name, int price, int cargoCapacity, BodyType bodyType)
+            throws VehiclePriceException, CargoCapacityException, VehicleNameException, TruckBodyTypeException {
         super(name, price, cargoCapacity);
+        if (bodyType == null) {
+            throw new TruckBodyTypeException();
+        }
         this.bodyType = bodyType;
     }
 
-    public Truck(Truck truck) {
+    public Truck(Truck truck)
+            throws TruckBodyTypeException, VehiclePriceException, CargoCapacityException, VehicleNameException {
         this(truck.getName(), truck.getPrice(), truck.getCargoCapacity(), truck.getBodyType());
     }
 
@@ -37,7 +47,10 @@ public class Truck extends CargoTransport {
         return bodyType;
     }
 
-    public void setBodyType(BodyType bodyType) {
+    public void setBodyType(BodyType bodyType) throws TruckBodyTypeException {
+        if (bodyType == null) {
+            throw new TruckBodyTypeException();
+        }
         this.bodyType = bodyType;
     }
 

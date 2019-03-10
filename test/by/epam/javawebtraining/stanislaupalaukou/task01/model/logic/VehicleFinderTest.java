@@ -4,6 +4,7 @@ import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.P
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.Car;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.Truck;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.Vehicle;
+import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.*;
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -24,7 +25,9 @@ public class VehicleFinderTest {
     private Vehicle truck;
 
     @BeforeTest
-    public void setUpParking() {
+    public void setUpParking() throws VehiclePriceException, VehicleNameException,
+            SeatsNumberException, CarBodyTypeException,
+            CargoCapacityException, TruckBodyTypeException {
         car1 = new Car("BMW", 66_000, 4, Car.BodyType.SEDAN);
         car2 = new Car("Renault", 15_000, 4, Car.BodyType.SEDAN);
         car3 = new Car("Volkswagen", 20_000, 4, Car.BodyType.COUPE);
@@ -40,7 +43,7 @@ public class VehicleFinderTest {
     }
 
     @Test
-    public void testFindTheCheapestVehicle() {
+    public void testFindTheCheapestVehicle() throws NullParkingException {
         Vehicle expected = car2;
         Vehicle actual = VehicleFinder.findTheCheapestVehicle(parking1);
 
@@ -48,7 +51,7 @@ public class VehicleFinderTest {
     }
 
     @Test
-    public void testFindTheCheapestVehicleParkingIsEmpty() {
+    public void testFindTheCheapestVehicleParkingIsEmpty() throws NullParkingException {
         Vehicle expected = null;
         Vehicle actual = VehicleFinder.findTheCheapestVehicle(parking2);
 
@@ -56,7 +59,7 @@ public class VehicleFinderTest {
     }
 
     @Test
-    public void testFindTheCheapestVehicleParkingIsNull() {
+    public void testFindTheCheapestVehicleParkingIsNull() throws NullParkingException {
         Vehicle expected = null;
         Vehicle actual = VehicleFinder.findTheCheapestVehicle(parking3);
 
@@ -64,7 +67,7 @@ public class VehicleFinderTest {
     }
 
     @Test
-    public void testFindTheDearestVehicle() {
+    public void testFindTheDearestVehicle() throws NullParkingException {
         Vehicle expected = truck;
         Vehicle actual = VehicleFinder.findTheDearestVehicle(parking1);
 
@@ -72,7 +75,7 @@ public class VehicleFinderTest {
     }
 
     @Test
-    public void testFindTheDearestVehicleParkingIsEmpty() {
+    public void testFindTheDearestVehicleParkingIsEmpty() throws NullParkingException {
         Vehicle expected = null;
         Vehicle actual = VehicleFinder.findTheDearestVehicle(parking2);
 
@@ -80,7 +83,7 @@ public class VehicleFinderTest {
     }
 
     @Test
-    public void testFindTheDearestVehicleParkinIsNull() {
+    public void testFindTheDearestVehicleParkingIsNull() throws NullParkingException {
         Vehicle expected = null;
         Vehicle actual = VehicleFinder.findTheDearestVehicle(parking3);
 

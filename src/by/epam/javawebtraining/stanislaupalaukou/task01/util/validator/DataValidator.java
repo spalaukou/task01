@@ -1,5 +1,7 @@
 package by.epam.javawebtraining.stanislaupalaukou.task01.util.validator;
 
+import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.ParkingIsEmptyException;
+import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.technical.DataValidatorException;
 import org.apache.log4j.Logger;
 
 import java.util.ArrayList;
@@ -22,12 +24,22 @@ public class DataValidator {
     private static List<String> validLines = new ArrayList<>();
 
     public List<String> validateStrings(List<String> originalLines) {
-        for (String originalString : originalLines) {
-            if (originalString.matches(DIGIT_PATTERN)) {
-                validLines.add(originalString);
+        try {
+            if (originalLines != null) {
+                for (String originalString : originalLines) {
+                    if (originalString.matches(DIGIT_PATTERN)) {
+                        validLines.add(originalString);
+                    }
+                }
+                logger.info("Lines were checked.");
+            } else {
+                logger.info("DataValidatorException has been thrown.");
+                throw new DataValidatorException("Strings for validation has not been found");
             }
+        } catch (DataValidatorException e) {
+            logger.info("Exception has been caught", e);
+            e.printStackTrace();
         }
-        logger.info("Lines were checked.");
         return validLines;
     }
 

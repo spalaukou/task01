@@ -4,6 +4,7 @@ import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.Car;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.Truck;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.Vehicle;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.VehicleType;
+import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.LogicalException;
 import by.epam.javawebtraining.stanislaupalaukou.task01.util.factory.VehicleFactory;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -16,7 +17,7 @@ import org.testng.annotations.Test;
 public class VehicleFactoryTest {
 
     @Test
-    public void testCreateVehicleCar() {
+    public void testCreateVehicleCar() throws LogicalException {
         Vehicle expected = new Car("BMW", 66_000, 4, Car.BodyType.SEDAN);
 
         Vehicle actual = VehicleFactory.createVehicle(VehicleType.CAR, "BMW", 66_000, 4, "sedan");
@@ -25,7 +26,7 @@ public class VehicleFactoryTest {
     }
 
     @Test
-    public void testCreateVehicleTruck() {
+    public void testCreateVehicleTruck() throws LogicalException {
         Vehicle expected = new Truck("Volvo", 80_000, 30_000, Truck.BodyType.CABOVER);
 
         Vehicle actual = VehicleFactory.createVehicle(VehicleType.TRUCK, "Volvo", 80_000, 30_000, "CABOVER");
@@ -34,7 +35,7 @@ public class VehicleFactoryTest {
     }
 
     @Test
-    public void testCreateVehicleNull() {
+    public void testCreateVehicleNull() throws LogicalException {
         Vehicle expected = null;
 
         Vehicle actual = VehicleFactory.createVehicle(VehicleType.CAR, "BMW", 66_000, 4, "invalidType");

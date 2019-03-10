@@ -1,5 +1,9 @@
 package by.epam.javawebtraining.stanislaupalaukou.task01.model.entity;
 
+import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.CargoCapacityException;
+import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.VehicleNameException;
+import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.VehiclePriceException;
+
 import java.util.Objects;
 
 /**
@@ -16,12 +20,17 @@ public abstract class CargoTransport extends Vehicle {
 
     public CargoTransport() {}
 
-    public CargoTransport(String name, int price, int cargoCapacity) {
+    public CargoTransport(String name, int price, int cargoCapacity)
+            throws VehicleNameException, VehiclePriceException, CargoCapacityException {
         super(name, price);
+        if (cargoCapacity <= 0) {
+            throw new CargoCapacityException();
+        }
         this.cargoCapacity = cargoCapacity;
     }
 
-    public CargoTransport(CargoTransport cargoTransport) {
+    public CargoTransport(CargoTransport cargoTransport)
+            throws VehiclePriceException, CargoCapacityException, VehicleNameException {
         this(cargoTransport.getName(), cargoTransport.getPrice(), cargoTransport.cargoCapacity);
     }
 
@@ -29,10 +38,11 @@ public abstract class CargoTransport extends Vehicle {
         return cargoCapacity;
     }
 
-    public void setCargoCapacity(int cargoCapacity) {
-        if(cargoCapacity > 0) {
-            this.cargoCapacity = cargoCapacity;
+    public void setCargoCapacity(int cargoCapacity) throws CargoCapacityException {
+        if(cargoCapacity <= 0) {
+            throw new CargoCapacityException();
         }
+        this.cargoCapacity = cargoCapacity;
     }
 
     @Override

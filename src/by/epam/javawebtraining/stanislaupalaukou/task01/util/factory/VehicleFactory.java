@@ -4,6 +4,7 @@ import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.Car;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.Truck;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.Vehicle;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.VehicleType;
+import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.*;
 
 /**
  * The Vehicle Factory class implements a Factory Design Pattern
@@ -27,7 +28,15 @@ public class VehicleFactory {
      * @param bodyTypeString
      * @return
      */
-    public static Vehicle createVehicle(VehicleType type, String name, int price, int localField, String bodyTypeString) {
+    public static Vehicle createVehicle(VehicleType type, String name, int price, int localField, String bodyTypeString)
+            throws VehicleTypeException, VehiclePriceException, VehicleNameException,
+            SeatsNumberException, CarBodyTypeException,
+            CargoCapacityException, TruckBodyTypeException {
+
+        if (type == null) {
+            throw new VehicleTypeException();
+        }
+
         Vehicle toReturn = null;
         switch (type) {
             case CAR:

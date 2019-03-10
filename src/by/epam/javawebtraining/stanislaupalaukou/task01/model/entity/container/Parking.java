@@ -1,8 +1,10 @@
 package by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container;
 
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.Vehicle;
-import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.technical.ParkingIsEmptyException;
-import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.technical.VehicleNotFoundException;
+import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.NullParkingException;
+import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.NullVehicleException;
+import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.ParkingIsEmptyException;
+import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.VehicleNotFoundException;
 import org.apache.log4j.Logger;
 
 import java.util.Arrays;
@@ -37,14 +39,18 @@ public class Parking {
         return vehicles;
     }
 
-    public void setVehicles(Vehicle[] vehicles) {
-        if (vehicles != null) {
+    public void setVehicles(Vehicle[] vehicles) throws NullParkingException {
+        if (vehicles == null) {
+            throw new NullParkingException();
+        } else {
             this.vehicles = vehicles;
         }
     }
 
-    public void addVehicle(Vehicle vehicle) {
-        if (vehicle != null && !isOnPlace(vehicle)) {
+    public void addVehicle(Vehicle vehicle) throws NullVehicleException {
+        if (vehicle == null) {
+            throw new NullVehicleException();
+        } else if (isOnPlace(vehicle)) {
             Vehicle[] newVehicles = new Vehicle[vehicles.length + 1];
 
             for (int i = 0; i < vehicles.length; i++) {
@@ -59,7 +65,7 @@ public class Parking {
     public void removeVehicle(Vehicle vehicle) {
         try {
             if (vehicles != null && vehicles.length != 0) {
-                if (vehicle != null && isOnPlace(vehicle)) {
+                if (isOnPlace(vehicle)) {
                     Vehicle[] newVehicles = new Vehicle[vehicles.length - 1];
                     for (int i = 0, j = 0; i < vehicles.length; i++, j++) {
                         if (!vehicle.equals(vehicles[i])) {
@@ -83,7 +89,7 @@ public class Parking {
         }
     }
 
-    boolean isOnPlace(Vehicle vehicle) {
+    private boolean isOnPlace(Vehicle vehicle) {
         if(vehicle != null) {
             for (Vehicle vehicleItem : vehicles) {
                 if (vehicle.equals(vehicleItem)) {

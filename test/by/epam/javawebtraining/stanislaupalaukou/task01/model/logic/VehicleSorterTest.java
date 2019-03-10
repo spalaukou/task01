@@ -3,6 +3,7 @@ package by.epam.javawebtraining.stanislaupalaukou.task01.model.logic;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.Car;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.Truck;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.Vehicle;
+import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.*;
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -25,7 +26,9 @@ public class VehicleSorterTest {
     private Vehicle[] vehicles3;
 
     @BeforeTest
-    public void setUpParking() {
+    public void setUpParking()
+            throws SeatsNumberException, VehiclePriceException, VehicleNameException, CarBodyTypeException,
+            CargoCapacityException, TruckBodyTypeException {
         car1 = new Car("BMW", 66_000, 4, Car.BodyType.SEDAN);
         car2 = new Car("Renault", 15_000, 4, Car.BodyType.SEDAN);
         car3 = new Car("Volkswagen", 20_000, 4, Car.BodyType.COUPE);

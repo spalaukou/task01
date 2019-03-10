@@ -2,6 +2,7 @@ package by.epam.javawebtraining.stanislaupalaukou.task01.model.logic;
 
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.Vehicle;
+import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.NullParkingException;
 import org.apache.log4j.Logger;
 
 /**
@@ -23,9 +24,13 @@ public class VehicleFinder {
    * @param parking
    * @return
    */
-  public static Vehicle findTheCheapestVehicle(Parking parking) {
+  public static Vehicle findTheCheapestVehicle(Parking parking) throws NullParkingException {
+    if (parking == null) {
+      throw new NullParkingException();
+    }
+
     Vehicle theCheapest = null;
-    if(parking != null && parking.getVehicles() != null && parking.getVehicles().length != 0) {
+    if(parking.getVehicles() != null && parking.getVehicles().length != 0) {
       theCheapest = parking.getVehicles()[0];
       for (int i = 0; i < parking.getVehicles().length; i++) {
         if (parking.getVehicles()[i].getPrice() < theCheapest.getPrice()) {
@@ -44,7 +49,11 @@ public class VehicleFinder {
    * @param parking
    * @return
    */
-  public static Vehicle findTheDearestVehicle(Parking parking) {
+  public static Vehicle findTheDearestVehicle(Parking parking) throws NullParkingException {
+    if (parking == null) {
+      throw new NullParkingException();
+    }
+
     Vehicle theDearest = null;
     if(parking != null && parking.getVehicles() != null && parking.getVehicles().length != 0) {
       theDearest = parking.getVehicles()[0];

@@ -4,6 +4,7 @@ import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.P
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.Car;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.Truck;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.Vehicle;
+import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.*;
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -19,7 +20,9 @@ public class VehicleCalculatorTest {
     private Parking parking3;
 
     @BeforeTest
-    public void setUpParking() {
+    public void setUpParking()
+            throws SeatsNumberException, VehiclePriceException, VehicleNameException, CarBodyTypeException,
+            CargoCapacityException, TruckBodyTypeException {
         Vehicle car1 = new Car("BMW", 66_000, 4, Car.BodyType.SEDAN);
         Vehicle car2 = new Car("Renault", 15_000, 4, Car.BodyType.SEDAN);
         Vehicle car3 = new Car("Volkswagen", 20_000, 4, Car.BodyType.COUPE);
@@ -35,7 +38,7 @@ public class VehicleCalculatorTest {
     }
 
     @Test
-    public void testTotalPrice() {
+    public void testTotalPrice() throws NullParkingException {
         int expected = 199_000;
         int actual = VehicleCalculator.totalPrice(parking1);
 
@@ -43,7 +46,7 @@ public class VehicleCalculatorTest {
     }
 
     @Test
-    public void testTotalPriceParkingIsEmpty() {
+    public void testTotalPriceParkingIsEmpty() throws NullParkingException {
         int expected = 0;
         int actual = VehicleCalculator.totalPrice(parking2);
 
@@ -51,7 +54,7 @@ public class VehicleCalculatorTest {
     }
 
     @Test
-    public void testTotalPriceParkingIsNull() {
+    public void testTotalPriceParkingIsNull() throws NullParkingException {
         int expected = 0;
         int actual = VehicleCalculator.totalPrice(parking3);
 
@@ -59,7 +62,7 @@ public class VehicleCalculatorTest {
     }
 
     @Test
-    public void TestTotalSeats() {
+    public void TestTotalSeats() throws NullParkingException {
         int expected = 16;
         int actual = VehicleCalculator.totalSeats(parking1);
 
@@ -67,7 +70,7 @@ public class VehicleCalculatorTest {
     }
 
     @Test
-    public void TestTotalSeatsParkingIsEmpty() {
+    public void TestTotalSeatsParkingIsEmpty() throws NullParkingException {
         int expected = 0;
         int actual = VehicleCalculator.totalSeats(parking2);
 
@@ -75,7 +78,7 @@ public class VehicleCalculatorTest {
     }
 
     @Test
-    public void TestTotalSeatsParkingIsNull() {
+    public void TestTotalSeatsParkingIsNull() throws NullParkingException {
         int expected = 0;
         int actual = VehicleCalculator.totalSeats(parking3);
 

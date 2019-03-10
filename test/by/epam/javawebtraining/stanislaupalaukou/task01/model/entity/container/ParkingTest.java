@@ -2,6 +2,7 @@ package by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container;
 
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.Car;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.Vehicle;
+import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.*;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -23,7 +24,8 @@ public class ParkingTest {
     private Parking parking1;
 
     @BeforeTest
-    public void setUpVehicles() {
+    public void setUpVehicles()
+            throws SeatsNumberException, VehiclePriceException, VehicleNameException, CarBodyTypeException {
         car1 = new Car("BMW", 66_000, 4, Car.BodyType.SEDAN);
         car2 = new Car("Renault", 15_000, 4, Car.BodyType.SEDAN);
         car3 = new Car("Volkswagen", 20_000, 4, Car.BodyType.COUPE);
@@ -36,7 +38,7 @@ public class ParkingTest {
 
     @Test
     public void testConstructor() {
-        Parking parking2 = new Parking(null);
+        Parking parking2 = new Parking((Vehicle[]) null);
 
         Vehicle[] expected1 = vehicles1;
         Vehicle[] actual1 = parking1.getVehicles();
@@ -67,7 +69,7 @@ public class ParkingTest {
     }
 
     @Test
-    public void testSetVehicles() {
+    public void testSetVehicles() throws NullParkingException {
         Parking actualParking = new Parking();
         Vehicle[] expected = vehicles1;
         actualParking.setVehicles(vehicles1);
@@ -77,7 +79,7 @@ public class ParkingTest {
     }
 
     @Test
-    public void testAddVehicle() {
+    public void testAddVehicle() throws NullVehicleException {
         Parking expected = new Parking(vehicles2);
         Parking actual = new Parking(vehicles1);
 

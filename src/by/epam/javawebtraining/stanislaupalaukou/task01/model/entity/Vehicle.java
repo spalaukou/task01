@@ -1,5 +1,8 @@
 package by.epam.javawebtraining.stanislaupalaukou.task01.model.entity;
 
+import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.VehicleNameException;
+import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.VehiclePriceException;
+
 import java.util.Objects;
 
 /**
@@ -17,11 +20,15 @@ public abstract class Vehicle {
 
     public Vehicle(){}
 
-    public Vehicle(String name, int price) {
-        if(name != null && price > 0) {
-            this.name = name;
-            this.price = price;
+    public Vehicle(String name, int price) throws VehicleNameException, VehiclePriceException {
+        if(name == null) {
+            throw new VehicleNameException();
+        } else if (price <= 0) {
+            throw new VehiclePriceException();
         }
+
+        this.name = name;
+        this.price = price;
     }
 
     public Vehicle(Vehicle vehicle) {
@@ -33,20 +40,22 @@ public abstract class Vehicle {
         return name;
     }
 
-    public void setName(String name) {
-        if(name != null) {
-            this.name = name;
+    public void setName(String name) throws VehicleNameException {
+        if(name == null) {
+            throw new VehicleNameException();
         }
+            this.name = name;
     }
 
     public int getPrice() {
         return price;
     }
 
-    public void setPrice(int price) {
-        if(price > 0) {
-            this.price = price;
+    public void setPrice(int price) throws VehiclePriceException {
+        if(price <= 0) {
+            throw new VehiclePriceException();
         }
+            this.price = price;
     }
 
     @Override

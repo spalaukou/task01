@@ -3,6 +3,7 @@ package by.epam.javawebtraining.stanislaupalaukou.task01.util.creator;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.Vehicle;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.VehicleType;
+import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.*;
 import by.epam.javawebtraining.stanislaupalaukou.task01.util.factory.VehicleFactory;
 import org.apache.log4j.Logger;
 
@@ -30,7 +31,11 @@ public class ParkingCreator {
         return new Parking(vehicles);
     }
 
-    public static Parking create(List<String> validLines) {
+    public static Parking create(List<String> validLines)
+            throws NullVehicleException, VehicleTypeException, VehicleNameException, VehiclePriceException,
+            CargoCapacityException, TruckBodyTypeException,
+            SeatsNumberException, CarBodyTypeException {
+        
         Parking parking = new Parking();
         for (String validString : validLines) {
             String[] splitted = validString.split(" ");

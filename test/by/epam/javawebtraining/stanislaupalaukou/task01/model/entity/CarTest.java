@@ -1,5 +1,9 @@
 package by.epam.javawebtraining.stanislaupalaukou.task01.model.entity;
 
+import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.CarBodyTypeException;
+import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.SeatsNumberException;
+import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.VehicleNameException;
+import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.VehiclePriceException;
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -13,7 +17,8 @@ public class CarTest {
     private Car car;
 
     @BeforeTest
-    public void setUpCar() {
+    public void setUpCar()
+            throws SeatsNumberException, VehiclePriceException, VehicleNameException, CarBodyTypeException {
         car = new Car ("BMW", 66_000, 4, Car.BodyType.SEDAN);
     }
 
@@ -36,7 +41,7 @@ public class CarTest {
     }
 
     @Test
-    public void testSetBodyType() {
+    public void testSetBodyType() throws CarBodyTypeException {
         Car.BodyType expectedBodyType = Car.BodyType.HATCHBACK;
 
         car.setBodyType(Car.BodyType.HATCHBACK);
