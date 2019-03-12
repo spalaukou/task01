@@ -22,7 +22,7 @@ public class VehicleCalculatorTest {
     @BeforeTest
     public void setUpParking()
             throws SeatsNumberException, VehiclePriceException, VehicleNameException, CarBodyTypeException,
-            CargoCapacityException, TruckBodyTypeException {
+            CargoCapacityException, TruckBodyTypeException, VehicleArrayException {
         Vehicle car1 = new Car("BMW", 66_000, 4, Car.BodyType.SEDAN);
         Vehicle car2 = new Car("Renault", 15_000, 4, Car.BodyType.SEDAN);
         Vehicle car3 = new Car("Volkswagen", 20_000, 4, Car.BodyType.COUPE);

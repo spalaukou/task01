@@ -27,7 +27,7 @@ public class VehicleFinderTest {
     @BeforeTest
     public void setUpParking() throws VehiclePriceException, VehicleNameException,
             SeatsNumberException, CarBodyTypeException,
-            CargoCapacityException, TruckBodyTypeException {
+            CargoCapacityException, TruckBodyTypeException, VehicleArrayException {
         car1 = new Car("BMW", 66_000, 4, Car.BodyType.SEDAN);
         car2 = new Car("Renault", 15_000, 4, Car.BodyType.SEDAN);
         car3 = new Car("Volkswagen", 20_000, 4, Car.BodyType.COUPE);

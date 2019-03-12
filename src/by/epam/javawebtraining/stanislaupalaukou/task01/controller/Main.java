@@ -9,6 +9,8 @@ import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.technica
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.logic.VehicleCalculator;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.logic.VehicleFinder;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.logic.VehicleSorter;
+import by.epam.javawebtraining.stanislaupalaukou.task01.model.logic.pattern.strategy.TheCheapestVehicle;
+import by.epam.javawebtraining.stanislaupalaukou.task01.model.logic.pattern.strategy.TheDearestVehicle;
 import by.epam.javawebtraining.stanislaupalaukou.task01.util.creator.CarCreator;
 import by.epam.javawebtraining.stanislaupalaukou.task01.util.creator.ParkingCreator;
 import by.epam.javawebtraining.stanislaupalaukou.task01.util.creator.PrinterCreator;
@@ -100,6 +102,17 @@ public class Main {
                     .comparing(Vehicle::getPrice)));
             printer.print("The dearest vehicle in the parking lot: " + VehicleFinder.findTheDearestVehicle(parking));
             printer.print("The cheapest vehicle in the parking lot: " + VehicleFinder.findTheCheapestVehicle(parking));
+            printer.print("----------------------");
+            printer.print("Strategy Pattern");
+            printer.print("----------------------");
+            printer.print("The Cheapest Vehicle");
+            parking.setFindingBehavior(new TheCheapestVehicle());
+            printer.print(parking.executeFindingBehavior());
+            printer.print("----------------------");
+            printer.print("The Dearest Vehicle");
+            parking.setFindingBehavior(new TheDearestVehicle());
+            printer.print(parking.executeFindingBehavior());
+            printer.print("----------------------");
 
             //Removing all vehicles from the parking and demonstrating ParkingIsEmptyException
             parking.removeVehicle(car1);

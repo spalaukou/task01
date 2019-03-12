@@ -68,10 +68,9 @@ public class VehicleSorter {
         if (parking == null) {
             throw new NullParkingException();
         }
-        Vehicle[] newVehicles = parking.getVehicles();
 
         Comparator<Vehicle> vehiclePriceComparator = new VehiclePriceComparator();
-        newVehicles = sort(newVehicles, vehiclePriceComparator);
+        sort(parking.getVehicles(), vehiclePriceComparator);
 
         logger.info("Parking has been sorted by price.");
     }
@@ -101,9 +100,10 @@ public class VehicleSorter {
         if (parking == null) {
             throw new NullParkingException();
         }
-        Vehicle[] newVehicles = parking.getVehicles();
+
         Comparator<Vehicle> vehicleNameComparator = new VehicleNameComparator();
-        sort(newVehicles, vehicleNameComparator);
+        sort(parking.getVehicles(), vehicleNameComparator);
+
         logger.info("Parking has been sorted by name.");
     }
 
@@ -134,10 +134,10 @@ public class VehicleSorter {
         if (parking == null) {
             throw new NullParkingException();
         }
-        Vehicle[] newVehicles = parking.getVehicles();
+
         Comparator<Vehicle> vehicleNameComparator = new VehicleNameComparator();
         Comparator<Vehicle> vehiclePriceComparator = new VehiclePriceComparator();
-        sort(newVehicles, vehicleNameComparator.thenComparing(vehiclePriceComparator));
+        sort(parking.getVehicles(), vehicleNameComparator.thenComparing(vehiclePriceComparator));
 
         logger.info("Vehiles have been sorted by name and then by price.");
     }

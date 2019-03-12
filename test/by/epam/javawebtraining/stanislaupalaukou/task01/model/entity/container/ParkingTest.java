@@ -25,7 +25,7 @@ public class ParkingTest {
 
     @BeforeTest
     public void setUpVehicles()
-            throws SeatsNumberException, VehiclePriceException, VehicleNameException, CarBodyTypeException {
+            throws SeatsNumberException, VehiclePriceException, VehicleNameException, CarBodyTypeException, VehicleArrayException {
         car1 = new Car("BMW", 66_000, 4, Car.BodyType.SEDAN);
         car2 = new Car("Renault", 15_000, 4, Car.BodyType.SEDAN);
         car3 = new Car("Volkswagen", 20_000, 4, Car.BodyType.COUPE);
@@ -37,7 +37,7 @@ public class ParkingTest {
     }
 
     @Test
-    public void testConstructor() {
+    public void testConstructor() throws VehicleArrayException {
         Parking parking2 = new Parking((Vehicle[]) null);
 
         Vehicle[] expected1 = vehicles1;
@@ -51,7 +51,7 @@ public class ParkingTest {
     }
 
     @Test
-    public void testDefaultConstructor() {
+    public void testDefaultConstructor() throws VehicleArrayException {
         Parking actual = new Parking();
         Parking expected = new Parking(new Vehicle[0]);
 
@@ -59,7 +59,7 @@ public class ParkingTest {
     }
 
     @Test
-    public void testGetVehicles() {
+    public void testGetVehicles() throws VehicleArrayException {
         Vehicle[] expected = vehicles1;
 
         Parking parking = new Parking(vehicles1);
@@ -79,7 +79,7 @@ public class ParkingTest {
     }
 
     @Test
-    public void testAddVehicle() throws NullVehicleException {
+    public void testAddVehicle() throws NullVehicleException, VehicleArrayException {
         Parking expected = new Parking(vehicles2);
         Parking actual = new Parking(vehicles1);
 
@@ -89,7 +89,7 @@ public class ParkingTest {
     }
 
     @Test
-    public void testRemoveVehicle() {
+    public void testRemoveVehicle() throws VehicleArrayException {
         Parking expected = new Parking(vehicles1);
         Parking actual = new Parking(vehicles2);
 
@@ -100,12 +100,17 @@ public class ParkingTest {
 
     @Test
     public void testRemoveVehicleVehicleNotFoundException() {
-        Parking actual = new Parking(vehicles1);
+        Parking actual = null;
+        try {
+            actual = new Parking(vehicles1);
+        } catch (VehicleArrayException e) {
+            e.printStackTrace();
+        }
         actual.removeVehicle(car3);
     }
 
     @Test
-    public void testRemoveParkingIsEmptyException() {
+    public void testRemoveParkingIsEmptyException() throws VehicleArrayException {
         Parking actual = new Parking(vehicles1);
         actual.removeVehicle(car3);
         actual.removeVehicle(car2);

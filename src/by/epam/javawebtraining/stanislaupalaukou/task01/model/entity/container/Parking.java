@@ -2,6 +2,7 @@ package by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container;
 
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.Vehicle;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.*;
+import by.epam.javawebtraining.stanislaupalaukou.task01.model.logic.pattern.strategy.FindingBehavior;
 import org.apache.log4j.Logger;
 
 import java.util.Arrays;
@@ -17,6 +18,8 @@ import java.util.Arrays;
 public class Parking implements AbstractParking<Vehicle[]> {
 
     private static final Logger logger = Logger.getLogger(Parking.class);
+
+    private FindingBehavior findingBehavior;
 
     private Vehicle[] vehicles;
 
@@ -47,6 +50,14 @@ public class Parking implements AbstractParking<Vehicle[]> {
         } else {
             this.vehicles = vehicles;
         }
+    }
+
+    public void setFindingBehavior(FindingBehavior findingBehavior) {
+        this.findingBehavior = findingBehavior;
+    }
+
+    public Vehicle executeFindingBehavior() throws NullParkingException {
+        return findingBehavior.find(vehicles);
     }
 
     @Override

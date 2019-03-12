@@ -27,7 +27,7 @@ public class ParkingCreator {
         return new Parking();
     }
 
-    public static Parking create(Vehicle[] vehicles) {
+    public static Parking create(Vehicle[] vehicles) throws VehicleArrayException {
         return new Parking(vehicles);
     }
 
