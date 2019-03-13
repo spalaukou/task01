@@ -1,7 +1,7 @@
 package by.epam.javawebtraining.stanislaupalaukou.task01.view;
 
-import java.io.FileWriter;
-import java.io.IOException;
+
+import java.io.*;
 
 /**
  * The view class implements Printable Interface
@@ -18,13 +18,20 @@ public class FilePrinter implements Printable {
 
     @Override
     public void print(Object o) {
-        if (o == null){
+        if (o == null) {
             return;
         }
-        try (FileWriter fileWriter = new FileWriter("output/outputData.txt", true)){
-            fileWriter.write(o.toString() + '\n');
-        } catch (IOException e){
-            System.out.println(e.getMessage());
+
+        String fileName = "output/outputData.txt";
+
+        try (Writer bufferedWriter = new BufferedWriter(new OutputStreamWriter(
+                new FileOutputStream(fileName, true)))) {
+
+            bufferedWriter.write(o.toString() + "\n");
+
+        } catch (IOException e) {
+            e.printStackTrace();
         }
+
     }
 }
