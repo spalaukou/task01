@@ -15,7 +15,7 @@ import java.util.Arrays;
  * @project Task 01
  */
 
-public class Parking implements AbstractParking<Vehicle[]> {
+public class Parking implements AbstractContainer<Vehicle[]> {
 
     private static final Logger logger = Logger.getLogger(Parking.class);
 
@@ -28,14 +28,18 @@ public class Parking implements AbstractParking<Vehicle[]> {
     }
 
     public Parking(Vehicle[] vehicle) throws VehicleArrayException {
-        if (vehicle == null) {
-            throw new VehicleArrayException();
+        if (vehicle != null) {
+            this.vehicles = vehicle;
         }
-        this.vehicles = vehicle;
+        throw new VehicleArrayException();
     }
 
-    public Parking(Parking parking) {
-        this.vehicles = parking.vehicles;
+    public Parking(Parking parking) throws NullParkingException {
+        if(parking != null) {
+            this.vehicles = parking.vehicles;
+        } else {
+            throw new NullParkingException();
+        }
     }
 
     @Override
@@ -45,10 +49,10 @@ public class Parking implements AbstractParking<Vehicle[]> {
 
     @Override
     public void setVehicles(Vehicle[] vehicles) throws NullParkingException {
-        if (vehicles == null) {
-            throw new NullParkingException();
-        } else {
+        if (vehicles != null) {
             this.vehicles = vehicles;
+        } else {
+            throw new NullParkingException();
         }
     }
 
@@ -62,9 +66,7 @@ public class Parking implements AbstractParking<Vehicle[]> {
 
     @Override
     public void addVehicle(Vehicle vehicle) throws NullVehicleException {
-        if (vehicle == null) {
-            throw new NullVehicleException();
-        } else if (!isOnPlace(vehicle)) {
+        if (vehicle != null && !isOnPlace(vehicle)) {
             Vehicle[] newVehicles = new Vehicle[vehicles.length + 1];
 
             for (int i = 0; i < vehicles.length; i++) {
@@ -73,6 +75,8 @@ public class Parking implements AbstractParking<Vehicle[]> {
 
             newVehicles[vehicles.length] = vehicle;
             vehicles = newVehicles;
+        } else {
+            throw new NullVehicleException();
         }
     }
 

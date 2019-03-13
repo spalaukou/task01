@@ -22,15 +22,18 @@ public abstract class CargoTransport extends Vehicle {
 
     public CargoTransport(String name, int price, int cargoCapacity)
             throws VehicleNameException, VehiclePriceException, CargoCapacityException {
+
         super(name, price);
-        if (cargoCapacity <= 0) {
+        if (cargoCapacity > 0) {
+            this.cargoCapacity = cargoCapacity;
+        } else {
             throw new CargoCapacityException();
         }
-        this.cargoCapacity = cargoCapacity;
     }
 
     public CargoTransport(CargoTransport cargoTransport)
             throws VehiclePriceException, CargoCapacityException, VehicleNameException {
+
         this(cargoTransport.getName(), cargoTransport.getPrice(), cargoTransport.cargoCapacity);
     }
 
@@ -39,10 +42,11 @@ public abstract class CargoTransport extends Vehicle {
     }
 
     public void setCargoCapacity(int cargoCapacity) throws CargoCapacityException {
-        if(cargoCapacity <= 0) {
+        if(cargoCapacity > 0) {
+            this.cargoCapacity = cargoCapacity;
+        } else {
             throw new CargoCapacityException();
         }
-        this.cargoCapacity = cargoCapacity;
     }
 
     @Override

@@ -18,9 +18,6 @@ public class FilePrinter implements Printable {
 
     @Override
     public void print(Object o) {
-        if (o == null) {
-            return;
-        }
 
         String fileName = "output/outputData.txt";
 
@@ -32,6 +29,5 @@ public class FilePrinter implements Printable {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
     }
 }

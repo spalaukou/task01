@@ -33,14 +33,18 @@ public class Car extends PassengerTransport {
     public Car(String name, int price, int seatsNumber, BodyType bodyType)
             throws SeatsNumberException, VehiclePriceException, VehicleNameException, CarBodyTypeException {
         super(name, price, seatsNumber);
-        if (bodyType == null) {
+
+        if (bodyType != null) {
+            this.bodyType = bodyType;
+        } else {
             throw new CarBodyTypeException();
         }
-        this.bodyType = bodyType;
+
     }
 
     public Car(Car car)
             throws SeatsNumberException, VehiclePriceException, VehicleNameException, CarBodyTypeException {
+
         this(car.getName(), car.getPrice(), car.getSeatsNumber(), car.getBodyType());
     }
 
@@ -49,10 +53,11 @@ public class Car extends PassengerTransport {
     }
 
     public void setBodyType(BodyType bodyType) throws CarBodyTypeException {
-        if (bodyType == null) {
+        if (bodyType != null) {
+            this.bodyType = bodyType;
+        } else {
             throw new CarBodyTypeException();
         }
-        this.bodyType = bodyType;
     }
 
     @Override

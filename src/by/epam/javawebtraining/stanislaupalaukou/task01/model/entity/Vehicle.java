@@ -21,14 +21,19 @@ public abstract class Vehicle {
     public Vehicle(){}
 
     public Vehicle(String name, int price) throws VehicleNameException, VehiclePriceException {
-        if(name == null) {
-            throw new VehicleNameException();
-        } else if (price <= 0) {
-            throw new VehiclePriceException();
-        }
 
-        this.name = name;
-        this.price = price;
+        if(name != null) {
+            this.name = name;
+
+            if(price > 0) {
+                this.price = price;
+            } else {
+                throw new VehiclePriceException();
+            }
+
+        } else {
+            throw new VehicleNameException();
+        }
     }
 
     public Vehicle(Vehicle vehicle) {
@@ -41,10 +46,11 @@ public abstract class Vehicle {
     }
 
     public void setName(String name) throws VehicleNameException {
-        if(name == null) {
+        if(name != null) {
+            this.name = name;
+        } else {
             throw new VehicleNameException();
         }
-            this.name = name;
     }
 
     public int getPrice() {
@@ -52,10 +58,11 @@ public abstract class Vehicle {
     }
 
     public void setPrice(int price) throws VehiclePriceException {
-        if(price <= 0) {
+        if(price > 0) {
+            this.price = price;
+        } else {
             throw new VehiclePriceException();
         }
-            this.price = price;
     }
 
     @Override

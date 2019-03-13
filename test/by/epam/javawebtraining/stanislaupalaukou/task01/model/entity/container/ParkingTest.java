@@ -118,14 +118,4 @@ public class ParkingTest {
         actual.removeVehicle(car1);
     }
 
-    /*@Test
-    public void testIsOnPlace() {
-        boolean actual1 = parking1.isOnPlace(car1);
-        boolean actual2 = parking1.isOnPlace(car3);
-        boolean actual3 = parking1.isOnPlace(null);
-
-        Assert.assertTrue(actual1);
-        Assert.assertFalse(actual2);
-        Assert.assertFalse(actual3);
-    }*/
 }

@@ -26,17 +26,17 @@ public class VehicleCalculator {
      * @return total price of all the Vehicles
      */
     public static int totalPrice(Parking parking) throws NullParkingException {
-        if (parking == null) {
-            throw new NullParkingException();
-        } else {
+        if (parking != null) {
+
             int totalPrice = 0;
-            if (parking != null) {
-                for (Vehicle vehicle : parking.getVehicles()) {
-                    totalPrice += vehicle.getPrice();
-                }
+            for (Vehicle vehicle : parking.getVehicles()) {
+                totalPrice += vehicle.getPrice();
             }
             logger.info("Total price has been calculated.");
             return totalPrice;
+
+        } else {
+            throw new NullParkingException();
         }
     }
 
@@ -48,25 +48,19 @@ public class VehicleCalculator {
      * @return total number of seats of all the vehicles
      */
     public static int totalSeats(Parking parking) throws NullParkingException {
-        int totalSeats = 0;
-        if(parking == null) {
-            throw new NullParkingException();
-        } else {
+        int totalSeats = -1;
+
+        if (parking != null) {
             for (Vehicle vehicle : parking.getVehicles()) {
-                if(vehicle.getClass() == Car.class) {
+                if (vehicle.getClass() == Car.class) {
                     totalSeats += ((PassengerTransport) vehicle).getSeatsNumber();
                 }
-
-//                //Calculating totalSeats with catching ClassCastException - not for using
-//                try {
-//                    totalSeats += ((PassengerTransport) vehicle).getSeatsNumber();
-//                } catch (ClassCastException e) {
-//                    System.out.println("Vehicle is not passenger: " + vehicle);
-//                }
-
             }
+            logger.info("Total seats has been calculated.");
+            return totalSeats;
+
+        } else {
+            throw new NullParkingException();
         }
-        logger.info("Total seats has been calculated.");
-        return totalSeats;
     }
 }

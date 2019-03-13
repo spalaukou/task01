@@ -15,9 +15,6 @@ public class ConsolePrinter implements Printable{
 
     @Override
     public void print(Object o) {
-        if(o == null) {
-            return;
-        }
         System.out.println(o);
     }
 }

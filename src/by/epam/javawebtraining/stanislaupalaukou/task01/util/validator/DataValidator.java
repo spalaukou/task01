@@ -1,6 +1,5 @@
 package by.epam.javawebtraining.stanislaupalaukou.task01.util.validator;
 
-import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.ParkingIsEmptyException;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.technical.DataValidatorException;
 import org.apache.log4j.Logger;
 
@@ -19,15 +18,14 @@ public class DataValidator {
 
     private static final Logger logger = Logger.getLogger(DataValidator.class);
 
-    public final String DIGIT_PATTERN = "(\\s*\\w+\\s*){5}";
-
     private static List<String> validLines = new ArrayList<>();
 
     public List<String> validateStrings(List<String> originalLines) {
         try {
             if (originalLines != null) {
                 for (String originalString : originalLines) {
-                    if (originalString.matches(DIGIT_PATTERN)) {
+                    String VALID_PATTERN = "(\\s*\\w+\\s*){5}";
+                    if (originalString.matches(VALID_PATTERN)) {
                         validLines.add(originalString);
                     }
                 }
@@ -42,5 +40,4 @@ public class DataValidator {
         }
         return validLines;
     }
-
 }

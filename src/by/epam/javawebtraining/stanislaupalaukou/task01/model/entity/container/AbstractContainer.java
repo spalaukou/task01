@@ -11,7 +11,7 @@ import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.
  * @project Task 01
  */
 
-public interface AbstractParking<T> {
+public interface AbstractContainer<T> {
 
     T getVehicles();
 

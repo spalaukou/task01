@@ -43,7 +43,7 @@ public class VehicleFinderTest {
     }
 
     @Test
-    public void testFindTheCheapestVehicle() throws NullParkingException {
+    public void testFindTheCheapestVehicle() throws NullParkingException, VehicleArrayException {
         Vehicle expected = car2;
         Vehicle actual = VehicleFinder.findTheCheapestVehicle(parking1);
 
@@ -51,7 +51,7 @@ public class VehicleFinderTest {
     }
 
     @Test
-    public void testFindTheCheapestVehicleParkingIsEmpty() throws NullParkingException {
+    public void testFindTheCheapestVehicleParkingIsEmpty() throws NullParkingException, VehicleArrayException {
         Vehicle expected = null;
         Vehicle actual = VehicleFinder.findTheCheapestVehicle(parking2);
 
@@ -59,7 +59,7 @@ public class VehicleFinderTest {
     }
 
     @Test
-    public void testFindTheCheapestVehicleParkingIsNull() throws NullParkingException {
+    public void testFindTheCheapestVehicleParkingIsNull() throws NullParkingException, VehicleArrayException {
         Vehicle expected = null;
         Vehicle actual = VehicleFinder.findTheCheapestVehicle(parking3);
 
@@ -67,7 +67,7 @@ public class VehicleFinderTest {
     }
 
     @Test
-    public void testFindTheDearestVehicle() throws NullParkingException {
+    public void testFindTheDearestVehicle() throws NullParkingException, VehicleArrayException {
         Vehicle expected = truck;
         Vehicle actual = VehicleFinder.findTheDearestVehicle(parking1);
 
@@ -75,7 +75,7 @@ public class VehicleFinderTest {
     }
 
     @Test
-    public void testFindTheDearestVehicleParkingIsEmpty() throws NullParkingException {
+    public void testFindTheDearestVehicleParkingIsEmpty() throws NullParkingException, VehicleArrayException {
         Vehicle expected = null;
         Vehicle actual = VehicleFinder.findTheDearestVehicle(parking2);
 
@@ -83,7 +83,7 @@ public class VehicleFinderTest {
     }
 
     @Test
-    public void testFindTheDearestVehicleParkingIsNull() throws NullParkingException {
+    public void testFindTheDearestVehicleParkingIsNull() throws NullParkingException, VehicleArrayException {
         Vehicle expected = null;
         Vehicle actual = VehicleFinder.findTheDearestVehicle(parking3);
 

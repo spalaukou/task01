@@ -22,15 +22,19 @@ public abstract class PassengerTransport extends Vehicle {
 
     public PassengerTransport(String name, int price, int seatsNumber)
             throws SeatsNumberException, VehicleNameException, VehiclePriceException {
+
         super(name, price);
-        if (seatsNumber <= 0) {
+
+        if (seatsNumber > 0) {
+            this.seatsNumber = seatsNumber;
+        } else {
             throw new SeatsNumberException();
         }
-        this.seatsNumber = seatsNumber;
     }
 
     public PassengerTransport(PassengerTransport passengerTransport)
             throws SeatsNumberException, VehiclePriceException, VehicleNameException {
+
         this(passengerTransport.getName(), passengerTransport.getPrice(), passengerTransport.getSeatsNumber());
     }
 
@@ -39,10 +43,12 @@ public abstract class PassengerTransport extends Vehicle {
     }
 
     public void setSeatsNumber(int seatsNumber) throws SeatsNumberException {
-        if(seatsNumber <= 0) {
+        if(seatsNumber > 0) {
+            this.seatsNumber = seatsNumber;
+        } else {
             throw new SeatsNumberException();
         }
-        this.seatsNumber = seatsNumber;
+
     }
 
     @Override

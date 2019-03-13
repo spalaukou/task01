@@ -32,14 +32,17 @@ public class Truck extends CargoTransport {
     public Truck(String name, int price, int cargoCapacity, BodyType bodyType)
             throws VehiclePriceException, CargoCapacityException, VehicleNameException, TruckBodyTypeException {
         super(name, price, cargoCapacity);
-        if (bodyType == null) {
+
+        if (bodyType != null) {
+            this.bodyType = bodyType;
+        } else {
             throw new TruckBodyTypeException();
         }
-        this.bodyType = bodyType;
     }
 
     public Truck(Truck truck)
             throws TruckBodyTypeException, VehiclePriceException, CargoCapacityException, VehicleNameException {
+
         this(truck.getName(), truck.getPrice(), truck.getCargoCapacity(), truck.getBodyType());
     }
 
@@ -48,10 +51,11 @@ public class Truck extends CargoTransport {
     }
 
     public void setBodyType(BodyType bodyType) throws TruckBodyTypeException {
-        if (bodyType == null) {
+        if (bodyType != null) {
+            this.bodyType = bodyType;
+        } else {
             throw new TruckBodyTypeException();
         }
-        this.bodyType = bodyType;
     }
 
     @Override

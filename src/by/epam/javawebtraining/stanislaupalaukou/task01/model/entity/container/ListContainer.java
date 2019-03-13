@@ -16,19 +16,19 @@ import java.util.Objects;
  * @project Task 01
  */
 
-public class ParkingList implements AbstractParking<List<Vehicle>> {
+public class ListContainer implements AbstractContainer<List<Vehicle>> {
 
     private List<Vehicle> vehicleList;
 
-    public ParkingList() {
+    public ListContainer() {
         vehicleList = new ArrayList<>();
     }
 
-    public ParkingList(List<Vehicle> vehicleList) {
+    public ListContainer(List<Vehicle> vehicleList) {
         this.vehicleList = vehicleList;
     }
 
-    public ParkingList(ParkingList parkingList) {
+    public ListContainer(ListContainer parkingList) {
         vehicleList = parkingList.getVehicles();
     }
 
@@ -39,30 +39,41 @@ public class ParkingList implements AbstractParking<List<Vehicle>> {
 
     @Override
     public void setVehicles(List<Vehicle> vehicles) throws NullParkingException {
-        if (vehicles == null) {
+        if (vehicles != null) {
+            vehicleList = vehicles;
+        } else {
             throw new NullParkingException();
         }
-        vehicleList = vehicles;
+
     }
 
     @Override
     public void addVehicle(Vehicle vehicle) throws NullVehicleException {
-        if (vehicle == null) {
+        if (vehicle != null) {
+            vehicleList.add(vehicle);
+        } else {
             throw new NullVehicleException();
         }
-        vehicleList.add(vehicle);
     }
 
     @Override
     public void removeVehicle(Vehicle vehicle) {
-        vehicleList.remove(vehicle);
+        if (vehicle != null) {
+            vehicleList.remove(vehicle);
+        } else {
+            try {
+                throw new NullVehicleException();
+            } catch (NullVehicleException e) {
+                e.printStackTrace();
+            }
+        }
     }
 
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        ParkingList that = (ParkingList) o;
+        ListContainer that = (ListContainer) o;
         return Objects.equals(vehicleList, that.vehicleList);
     }
 
@@ -73,7 +84,7 @@ public class ParkingList implements AbstractParking<List<Vehicle>> {
 
     @Override
     public String toString() {
-        return "ParkingList{" +
+        return "ListContainer{" +
                 "vehicleList=" + vehicleList +
                 '}';
     }

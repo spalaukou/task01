@@ -32,9 +32,7 @@ public class ParkingCreator {
     }
 
     public static Parking create(List<String> validLines)
-            throws NullVehicleException, VehicleTypeException, VehicleNameException, VehiclePriceException,
-            CargoCapacityException, TruckBodyTypeException,
-            SeatsNumberException, CarBodyTypeException {
+            throws LogicalException {
         
         Parking parking = new Parking();
         for (String validString : validLines) {
