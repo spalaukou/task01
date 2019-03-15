@@ -1,9 +1,6 @@
 package by.epam.javawebtraining.stanislaupalaukou.task01.model.entity;
 
-import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.CargoCapacityException;
-import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.TruckBodyTypeException;
-import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.VehicleNameException;
-import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.VehiclePriceException;
+import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.*;
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -20,6 +17,21 @@ public class TruckTest {
     public void setUpTruck()
             throws TruckBodyTypeException, VehiclePriceException, CargoCapacityException, VehicleNameException {
         truck = new Truck ("Volvo", 80_000, 30_000, Truck.BodyType.CABOVER);
+    }
+
+    @Test
+    public void testDefaultConstructorTruck() {
+        Truck actual = new Truck();
+
+        String expectedName = null;
+        int expectedPrice = 0;
+        int expectedCargoCapacity = 0;
+        Truck.BodyType expectedBodyType = null;
+
+        Assert.assertEquals(expectedName, actual.getName());
+        Assert.assertEquals(expectedPrice, actual.getPrice());
+        Assert.assertEquals(expectedCargoCapacity, actual.getCargoCapacity());
+        Assert.assertEquals(expectedBodyType, actual.getBodyType());
     }
 
     @Test
@@ -40,6 +52,20 @@ public class TruckTest {
         Assert.assertEquals(expectedBodyType, actualBodyType);
     }
 
+    @Test (expectedExceptions = TruckBodyTypeException.class)
+    public void testConstructorCarException()
+            throws CargoCapacityException, VehiclePriceException, VehicleNameException, TruckBodyTypeException {
+        new Truck ("Volvo", 80_000, 30_000,null);
+    }
+
+    @Test
+    public void testCopyConstructorCar()
+            throws VehiclePriceException, VehicleNameException, CargoCapacityException, TruckBodyTypeException {
+        Truck expectedTruck = new Truck(truck);
+
+        Assert.assertEquals(expectedTruck, truck);
+    }
+
     @Test
     public void testSetBodyType() throws TruckBodyTypeException {
         Truck.BodyType expectedBodyType = Truck.BodyType.SLEEPER;
@@ -49,4 +75,10 @@ public class TruckTest {
 
         Assert.assertEquals(expectedBodyType, actualBodyType);
     }
+
+    @Test (expectedExceptions = TruckBodyTypeException.class)
+    public void testSetBodyTypeException() throws TruckBodyTypeException {
+        truck.setBodyType(null);
+    }
+
 }

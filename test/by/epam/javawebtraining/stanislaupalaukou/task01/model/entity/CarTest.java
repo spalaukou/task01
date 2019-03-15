@@ -59,7 +59,8 @@ public class CarTest {
     }
 
     @Test
-    public void testCopyConstructorCar() throws SeatsNumberException, VehiclePriceException, VehicleNameException, CarBodyTypeException {
+    public void testCopyConstructorCar()
+            throws SeatsNumberException, VehiclePriceException, VehicleNameException, CarBodyTypeException {
         Car expectedCar = new Car(car);
 
         Assert.assertEquals(expectedCar, car);
@@ -79,6 +80,5 @@ public class CarTest {
     public void testSetBodyTypeException() throws CarBodyTypeException {
         car.setBodyType(null);
     }
-
 
 }
