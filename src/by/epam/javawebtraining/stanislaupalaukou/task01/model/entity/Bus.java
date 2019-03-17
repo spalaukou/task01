@@ -1,6 +1,6 @@
 package by.epam.javawebtraining.stanislaupalaukou.task01.model.entity;
 
-import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.CarBodyTypeException;
+import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.BusBodyTypeException;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.SeatsNumberException;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.VehicleNameException;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.VehiclePriceException;
@@ -8,55 +8,55 @@ import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.
 import java.util.Objects;
 
 /**
- * The entity class includes base fields
- * and methods of all the cars.
- *
- * @author Stanislau Palaukou on 14.02.2019
+ * @author Stanislau Palaukou on 16.03.2019
  * @project Task 01
  */
 
-public class Car extends PassengerTransport {
+public class Bus extends PassengerTransport {
 
     private BodyType bodyType;
 
     /**
-     * The entity class of cars body types.
+     * The entity class of buses body types.
      */
     public enum BodyType {
-        SEDAN,
-        HATCHBACK,
-        COUPE
+        MINI,
+        CITY,
+        SCHOOL,
+        TOURIST
     }
 
-    public Car() {}
+    public Bus() {}
 
-    public Car(String name, int price, int seatsNumber, BodyType bodyType)
-            throws SeatsNumberException, VehiclePriceException, VehicleNameException, CarBodyTypeException {
+    public Bus(String name, int price, int seatsNumber, BodyType bodyType)
+            throws SeatsNumberException, VehiclePriceException, VehicleNameException, BusBodyTypeException {
         super(name, price, seatsNumber);
+
+
 
         if (bodyType != null) {
             this.bodyType = bodyType;
         } else {
-            throw new CarBodyTypeException();
+            throw new BusBodyTypeException();
         }
 
     }
 
-    public Car(Car car)
-            throws SeatsNumberException, VehiclePriceException, VehicleNameException, CarBodyTypeException {
+    public Bus(Bus bus)
+            throws SeatsNumberException, VehiclePriceException, VehicleNameException, BusBodyTypeException {
 
-        this(car.getName(), car.getPrice(), car.getSeatsNumber(), car.getBodyType());
+        this(bus.getName(), bus.getPrice(), bus.getSeatsNumber(), bus.getBodyType());
     }
 
     public BodyType getBodyType() {
         return bodyType;
     }
 
-    public void setBodyType(BodyType bodyType) throws CarBodyTypeException {
+    public void setBodyType(BodyType bodyType) throws BusBodyTypeException {
         if (bodyType != null) {
             this.bodyType = bodyType;
         } else {
-            throw new CarBodyTypeException();
+            throw new BusBodyTypeException();
         }
     }
 
@@ -65,8 +65,8 @@ public class Car extends PassengerTransport {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         if (!super.equals(o)) return false;
-        Car car = (Car) o;
-        return bodyType == car.bodyType;
+        Bus bus = (Bus) o;
+        return bodyType == bus.bodyType;
     }
 
     @Override
@@ -76,7 +76,7 @@ public class Car extends PassengerTransport {
 
     @Override
     public String toString() {
-        return "Car {" + super.toString() +
+        return "Bus {" + super.toString() +
                 ", bodyType = " + bodyType +
                 '}';
     }

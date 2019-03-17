@@ -53,12 +53,9 @@ public class VehicleCalculatorTest {
         Assert.assertEquals(expected, actual);
     }
 
-    @Test
-    public void testTotalPriceParkingIsNull() throws NullParkingException {
-        int expected = 0;
-        int actual = VehicleCalculator.totalPrice(parking3);
-
-        Assert.assertEquals(expected, actual);
+    @Test (expectedExceptions = NullParkingException.class)
+    public void testTotalPriceParkingIsNullException() throws NullParkingException {
+        VehicleCalculator.totalPrice(parking3);
     }
 
     @Test
@@ -77,11 +74,8 @@ public class VehicleCalculatorTest {
         Assert.assertEquals(expected, actual);
     }
 
-    @Test
-    public void TestTotalSeatsParkingIsNull() throws NullParkingException {
-        int expected = 0;
-        int actual = VehicleCalculator.totalSeats(parking3);
-
-        Assert.assertEquals(expected, actual);
+    @Test (expectedExceptions = NullParkingException.class)
+    public void TestTotalSeatsParkingIsNullException() throws NullParkingException {
+        VehicleCalculator.totalSeats(parking3);
     }
 }

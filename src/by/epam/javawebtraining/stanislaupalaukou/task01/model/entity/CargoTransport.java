@@ -31,12 +31,6 @@ public abstract class CargoTransport extends Vehicle {
         }
     }
 
-    public CargoTransport(CargoTransport cargoTransport)
-            throws VehiclePriceException, CargoCapacityException, VehicleNameException {
-
-        this(cargoTransport.getName(), cargoTransport.getPrice(), cargoTransport.cargoCapacity);
-    }
-
     public int getCargoCapacity() {
         return cargoCapacity;
     }

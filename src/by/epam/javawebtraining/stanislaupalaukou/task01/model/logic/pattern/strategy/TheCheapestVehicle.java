@@ -9,6 +9,7 @@ import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.
  */
 
 public class TheCheapestVehicle implements FindingBehavior {
+
     @Override
     public Vehicle find(Vehicle[] vehicles) throws NullParkingException {
         if (vehicles != null) {

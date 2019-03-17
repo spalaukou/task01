@@ -1,60 +1,58 @@
 package by.epam.javawebtraining.stanislaupalaukou.task01.model.entity;
 
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.CargoCapacityException;
-import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.TruckBodyTypeException;
+import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.VanBodyTypeException;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.VehicleNameException;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.VehiclePriceException;
 
 import java.util.Objects;
 
 /**
- * The entity class includes base fields
- * and methods of all the trucks.
- *
- * @author Stanislau Palaukou on 17.02.2019
+ * @author Stanislau Palaukou on 16.03.2019
  * @project Task 01
  */
 
-public class Truck extends CargoTransport {
+public class Van extends CargoTransport {
 
     private BodyType bodyType;
 
     /**
-     * The entity class of trucks' body types.
+     * The entity class of vans body types.
      */
     public enum BodyType {
-        CABOVER,
-        SLEEPER
+        FULLSIZE,
+        MULTISTOP,
+        BOX,
     }
 
-    public Truck() {}
+    public Van() {}
 
-    public Truck(String name, int price, int cargoCapacity, BodyType bodyType)
-            throws VehiclePriceException, CargoCapacityException, VehicleNameException, TruckBodyTypeException {
+    public Van(String name, int price, int cargoCapacity, BodyType bodyType)
+            throws VehiclePriceException, CargoCapacityException, VehicleNameException, VanBodyTypeException {
         super(name, price, cargoCapacity);
 
         if (bodyType != null) {
             this.bodyType = bodyType;
         } else {
-            throw new TruckBodyTypeException();
+            throw new VanBodyTypeException();
         }
     }
 
-    public Truck(Truck truck)
-            throws VehiclePriceException, VehicleNameException, CargoCapacityException, TruckBodyTypeException {
+    public Van(Van van)
+            throws VanBodyTypeException, VehiclePriceException, CargoCapacityException, VehicleNameException {
 
-        this(truck.getName(), truck.getPrice(), truck.getCargoCapacity(), truck.getBodyType());
+        this(van.getName(), van.getPrice(), van.getCargoCapacity(), van.getBodyType());
     }
 
     public BodyType getBodyType() {
         return bodyType;
     }
 
-    public void setBodyType(BodyType bodyType) throws TruckBodyTypeException {
+    public void setBodyType(BodyType bodyType) throws VanBodyTypeException {
         if (bodyType != null) {
             this.bodyType = bodyType;
         } else {
-            throw new TruckBodyTypeException();
+            throw new VanBodyTypeException();
         }
     }
 
@@ -63,8 +61,8 @@ public class Truck extends CargoTransport {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         if (!super.equals(o)) return false;
-        Truck truck = (Truck) o;
-        return bodyType == truck.bodyType;
+        Van van = (Van) o;
+        return bodyType == van.bodyType;
     }
 
     @Override
@@ -74,7 +72,7 @@ public class Truck extends CargoTransport {
 
     @Override
     public String toString() {
-        return "Truck {" + super.toString() +
+        return "Van {" + super.toString() +
                 ", bodyType = " + bodyType +
                 '}';
     }

@@ -30,8 +30,9 @@ public class Parking implements AbstractContainer<Vehicle[]> {
     public Parking(Vehicle[] vehicle) throws VehicleArrayException {
         if (vehicle != null) {
             this.vehicles = vehicle;
+        } else {
+            throw new VehicleArrayException();
         }
-        throw new VehicleArrayException();
     }
 
     public Parking(Parking parking) throws NullParkingException {
@@ -134,10 +135,11 @@ public class Parking implements AbstractContainer<Vehicle[]> {
 
     @Override
     public String toString() {
-        if (vehicles == null) {
-            return "There is no vehicles in the parking lot";
+        if (vehicles != null) {
+            return "Parking " +
+                    Arrays.toString(vehicles);
         }
-        return "Parking " +
-                Arrays.toString(vehicles);
+
+        return "There is no vehicles in the parking lot";
     }
 }

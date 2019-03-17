@@ -4,6 +4,11 @@ TRuCK Kenworth 60000 20000 SlEePeR
 CAR Audi 25000 4 COUPE
 invalid string
 
+BUS Scania 60000 45 tourist
+bike Toyota 25000 1 CRUISER
+DumpTruck MAZ 55000 20000 construction
+vaN Iveco 40000 3500 Box
+
 null
 CAR Citroen 5000 4 HATCHBACK
 0dks

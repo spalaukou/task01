@@ -48,9 +48,8 @@ public class VehicleCalculator {
      * @return total number of seats of all the vehicles
      */
     public static int totalSeats(Parking parking) throws NullParkingException {
-        int totalSeats = -1;
-
         if (parking != null) {
+            int totalSeats = 0;
             for (Vehicle vehicle : parking.getVehicles()) {
                 if (vehicle.getClass() == Car.class) {
                     totalSeats += ((PassengerTransport) vehicle).getSeatsNumber();

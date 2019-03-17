@@ -18,9 +18,9 @@ public abstract class PassengerTransport extends Vehicle {
 
     private int seatsNumber;
 
-    public PassengerTransport() {}
+    PassengerTransport() {}
 
-    public PassengerTransport(String name, int price, int seatsNumber)
+    PassengerTransport(String name, int price, int seatsNumber)
             throws SeatsNumberException, VehicleNameException, VehiclePriceException {
 
         super(name, price);
@@ -30,12 +30,6 @@ public abstract class PassengerTransport extends Vehicle {
         } else {
             throw new SeatsNumberException();
         }
-    }
-
-    public PassengerTransport(PassengerTransport passengerTransport)
-            throws SeatsNumberException, VehiclePriceException, VehicleNameException {
-
-        this(passengerTransport.getName(), passengerTransport.getPrice(), passengerTransport.getSeatsNumber());
     }
 
     public int getSeatsNumber() {

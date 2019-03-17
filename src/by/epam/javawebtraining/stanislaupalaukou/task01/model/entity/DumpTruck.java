@@ -1,60 +1,57 @@
 package by.epam.javawebtraining.stanislaupalaukou.task01.model.entity;
 
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.CargoCapacityException;
-import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.TruckBodyTypeException;
+import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.DumpTruckBodyTypeException;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.VehicleNameException;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.VehiclePriceException;
 
 import java.util.Objects;
 
 /**
- * The entity class includes base fields
- * and methods of all the trucks.
- *
- * @author Stanislau Palaukou on 17.02.2019
+ * @author Stanislau Palaukou on 16.03.2019
  * @project Task 01
  */
 
-public class Truck extends CargoTransport {
+public class DumpTruck extends CargoTransport {
 
     private BodyType bodyType;
 
     /**
-     * The entity class of trucks' body types.
+     * The entity class of dump trucks body types.
      */
     public enum BodyType {
-        CABOVER,
-        SLEEPER
+        CONSTRUCTION,
+        GARBAGE,
     }
 
-    public Truck() {}
+    public DumpTruck() {}
 
-    public Truck(String name, int price, int cargoCapacity, BodyType bodyType)
-            throws VehiclePriceException, CargoCapacityException, VehicleNameException, TruckBodyTypeException {
+    public DumpTruck(String name, int price, int cargoCapacity, BodyType bodyType)
+            throws VehiclePriceException, CargoCapacityException, VehicleNameException, DumpTruckBodyTypeException {
         super(name, price, cargoCapacity);
 
         if (bodyType != null) {
             this.bodyType = bodyType;
         } else {
-            throw new TruckBodyTypeException();
+            throw new DumpTruckBodyTypeException();
         }
     }
 
-    public Truck(Truck truck)
-            throws VehiclePriceException, VehicleNameException, CargoCapacityException, TruckBodyTypeException {
+    public DumpTruck(DumpTruck dumpTruck)
+            throws DumpTruckBodyTypeException, VehiclePriceException, CargoCapacityException, VehicleNameException {
 
-        this(truck.getName(), truck.getPrice(), truck.getCargoCapacity(), truck.getBodyType());
+        this(dumpTruck.getName(), dumpTruck.getPrice(), dumpTruck.getCargoCapacity(), dumpTruck.getBodyType());
     }
 
     public BodyType getBodyType() {
         return bodyType;
     }
 
-    public void setBodyType(BodyType bodyType) throws TruckBodyTypeException {
+    public void setBodyType(BodyType bodyType) throws DumpTruckBodyTypeException {
         if (bodyType != null) {
             this.bodyType = bodyType;
         } else {
-            throw new TruckBodyTypeException();
+            throw new DumpTruckBodyTypeException();
         }
     }
 
@@ -63,8 +60,8 @@ public class Truck extends CargoTransport {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         if (!super.equals(o)) return false;
-        Truck truck = (Truck) o;
-        return bodyType == truck.bodyType;
+        DumpTruck dumpTruck = (DumpTruck) o;
+        return bodyType == dumpTruck.bodyType;
     }
 
     @Override
@@ -74,7 +71,7 @@ public class Truck extends CargoTransport {
 
     @Override
     public String toString() {
-        return "Truck {" + super.toString() +
+        return "DumpTruck {" + super.toString() +
                 ", bodyType = " + bodyType +
                 '}';
     }

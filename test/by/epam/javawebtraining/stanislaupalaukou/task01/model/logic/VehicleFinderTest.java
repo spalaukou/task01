@@ -50,20 +50,14 @@ public class VehicleFinderTest {
         Assert.assertEquals(expected, actual);
     }
 
-    @Test
-    public void testFindTheCheapestVehicleParkingIsEmpty() throws NullParkingException, VehicleArrayException {
-        Vehicle expected = null;
-        Vehicle actual = VehicleFinder.findTheCheapestVehicle(parking2);
-
-        Assert.assertEquals(expected, actual);
+    @Test (expectedExceptions = NullParkingException.class)
+    public void testFindTheCheapestVehicleNullParkingException() throws NullParkingException, VehicleArrayException {
+        VehicleFinder.findTheCheapestVehicle(parking3);
     }
 
-    @Test
-    public void testFindTheCheapestVehicleParkingIsNull() throws NullParkingException, VehicleArrayException {
-        Vehicle expected = null;
-        Vehicle actual = VehicleFinder.findTheCheapestVehicle(parking3);
-
-        Assert.assertEquals(expected, actual);
+    @Test (expectedExceptions = VehicleArrayException.class)
+    public void testFindTheCheapestVehicleArrayException() throws NullParkingException, VehicleArrayException {
+        VehicleFinder.findTheCheapestVehicle(parking2);
     }
 
     @Test
@@ -74,19 +68,14 @@ public class VehicleFinderTest {
         Assert.assertEquals(expected, actual);
     }
 
-    @Test
-    public void testFindTheDearestVehicleParkingIsEmpty() throws NullParkingException, VehicleArrayException {
-        Vehicle expected = null;
-        Vehicle actual = VehicleFinder.findTheDearestVehicle(parking2);
-
-        Assert.assertEquals(expected, actual);
+    @Test (expectedExceptions = NullParkingException.class)
+    public void testFindTheDearestVehicleNullParkingException() throws NullParkingException, VehicleArrayException {
+        VehicleFinder.findTheDearestVehicle(parking3);
     }
 
-    @Test
-    public void testFindTheDearestVehicleParkingIsNull() throws NullParkingException, VehicleArrayException {
-        Vehicle expected = null;
-        Vehicle actual = VehicleFinder.findTheDearestVehicle(parking3);
-
-        Assert.assertEquals(expected, actual);
+    @Test (expectedExceptions = VehicleArrayException.class)
+    public void testFindTheDearestVehicleArrayException() throws NullParkingException, VehicleArrayException {
+        VehicleFinder.findTheDearestVehicle(parking2);
     }
+
 }

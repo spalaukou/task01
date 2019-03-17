@@ -10,6 +10,10 @@ package by.epam.javawebtraining.stanislaupalaukou.task01.model.entity;
  */
 
 public enum VehicleType {
+    BIKE,
+    BUS,
     CAR,
-    TRUCK
+    TRUCK,
+    VAN,
+    DUMPTRUCK
 }

@@ -12,11 +12,13 @@ import org.testng.annotations.Test;
 
 public class TruckTest {
     private Truck truck;
+    private Truck expected;
 
     @BeforeTest
     public void setUpTruck()
             throws TruckBodyTypeException, VehiclePriceException, CargoCapacityException, VehicleNameException {
         truck = new Truck ("Volvo", 80_000, 30_000, Truck.BodyType.CABOVER);
+        expected = new Truck ("Volvo", 80_000, 30_000, Truck.BodyType.CABOVER);
     }
 
     @Test
@@ -53,13 +55,32 @@ public class TruckTest {
     }
 
     @Test (expectedExceptions = TruckBodyTypeException.class)
-    public void testConstructorCarException()
+    public void testConstructorTruckException()
             throws CargoCapacityException, VehiclePriceException, VehicleNameException, TruckBodyTypeException {
         new Truck ("Volvo", 80_000, 30_000,null);
     }
 
+
+    @Test (expectedExceptions = CargoCapacityException.class)
+    public void testConstructorCarSeatsException()
+            throws VehiclePriceException, VehicleNameException, CargoCapacityException, TruckBodyTypeException {
+        new Truck ("Volvo", 80_000, 0, Truck.BodyType.CABOVER);
+    }
+
+    @Test (expectedExceptions = VehicleNameException.class)
+    public void testConstructorCarNameException()
+            throws VehiclePriceException, VehicleNameException, CargoCapacityException, TruckBodyTypeException {
+        new Truck (null, 80_000, 30_000, Truck.BodyType.CABOVER);
+    }
+
+    @Test (expectedExceptions = VehiclePriceException.class)
+    public void testConstructorCarPriceException()
+            throws VehiclePriceException, VehicleNameException, CargoCapacityException, TruckBodyTypeException {
+        new Truck ("Volvo", 0, 30_000, Truck.BodyType.CABOVER);
+    }
+
     @Test
-    public void testCopyConstructorCar()
+    public void testCopyConstructorTruck()
             throws VehiclePriceException, VehicleNameException, CargoCapacityException, TruckBodyTypeException {
         Truck expectedTruck = new Truck(truck);
 
@@ -79,6 +100,37 @@ public class TruckTest {
     @Test (expectedExceptions = TruckBodyTypeException.class)
     public void testSetBodyTypeException() throws TruckBodyTypeException {
         truck.setBodyType(null);
+    }
+
+    @Test
+    public void testSetCargoCapacity() throws CargoCapacityException {
+        truck.setCargoCapacity(1_000);
+        int expectedCargoCapacity = 1_000;
+
+        Assert.assertEquals(expectedCargoCapacity, truck.getCargoCapacity());
+    }
+
+    @Test (expectedExceptions = CargoCapacityException.class)
+    public void testSetCargoCapacityException() throws CargoCapacityException {
+        truck.setCargoCapacity(-1);
+    }
+
+    @Test
+    public void testEquals() {
+        Assert.assertTrue(truck.equals(expected));
+    }
+
+    @Test
+    public void testHashCode() {
+        Assert.assertEquals(expected.hashCode(), truck.hashCode());
+    }
+
+    @Test
+    public void testToString() {
+        String expectedString = "Truck {name = Volvo, price = 80000, cargoCapacity = 30000, bodyType = CABOVER}";
+        System.out.println(expected);
+
+        Assert.assertEquals(expectedString, expected.toString());
     }
 
 }

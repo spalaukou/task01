@@ -32,7 +32,7 @@ public class VehicleSorter {
      */
     private static Vehicle[] sort(Vehicle[] vehicles, Comparator<Vehicle> comparator) throws VehicleArrayException {
 
-        if(vehicles != null) {
+        if(vehicles != null && vehicles.length > 0) {
             
             for (int i = 0; i < vehicles.length; i++) {
                 for (int j = i + 1; j < vehicles.length; j++) {

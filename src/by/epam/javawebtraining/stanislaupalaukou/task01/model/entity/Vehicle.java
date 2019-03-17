@@ -30,15 +30,9 @@ public abstract class Vehicle {
             } else {
                 throw new VehiclePriceException();
             }
-
         } else {
             throw new VehicleNameException();
         }
-    }
-
-    public Vehicle(Vehicle vehicle) {
-        this.name = vehicle.name;
-        this.price = vehicle.price;
     }
 
     public String getName() {

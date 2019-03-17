@@ -2036,3 +2036,2344 @@ by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.Vehicle
 by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.ParkingIsEmptyException: Parking is empty
 	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:103)
 	at by.epam.javawebtraining.stanislaupalaukou.task01.controller.Main.main(Main.java:129)
+2019-03-15 17:29:45 INFO  Main:42 - App has been launched.
+2019-03-15 17:29:45 INFO  PrinterCreator:36 - Printer has been created.
+2019-03-15 17:29:45 INFO  DataReader:35 - File has been read.
+2019-03-15 17:29:45 INFO  DataValidator:32 - Lines were checked.
+2019-03-15 17:29:45 INFO  ParkingCreator:47 - Parking has been created.
+2019-03-15 17:29:45 INFO  Parking:98 - VehicleNotFoundException has been thrown.
+2019-03-15 17:29:45 INFO  Parking:106 - Exception has been caught
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.VehicleNotFoundException: Vehicle not found: Truck {name = Volvo, price = 80000, cargoCapacity = 30000, bodyType = CABOVER}
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:99)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.controller.Main.main(Main.java:73)
+2019-03-15 17:29:45 INFO  VehicleSorter:67 - Parking has been sorted by price.
+2019-03-15 17:29:45 INFO  VehicleSorter:87 - Parking has been sorted by name.
+2019-03-15 17:29:45 INFO  VehicleSorter:110 - Vehiles have been sorted by name and then by price.
+2019-03-15 17:29:45 INFO  VehicleCalculator:35 - Total price has been calculated.
+2019-03-15 17:29:45 INFO  VehicleCalculator:59 - Total seats has been calculated.
+2019-03-15 17:29:45 INFO  VehicleFinder:78 - The dearest vehicle has been found
+2019-03-15 17:29:45 INFO  VehicleFinder:46 - The cheapest vehicle has been found
+2019-03-15 17:29:45 INFO  Parking:102 - ParkingIsEmptyException has been thrown.
+2019-03-15 17:29:45 INFO  Parking:106 - Exception has been caught
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.ParkingIsEmptyException: Parking is empty
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:103)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.controller.Main.main(Main.java:131)
+2019-03-17 01:02:48 INFO  Main:42 - App has been launched.
+2019-03-17 01:02:48 INFO  PrinterCreator:36 - Printer has been created.
+2019-03-17 01:02:48 INFO  DataReader:35 - File has been read.
+2019-03-17 01:02:48 INFO  DataValidator:32 - Lines were checked.
+2019-03-17 01:02:48 INFO  ParkingCreator:47 - Parking has been created.
+2019-03-17 01:02:48 INFO  Parking:98 - VehicleNotFoundException has been thrown.
+2019-03-17 01:02:48 INFO  Parking:106 - Exception has been caught
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.VehicleNotFoundException: Vehicle not found: Truck {name = Volvo, price = 80000, cargoCapacity = 30000, bodyType = CABOVER}
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:99)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.controller.Main.main(Main.java:73)
+2019-03-17 01:02:48 INFO  VehicleSorter:67 - Parking has been sorted by price.
+2019-03-17 01:02:48 INFO  VehicleSorter:87 - Parking has been sorted by name.
+2019-03-17 01:02:48 INFO  VehicleSorter:110 - Vehiles have been sorted by name and then by price.
+2019-03-17 01:02:48 INFO  VehicleCalculator:35 - Total price has been calculated.
+2019-03-17 01:02:48 INFO  VehicleCalculator:59 - Total seats has been calculated.
+2019-03-17 01:02:48 INFO  VehicleFinder:78 - The dearest vehicle has been found
+2019-03-17 01:02:48 INFO  VehicleFinder:46 - The cheapest vehicle has been found
+2019-03-17 01:02:48 INFO  Parking:102 - ParkingIsEmptyException has been thrown.
+2019-03-17 01:02:48 INFO  Parking:106 - Exception has been caught
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.ParkingIsEmptyException: Parking is empty
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:103)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.controller.Main.main(Main.java:131)
+2019-03-17 01:12:28 INFO  Main:44 - App has been launched.
+2019-03-17 01:12:28 INFO  PrinterCreator:36 - Printer has been created.
+2019-03-17 01:12:28 INFO  DataReader:35 - File has been read.
+2019-03-17 01:12:28 INFO  DataValidator:32 - Lines were checked.
+2019-03-17 01:12:28 INFO  ParkingCreator:47 - Parking has been created.
+2019-03-17 01:13:09 INFO  Main:42 - App has been launched.
+2019-03-17 01:13:09 INFO  PrinterCreator:36 - Printer has been created.
+2019-03-17 01:13:09 INFO  DataReader:35 - File has been read.
+2019-03-17 01:13:09 INFO  DataValidator:32 - Lines were checked.
+2019-03-17 01:13:09 INFO  ParkingCreator:47 - Parking has been created.
+2019-03-17 01:13:09 INFO  Parking:98 - VehicleNotFoundException has been thrown.
+2019-03-17 01:13:09 INFO  Parking:106 - Exception has been caught
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.VehicleNotFoundException: Vehicle not found: Truck {name = Volvo, price = 80000, cargoCapacity = 30000, bodyType = CABOVER}
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:99)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.controller.Main.main(Main.java:73)
+2019-03-17 01:13:09 INFO  VehicleSorter:67 - Parking has been sorted by price.
+2019-03-17 01:13:09 INFO  VehicleSorter:87 - Parking has been sorted by name.
+2019-03-17 01:13:09 INFO  VehicleSorter:110 - Vehiles have been sorted by name and then by price.
+2019-03-17 01:13:09 INFO  VehicleCalculator:35 - Total price has been calculated.
+2019-03-17 01:13:09 INFO  VehicleCalculator:59 - Total seats has been calculated.
+2019-03-17 01:13:09 INFO  VehicleFinder:78 - The dearest vehicle has been found
+2019-03-17 01:13:09 INFO  VehicleFinder:46 - The cheapest vehicle has been found
+2019-03-17 01:13:09 INFO  Parking:102 - ParkingIsEmptyException has been thrown.
+2019-03-17 01:13:09 INFO  Parking:106 - Exception has been caught
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.ParkingIsEmptyException: Parking is empty
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:103)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.controller.Main.main(Main.java:131)
+2019-03-17 10:47:32 INFO  Main:42 - App has been launched.
+2019-03-17 10:47:32 INFO  PrinterCreator:36 - Printer has been created.
+2019-03-17 10:47:32 INFO  DataReader:35 - File has been read.
+2019-03-17 10:47:32 INFO  DataValidator:32 - Lines were checked.
+2019-03-17 10:47:33 INFO  ParkingCreator:47 - Parking has been created.
+2019-03-17 10:47:33 INFO  Parking:98 - VehicleNotFoundException has been thrown.
+2019-03-17 10:47:33 INFO  Parking:106 - Exception has been caught
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.VehicleNotFoundException: Vehicle not found: Truck {name = Volvo, price = 80000, cargoCapacity = 30000, bodyType = CABOVER}
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:99)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.controller.Main.main(Main.java:73)
+2019-03-17 10:47:33 INFO  VehicleSorter:67 - Parking has been sorted by price.
+2019-03-17 10:47:33 INFO  VehicleSorter:87 - Parking has been sorted by name.
+2019-03-17 10:47:33 INFO  VehicleSorter:110 - Vehiles have been sorted by name and then by price.
+2019-03-17 10:47:33 INFO  VehicleCalculator:35 - Total price has been calculated.
+2019-03-17 10:47:33 INFO  VehicleCalculator:59 - Total seats has been calculated.
+2019-03-17 10:47:33 INFO  VehicleFinder:78 - The dearest vehicle has been found
+2019-03-17 10:47:33 INFO  VehicleFinder:46 - The cheapest vehicle has been found
+2019-03-17 10:47:33 INFO  Parking:98 - VehicleNotFoundException has been thrown.
+2019-03-17 10:47:33 INFO  Parking:106 - Exception has been caught
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.VehicleNotFoundException: Vehicle not found: Car {name = BMW, price = 66000, seatsNumber = 4, bodyType = SEDAN}
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:99)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.controller.Main.main(Main.java:131)
+2019-03-17 10:47:33 INFO  VehicleFinder:78 - The dearest vehicle has been found
+2019-03-17 10:47:33 INFO  Main:135 - App has been completed successfully.
+2019-03-17 10:52:57 INFO  Main:42 - App has been launched.
+2019-03-17 10:52:57 INFO  PrinterCreator:36 - Printer has been created.
+2019-03-17 10:52:57 INFO  DataReader:35 - File has been read.
+2019-03-17 10:52:58 INFO  DataValidator:32 - Lines were checked.
+2019-03-17 10:52:58 INFO  ParkingCreator:47 - Parking has been created.
+2019-03-17 10:52:58 INFO  Parking:98 - VehicleNotFoundException has been thrown.
+2019-03-17 10:52:58 INFO  Parking:106 - Exception has been caught
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.VehicleNotFoundException: Vehicle not found: Truck {name = Volvo, price = 80000, cargoCapacity = 30000, bodyType = CABOVER}
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:99)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.controller.Main.main(Main.java:73)
+2019-03-17 10:52:58 INFO  VehicleSorter:67 - Parking has been sorted by price.
+2019-03-17 10:52:58 INFO  VehicleSorter:87 - Parking has been sorted by name.
+2019-03-17 10:52:58 INFO  VehicleSorter:110 - Vehiles have been sorted by name and then by price.
+2019-03-17 10:52:58 INFO  VehicleCalculator:35 - Total price has been calculated.
+2019-03-17 10:52:58 INFO  VehicleCalculator:59 - Total seats has been calculated.
+2019-03-17 10:52:58 INFO  VehicleFinder:78 - The dearest vehicle has been found
+2019-03-17 10:52:58 INFO  VehicleFinder:46 - The cheapest vehicle has been found
+2019-03-17 10:52:58 INFO  Parking:98 - VehicleNotFoundException has been thrown.
+2019-03-17 10:52:58 INFO  Parking:106 - Exception has been caught
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.VehicleNotFoundException: Vehicle not found: Car {name = BMW, price = 66000, seatsNumber = 4, bodyType = SEDAN}
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:99)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.controller.Main.main(Main.java:131)
+2019-03-17 10:52:58 INFO  VehicleFinder:78 - The dearest vehicle has been found
+2019-03-17 10:52:58 INFO  Main:135 - App has been completed successfully.
+2019-03-17 10:53:16 INFO  Main:42 - App has been launched.
+2019-03-17 10:53:16 INFO  PrinterCreator:36 - Printer has been created.
+2019-03-17 10:53:16 INFO  DataReader:35 - File has been read.
+2019-03-17 10:53:16 INFO  DataValidator:32 - Lines were checked.
+2019-03-17 10:53:16 INFO  ParkingCreator:47 - Parking has been created.
+2019-03-17 10:53:16 INFO  Parking:98 - VehicleNotFoundException has been thrown.
+2019-03-17 10:53:16 INFO  Parking:106 - Exception has been caught
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.VehicleNotFoundException: Vehicle not found: Truck {name = Volvo, price = 80000, cargoCapacity = 30000, bodyType = CABOVER}
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:99)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.controller.Main.main(Main.java:73)
+2019-03-17 10:53:16 INFO  VehicleSorter:67 - Parking has been sorted by price.
+2019-03-17 10:53:16 INFO  VehicleSorter:87 - Parking has been sorted by name.
+2019-03-17 10:53:16 INFO  VehicleSorter:110 - Vehiles have been sorted by name and then by price.
+2019-03-17 10:53:16 INFO  VehicleCalculator:35 - Total price has been calculated.
+2019-03-17 10:53:16 INFO  VehicleCalculator:59 - Total seats has been calculated.
+2019-03-17 10:53:16 INFO  VehicleFinder:78 - The dearest vehicle has been found
+2019-03-17 10:53:16 INFO  VehicleFinder:46 - The cheapest vehicle has been found
+2019-03-17 10:53:16 INFO  Parking:98 - VehicleNotFoundException has been thrown.
+2019-03-17 10:53:16 INFO  Parking:106 - Exception has been caught
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.VehicleNotFoundException: Vehicle not found: Car {name = BMW, price = 66000, seatsNumber = 4, bodyType = SEDAN}
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:99)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.controller.Main.main(Main.java:131)
+2019-03-17 10:53:16 INFO  VehicleFinder:78 - The dearest vehicle has been found
+2019-03-17 10:53:16 INFO  Main:135 - App has been completed successfully.
+2019-03-17 10:53:35 INFO  Main:42 - App has been launched.
+2019-03-17 10:53:35 INFO  PrinterCreator:36 - Printer has been created.
+2019-03-17 10:53:35 INFO  DataReader:35 - File has been read.
+2019-03-17 10:53:35 INFO  DataValidator:32 - Lines were checked.
+2019-03-17 10:53:36 INFO  ParkingCreator:47 - Parking has been created.
+2019-03-17 10:53:36 INFO  Parking:98 - VehicleNotFoundException has been thrown.
+2019-03-17 10:53:36 INFO  Parking:106 - Exception has been caught
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.VehicleNotFoundException: Vehicle not found: Truck {name = Volvo, price = 80000, cargoCapacity = 30000, bodyType = CABOVER}
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:99)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.controller.Main.main(Main.java:73)
+2019-03-17 10:53:36 INFO  VehicleSorter:67 - Parking has been sorted by price.
+2019-03-17 10:53:36 INFO  VehicleSorter:87 - Parking has been sorted by name.
+2019-03-17 10:53:36 INFO  VehicleSorter:110 - Vehiles have been sorted by name and then by price.
+2019-03-17 10:53:36 INFO  VehicleCalculator:35 - Total price has been calculated.
+2019-03-17 10:53:36 INFO  VehicleCalculator:59 - Total seats has been calculated.
+2019-03-17 10:53:36 INFO  VehicleFinder:78 - The dearest vehicle has been found
+2019-03-17 10:53:36 INFO  VehicleFinder:46 - The cheapest vehicle has been found
+2019-03-17 10:53:36 INFO  Parking:98 - VehicleNotFoundException has been thrown.
+2019-03-17 10:53:36 INFO  Parking:106 - Exception has been caught
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.VehicleNotFoundException: Vehicle not found: Car {name = BMW, price = 66000, seatsNumber = 4, bodyType = SEDAN}
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:99)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.controller.Main.main(Main.java:131)
+2019-03-17 10:53:36 INFO  VehicleFinder:78 - The dearest vehicle has been found
+2019-03-17 10:53:36 INFO  Main:135 - App has been completed successfully.
+2019-03-17 13:03:11 INFO  Main:42 - App has been launched.
+2019-03-17 13:03:11 INFO  PrinterCreator:36 - Printer has been created.
+2019-03-17 13:03:11 INFO  DataReader:35 - File has been read.
+2019-03-17 13:03:11 INFO  DataValidator:32 - Lines were checked.
+2019-03-17 13:03:11 INFO  ParkingCreator:47 - Parking has been created.
+2019-03-17 13:03:11 INFO  Parking:98 - VehicleNotFoundException has been thrown.
+2019-03-17 13:03:11 INFO  Parking:106 - Exception has been caught
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.VehicleNotFoundException: Vehicle not found: Truck {name = Volvo, price = 80000, cargoCapacity = 30000, bodyType = CABOVER}
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:99)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.controller.Main.main(Main.java:73)
+2019-03-17 13:03:11 INFO  VehicleSorter:67 - Parking has been sorted by price.
+2019-03-17 13:03:11 INFO  VehicleSorter:87 - Parking has been sorted by name.
+2019-03-17 13:03:11 INFO  VehicleSorter:110 - Vehiles have been sorted by name and then by price.
+2019-03-17 13:03:11 INFO  VehicleCalculator:35 - Total price has been calculated.
+2019-03-17 13:03:11 INFO  VehicleCalculator:59 - Total seats has been calculated.
+2019-03-17 13:03:11 INFO  VehicleFinder:78 - The dearest vehicle has been found
+2019-03-17 13:03:11 INFO  VehicleFinder:46 - The cheapest vehicle has been found
+2019-03-17 13:03:11 INFO  Parking:98 - VehicleNotFoundException has been thrown.
+2019-03-17 13:03:11 INFO  Parking:106 - Exception has been caught
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.VehicleNotFoundException: Vehicle not found: Car {name = BMW, price = 66000, seatsNumber = 4, bodyType = SEDAN}
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:99)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.controller.Main.main(Main.java:131)
+2019-03-17 13:03:11 INFO  VehicleFinder:78 - The dearest vehicle has been found
+2019-03-17 13:03:11 INFO  Main:135 - App has been completed successfully.
+2019-03-17 13:23:46 INFO  Main:42 - App has been launched.
+2019-03-17 13:23:46 INFO  PrinterCreator:36 - Printer has been created.
+2019-03-17 13:23:46 INFO  DataReader:35 - File has been read.
+2019-03-17 13:23:46 INFO  DataValidator:32 - Lines were checked.
+2019-03-17 13:23:46 INFO  ParkingCreator:47 - Parking has been created.
+2019-03-17 13:23:46 INFO  Parking:98 - VehicleNotFoundException has been thrown.
+2019-03-17 13:23:46 INFO  Parking:106 - Exception has been caught
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.VehicleNotFoundException: Vehicle not found: Truck {name = Volvo, price = 80000, cargoCapacity = 30000, bodyType = CABOVER}
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:99)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.controller.Main.main(Main.java:73)
+2019-03-17 13:23:46 INFO  VehicleSorter:67 - Parking has been sorted by price.
+2019-03-17 13:23:46 INFO  VehicleSorter:87 - Parking has been sorted by name.
+2019-03-17 13:23:46 INFO  VehicleSorter:110 - Vehiles have been sorted by name and then by price.
+2019-03-17 13:23:46 INFO  VehicleCalculator:35 - Total price has been calculated.
+2019-03-17 13:23:46 INFO  VehicleCalculator:59 - Total seats has been calculated.
+2019-03-17 13:23:46 INFO  VehicleFinder:78 - The dearest vehicle has been found
+2019-03-17 13:23:46 INFO  VehicleFinder:46 - The cheapest vehicle has been found
+2019-03-17 13:23:46 INFO  Parking:98 - VehicleNotFoundException has been thrown.
+2019-03-17 13:23:46 INFO  Parking:106 - Exception has been caught
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.VehicleNotFoundException: Vehicle not found: Car {name = BMW, price = 66000, seatsNumber = 4, bodyType = SEDAN}
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:99)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.controller.Main.main(Main.java:131)
+2019-03-17 13:23:46 INFO  VehicleFinder:78 - The dearest vehicle has been found
+2019-03-17 13:23:46 INFO  Main:135 - App has been completed successfully.
+2019-03-17 13:46:31 INFO  Main:42 - App has been launched.
+2019-03-17 13:46:31 INFO  PrinterCreator:36 - Printer has been created.
+2019-03-17 13:46:31 INFO  DataReader:35 - File has been read.
+2019-03-17 13:46:31 INFO  DataValidator:32 - Lines were checked.
+2019-03-17 13:46:31 INFO  ParkingCreator:47 - Parking has been created.
+2019-03-17 13:46:31 INFO  Parking:98 - VehicleNotFoundException has been thrown.
+2019-03-17 13:46:31 INFO  Parking:106 - Exception has been caught
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.VehicleNotFoundException: Vehicle not found: Truck {name = Volvo, price = 80000, cargoCapacity = 30000, bodyType = CABOVER}
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:99)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.controller.Main.main(Main.java:73)
+2019-03-17 13:46:31 INFO  VehicleSorter:67 - Parking has been sorted by price.
+2019-03-17 13:46:31 INFO  VehicleSorter:87 - Parking has been sorted by name.
+2019-03-17 13:46:31 INFO  VehicleSorter:110 - Vehiles have been sorted by name and then by price.
+2019-03-17 13:46:31 INFO  VehicleCalculator:35 - Total price has been calculated.
+2019-03-17 13:46:31 INFO  VehicleCalculator:59 - Total seats has been calculated.
+2019-03-17 13:46:31 INFO  VehicleFinder:78 - The dearest vehicle has been found
+2019-03-17 13:46:31 INFO  VehicleFinder:46 - The cheapest vehicle has been found
+2019-03-17 13:46:31 INFO  Parking:98 - VehicleNotFoundException has been thrown.
+2019-03-17 13:46:31 INFO  Parking:106 - Exception has been caught
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.VehicleNotFoundException: Vehicle not found: Car {name = BMW, price = 66000, seatsNumber = 4, bodyType = SEDAN}
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:99)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.controller.Main.main(Main.java:131)
+2019-03-17 13:46:31 INFO  VehicleFinder:78 - The dearest vehicle has been found
+2019-03-17 13:46:31 INFO  Main:135 - App has been completed successfully.
+2019-03-17 13:47:07 INFO  Main:42 - App has been launched.
+2019-03-17 13:47:07 INFO  PrinterCreator:36 - Printer has been created.
+2019-03-17 13:47:07 INFO  DataReader:35 - File has been read.
+2019-03-17 13:47:07 INFO  DataValidator:32 - Lines were checked.
+2019-03-17 13:47:07 INFO  ParkingCreator:47 - Parking has been created.
+2019-03-17 13:47:07 INFO  Parking:98 - VehicleNotFoundException has been thrown.
+2019-03-17 13:47:07 INFO  Parking:106 - Exception has been caught
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.VehicleNotFoundException: Vehicle not found: Truck {name = Volvo, price = 80000, cargoCapacity = 30000, bodyType = CABOVER}
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:99)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.controller.Main.main(Main.java:73)
+2019-03-17 13:47:07 INFO  VehicleSorter:67 - Parking has been sorted by price.
+2019-03-17 13:47:07 INFO  VehicleSorter:87 - Parking has been sorted by name.
+2019-03-17 13:47:07 INFO  VehicleSorter:110 - Vehiles have been sorted by name and then by price.
+2019-03-17 13:47:07 INFO  VehicleCalculator:35 - Total price has been calculated.
+2019-03-17 13:47:07 INFO  VehicleCalculator:59 - Total seats has been calculated.
+2019-03-17 13:47:07 INFO  VehicleFinder:78 - The dearest vehicle has been found
+2019-03-17 13:47:07 INFO  VehicleFinder:46 - The cheapest vehicle has been found
+2019-03-17 13:47:07 INFO  Parking:98 - VehicleNotFoundException has been thrown.
+2019-03-17 13:47:07 INFO  Parking:106 - Exception has been caught
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.VehicleNotFoundException: Vehicle not found: Car {name = BMW, price = 66000, seatsNumber = 4, bodyType = SEDAN}
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:99)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.controller.Main.main(Main.java:131)
+2019-03-17 13:47:07 INFO  VehicleFinder:78 - The dearest vehicle has been found
+2019-03-17 13:47:07 INFO  Main:135 - App has been completed successfully.
+2019-03-17 13:55:27 INFO  Main:42 - App has been launched.
+2019-03-17 13:55:27 INFO  PrinterCreator:36 - Printer has been created.
+2019-03-17 13:55:27 INFO  DataReader:35 - File has been read.
+2019-03-17 13:55:27 INFO  DataValidator:32 - Lines were checked.
+2019-03-17 13:55:27 INFO  ParkingCreator:47 - Parking has been created.
+2019-03-17 13:55:27 INFO  Parking:99 - VehicleNotFoundException has been thrown.
+2019-03-17 13:55:27 INFO  Parking:107 - Exception has been caught
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.VehicleNotFoundException: Vehicle not found: Truck {name = Volvo, price = 80000, cargoCapacity = 30000, bodyType = CABOVER}
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:100)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.controller.Main.main(Main.java:73)
+2019-03-17 13:55:27 INFO  VehicleSorter:67 - Parking has been sorted by price.
+2019-03-17 13:55:27 INFO  VehicleSorter:87 - Parking has been sorted by name.
+2019-03-17 13:55:27 INFO  VehicleSorter:110 - Vehiles have been sorted by name and then by price.
+2019-03-17 13:55:27 INFO  VehicleCalculator:35 - Total price has been calculated.
+2019-03-17 13:55:27 INFO  VehicleCalculator:59 - Total seats has been calculated.
+2019-03-17 13:55:27 INFO  VehicleFinder:78 - The dearest vehicle has been found
+2019-03-17 13:55:27 INFO  VehicleFinder:46 - The cheapest vehicle has been found
+2019-03-17 13:55:27 INFO  Parking:99 - VehicleNotFoundException has been thrown.
+2019-03-17 13:55:27 INFO  Parking:107 - Exception has been caught
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.VehicleNotFoundException: Vehicle not found: Car {name = BMW, price = 66000, seatsNumber = 4, bodyType = SEDAN}
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:100)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.controller.Main.main(Main.java:131)
+2019-03-17 13:55:27 INFO  VehicleFinder:78 - The dearest vehicle has been found
+2019-03-17 13:55:27 INFO  Main:135 - App has been completed successfully.
+2019-03-17 14:09:39 INFO  Parking:99 - VehicleNotFoundException has been thrown.
+2019-03-17 14:09:39 INFO  Parking:107 - Exception has been caught
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.VehicleNotFoundException: Vehicle not found: Car {name = Volkswagen, price = 20000, seatsNumber = 4, bodyType = COUPE}
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:100)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.ParkingTest.testRemoveVehicle(ParkingTest.java:117)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+2019-03-17 14:16:22 INFO  Parking:103 - ParkingIsEmptyException has been thrown.
+2019-03-17 14:16:22 INFO  Parking:107 - Exception has been caught
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.ParkingIsEmptyException: Parking is empty
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:104)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.ParkingTest.testRemoveVehicleVehicleNotFoundException(ParkingTest.java:143)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+2019-03-17 14:16:29 INFO  Parking:103 - ParkingIsEmptyException has been thrown.
+2019-03-17 14:16:29 INFO  Parking:107 - Exception has been caught
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.ParkingIsEmptyException: Parking is empty
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:104)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.ParkingTest.testRemoveVehicleVehicleNotFoundException(ParkingTest.java:143)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+2019-03-17 14:16:55 INFO  Parking:103 - ParkingIsEmptyException has been thrown.
+2019-03-17 14:16:55 INFO  Parking:107 - Exception has been caught
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.ParkingIsEmptyException: Parking is empty
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:104)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.ParkingTest.testRemoveParkingIsEmptyException(ParkingTest.java:149)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+2019-03-17 14:16:55 INFO  Parking:103 - ParkingIsEmptyException has been thrown.
+2019-03-17 14:16:55 INFO  Parking:107 - Exception has been caught
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.ParkingIsEmptyException: Parking is empty
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:104)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.ParkingTest.testRemoveParkingIsEmptyException(ParkingTest.java:150)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+2019-03-17 14:16:55 INFO  Parking:103 - ParkingIsEmptyException has been thrown.
+2019-03-17 14:16:55 INFO  Parking:107 - Exception has been caught
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.ParkingIsEmptyException: Parking is empty
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:104)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.ParkingTest.testRemoveParkingIsEmptyException(ParkingTest.java:151)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+2019-03-17 14:16:55 INFO  Parking:103 - ParkingIsEmptyException has been thrown.
+2019-03-17 14:16:55 INFO  Parking:107 - Exception has been caught
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.ParkingIsEmptyException: Parking is empty
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:104)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.ParkingTest.testRemoveParkingIsEmptyException(ParkingTest.java:152)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+2019-03-17 14:16:55 INFO  Parking:103 - ParkingIsEmptyException has been thrown.
+2019-03-17 14:16:55 INFO  Parking:107 - Exception has been caught
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.ParkingIsEmptyException: Parking is empty
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:104)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.ParkingTest.testRemoveVehicleVehicleNotFoundException(ParkingTest.java:143)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+2019-03-17 14:17:04 INFO  Parking:103 - ParkingIsEmptyException has been thrown.
+2019-03-17 14:17:04 INFO  Parking:107 - Exception has been caught
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.ParkingIsEmptyException: Parking is empty
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:104)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.ParkingTest.testRemoveParkingIsEmptyException(ParkingTest.java:149)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+2019-03-17 14:17:04 INFO  Parking:103 - ParkingIsEmptyException has been thrown.
+2019-03-17 14:17:04 INFO  Parking:107 - Exception has been caught
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.ParkingIsEmptyException: Parking is empty
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:104)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.ParkingTest.testRemoveParkingIsEmptyException(ParkingTest.java:150)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+2019-03-17 14:17:04 INFO  Parking:103 - ParkingIsEmptyException has been thrown.
+2019-03-17 14:17:04 INFO  Parking:107 - Exception has been caught
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.ParkingIsEmptyException: Parking is empty
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:104)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.ParkingTest.testRemoveParkingIsEmptyException(ParkingTest.java:151)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+2019-03-17 14:17:04 INFO  Parking:103 - ParkingIsEmptyException has been thrown.
+2019-03-17 14:17:04 INFO  Parking:107 - Exception has been caught
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.ParkingIsEmptyException: Parking is empty
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:104)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.ParkingTest.testRemoveParkingIsEmptyException(ParkingTest.java:152)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+2019-03-17 14:17:04 INFO  Parking:103 - ParkingIsEmptyException has been thrown.
+2019-03-17 14:17:04 INFO  Parking:107 - Exception has been caught
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.ParkingIsEmptyException: Parking is empty
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:104)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.ParkingTest.testRemoveVehicleVehicleNotFoundException(ParkingTest.java:143)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+2019-03-17 14:17:45 INFO  Parking:103 - ParkingIsEmptyException has been thrown.
+2019-03-17 14:17:45 INFO  Parking:107 - Exception has been caught
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.ParkingIsEmptyException: Parking is empty
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:104)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.ParkingTest.testRemoveParkingIsEmptyException(ParkingTest.java:149)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+2019-03-17 14:17:45 INFO  Parking:103 - ParkingIsEmptyException has been thrown.
+2019-03-17 14:17:45 INFO  Parking:107 - Exception has been caught
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.ParkingIsEmptyException: Parking is empty
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:104)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.ParkingTest.testRemoveParkingIsEmptyException(ParkingTest.java:150)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+2019-03-17 14:17:45 INFO  Parking:103 - ParkingIsEmptyException has been thrown.
+2019-03-17 14:17:45 INFO  Parking:107 - Exception has been caught
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.ParkingIsEmptyException: Parking is empty
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:104)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.ParkingTest.testRemoveParkingIsEmptyException(ParkingTest.java:151)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+2019-03-17 14:17:45 INFO  Parking:103 - ParkingIsEmptyException has been thrown.
+2019-03-17 14:17:45 INFO  Parking:107 - Exception has been caught
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.ParkingIsEmptyException: Parking is empty
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:104)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.ParkingTest.testRemoveParkingIsEmptyException(ParkingTest.java:152)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+2019-03-17 14:17:45 INFO  Parking:103 - ParkingIsEmptyException has been thrown.
+2019-03-17 14:17:45 INFO  Parking:107 - Exception has been caught
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.ParkingIsEmptyException: Parking is empty
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:104)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.ParkingTest.testRemoveVehicleVehicleNotFoundException(ParkingTest.java:143)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+2019-03-17 14:29:20 INFO  Parking:103 - ParkingIsEmptyException has been thrown.
+2019-03-17 14:29:20 INFO  Parking:107 - Exception has been caught
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.ParkingIsEmptyException: Parking is empty
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:104)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.ParkingTest.testRemoveParkingIsEmptyException(ParkingTest.java:149)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+2019-03-17 14:29:20 INFO  Parking:103 - ParkingIsEmptyException has been thrown.
+2019-03-17 14:29:20 INFO  Parking:107 - Exception has been caught
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.ParkingIsEmptyException: Parking is empty
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:104)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.ParkingTest.testRemoveParkingIsEmptyException(ParkingTest.java:150)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+2019-03-17 14:29:20 INFO  Parking:103 - ParkingIsEmptyException has been thrown.
+2019-03-17 14:29:20 INFO  Parking:107 - Exception has been caught
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.ParkingIsEmptyException: Parking is empty
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:104)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.ParkingTest.testRemoveParkingIsEmptyException(ParkingTest.java:151)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+2019-03-17 14:29:20 INFO  Parking:103 - ParkingIsEmptyException has been thrown.
+2019-03-17 14:29:20 INFO  Parking:107 - Exception has been caught
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.ParkingIsEmptyException: Parking is empty
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:104)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.ParkingTest.testRemoveParkingIsEmptyException(ParkingTest.java:152)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+2019-03-17 14:29:20 INFO  Parking:103 - ParkingIsEmptyException has been thrown.
+2019-03-17 14:29:20 INFO  Parking:107 - Exception has been caught
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.ParkingIsEmptyException: Parking is empty
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:104)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.ParkingTest.testRemoveVehicleVehicleNotFoundException(ParkingTest.java:143)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+2019-03-17 14:31:16 INFO  Parking:99 - VehicleNotFoundException has been thrown.
+2019-03-17 14:31:16 INFO  Parking:107 - Exception has been caught
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.VehicleNotFoundException: Vehicle not found: Car {name = Volkswagen, price = 20000, seatsNumber = 4, bodyType = COUPE}
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:100)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.ParkingTest.testRemoveVehicleVehicleNotFoundException(ParkingTest.java:143)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+2019-03-17 14:32:08 INFO  Parking:99 - VehicleNotFoundException has been thrown.
+2019-03-17 14:32:08 INFO  Parking:107 - Exception has been caught
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.VehicleNotFoundException: Vehicle not found: Car {name = Volkswagen, price = 20000, seatsNumber = 4, bodyType = COUPE}
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:100)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.ParkingTest.testRemoveVehicleVehicleNotFoundException(ParkingTest.java:137)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+2019-03-17 14:33:30 INFO  Parking:103 - ParkingIsEmptyException has been thrown.
+2019-03-17 14:33:30 INFO  Parking:107 - Exception has been caught
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.ParkingIsEmptyException: Parking is empty
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:104)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.ParkingTest.testRemoveParkingIsEmptyException(ParkingTest.java:149)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+2019-03-17 14:33:30 INFO  Parking:103 - ParkingIsEmptyException has been thrown.
+2019-03-17 14:33:30 INFO  Parking:107 - Exception has been caught
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.ParkingIsEmptyException: Parking is empty
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:104)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.ParkingTest.testRemoveParkingIsEmptyException(ParkingTest.java:150)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+2019-03-17 14:33:30 INFO  Parking:103 - ParkingIsEmptyException has been thrown.
+2019-03-17 14:33:30 INFO  Parking:107 - Exception has been caught
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.ParkingIsEmptyException: Parking is empty
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:104)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.ParkingTest.testRemoveParkingIsEmptyException(ParkingTest.java:151)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+2019-03-17 14:33:30 INFO  Parking:103 - ParkingIsEmptyException has been thrown.
+2019-03-17 14:33:30 INFO  Parking:107 - Exception has been caught
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.ParkingIsEmptyException: Parking is empty
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:104)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.ParkingTest.testRemoveParkingIsEmptyException(ParkingTest.java:152)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+2019-03-17 14:33:41 INFO  Parking:103 - ParkingIsEmptyException has been thrown.
+2019-03-17 14:33:41 INFO  Parking:107 - Exception has been caught
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.ParkingIsEmptyException: Parking is empty
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:104)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.ParkingTest.testRemoveVehicleVehicleNotFoundException(ParkingTest.java:143)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+2019-03-17 14:34:15 INFO  Parking:103 - ParkingIsEmptyException has been thrown.
+2019-03-17 14:34:15 INFO  Parking:107 - Exception has been caught
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.ParkingIsEmptyException: Parking is empty
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:104)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.ParkingTest.testRemoveParkingIsEmptyException(ParkingTest.java:149)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+2019-03-17 14:34:15 INFO  Parking:103 - ParkingIsEmptyException has been thrown.
+2019-03-17 14:34:15 INFO  Parking:107 - Exception has been caught
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.ParkingIsEmptyException: Parking is empty
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:104)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.ParkingTest.testRemoveParkingIsEmptyException(ParkingTest.java:150)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+2019-03-17 14:34:15 INFO  Parking:103 - ParkingIsEmptyException has been thrown.
+2019-03-17 14:34:15 INFO  Parking:107 - Exception has been caught
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.ParkingIsEmptyException: Parking is empty
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:104)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.ParkingTest.testRemoveParkingIsEmptyException(ParkingTest.java:151)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+2019-03-17 14:34:15 INFO  Parking:103 - ParkingIsEmptyException has been thrown.
+2019-03-17 14:34:15 INFO  Parking:107 - Exception has been caught
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.ParkingIsEmptyException: Parking is empty
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:104)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.ParkingTest.testRemoveParkingIsEmptyException(ParkingTest.java:152)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+2019-03-17 14:34:15 INFO  Parking:103 - ParkingIsEmptyException has been thrown.
+2019-03-17 14:34:15 INFO  Parking:107 - Exception has been caught
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.ParkingIsEmptyException: Parking is empty
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:104)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.ParkingTest.testRemoveVehicleVehicleNotFoundException(ParkingTest.java:143)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+2019-03-17 14:34:58 INFO  Parking:103 - ParkingIsEmptyException has been thrown.
+2019-03-17 14:34:58 INFO  Parking:107 - Exception has been caught
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.ParkingIsEmptyException: Parking is empty
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:104)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.ParkingTest.testRemoveParkingIsEmptyException(ParkingTest.java:149)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+2019-03-17 14:34:58 INFO  Parking:103 - ParkingIsEmptyException has been thrown.
+2019-03-17 14:34:58 INFO  Parking:107 - Exception has been caught
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.ParkingIsEmptyException: Parking is empty
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:104)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.ParkingTest.testRemoveParkingIsEmptyException(ParkingTest.java:150)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+2019-03-17 14:34:58 INFO  Parking:103 - ParkingIsEmptyException has been thrown.
+2019-03-17 14:34:58 INFO  Parking:107 - Exception has been caught
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.ParkingIsEmptyException: Parking is empty
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:104)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.ParkingTest.testRemoveParkingIsEmptyException(ParkingTest.java:151)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+2019-03-17 14:34:58 INFO  Parking:103 - ParkingIsEmptyException has been thrown.
+2019-03-17 14:34:58 INFO  Parking:107 - Exception has been caught
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.ParkingIsEmptyException: Parking is empty
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:104)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.ParkingTest.testRemoveParkingIsEmptyException(ParkingTest.java:152)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+2019-03-17 14:37:01 INFO  Parking:103 - ParkingIsEmptyException has been thrown.
+2019-03-17 14:37:01 INFO  Parking:107 - Exception has been caught
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.ParkingIsEmptyException: Parking is empty
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:104)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.ParkingTest.testRemoveVehicleNotFoundException(ParkingTest.java:137)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+2019-03-17 14:37:40 INFO  Parking:99 - VehicleNotFoundException has been thrown.
+2019-03-17 14:37:40 INFO  Parking:107 - Exception has been caught
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.VehicleNotFoundException: Vehicle not found: Car {name = Volkswagen, price = 20000, seatsNumber = 4, bodyType = COUPE}
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:100)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.ParkingTest.testRemoveVehicleNotFoundException(ParkingTest.java:137)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+2019-03-17 14:38:20 INFO  Parking:99 - VehicleNotFoundException has been thrown.
+2019-03-17 14:38:20 INFO  Parking:107 - Exception has been caught
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.VehicleNotFoundException: Vehicle not found: Car {name = Volkswagen, price = 20000, seatsNumber = 4, bodyType = COUPE}
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:100)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.ParkingTest.testRemoveVehicleNotFoundException(ParkingTest.java:137)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+2019-03-17 14:38:31 INFO  Parking:103 - ParkingIsEmptyException has been thrown.
+2019-03-17 14:38:31 INFO  Parking:107 - Exception has been caught
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.ParkingIsEmptyException: Parking is empty
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:104)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.ParkingTest.testRemoveParkingIsEmptyException(ParkingTest.java:143)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+2019-03-17 14:38:31 INFO  Parking:103 - ParkingIsEmptyException has been thrown.
+2019-03-17 14:38:31 INFO  Parking:107 - Exception has been caught
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.ParkingIsEmptyException: Parking is empty
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:104)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.ParkingTest.testRemoveParkingIsEmptyException(ParkingTest.java:144)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+2019-03-17 14:38:31 INFO  Parking:103 - ParkingIsEmptyException has been thrown.
+2019-03-17 14:38:31 INFO  Parking:107 - Exception has been caught
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.ParkingIsEmptyException: Parking is empty
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:104)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.ParkingTest.testRemoveParkingIsEmptyException(ParkingTest.java:145)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+2019-03-17 14:38:31 INFO  Parking:103 - ParkingIsEmptyException has been thrown.
+2019-03-17 14:38:31 INFO  Parking:107 - Exception has been caught
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.ParkingIsEmptyException: Parking is empty
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:104)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.ParkingTest.testRemoveParkingIsEmptyException(ParkingTest.java:146)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+2019-03-17 14:38:31 INFO  Parking:99 - VehicleNotFoundException has been thrown.
+2019-03-17 14:38:31 INFO  Parking:107 - Exception has been caught
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.VehicleNotFoundException: Vehicle not found: Car {name = Volkswagen, price = 20000, seatsNumber = 4, bodyType = COUPE}
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:100)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.ParkingTest.testRemoveVehicleNotFoundException(ParkingTest.java:137)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+2019-03-17 14:38:52 INFO  Parking:103 - ParkingIsEmptyException has been thrown.
+2019-03-17 14:38:52 INFO  Parking:107 - Exception has been caught
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.ParkingIsEmptyException: Parking is empty
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:104)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.ParkingTest.testRemoveParkingIsEmptyException(ParkingTest.java:143)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+2019-03-17 14:38:52 INFO  Parking:103 - ParkingIsEmptyException has been thrown.
+2019-03-17 14:38:52 INFO  Parking:107 - Exception has been caught
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.ParkingIsEmptyException: Parking is empty
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:104)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.ParkingTest.testRemoveParkingIsEmptyException(ParkingTest.java:144)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+2019-03-17 14:38:52 INFO  Parking:103 - ParkingIsEmptyException has been thrown.
+2019-03-17 14:38:52 INFO  Parking:107 - Exception has been caught
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.ParkingIsEmptyException: Parking is empty
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:104)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.ParkingTest.testRemoveParkingIsEmptyException(ParkingTest.java:145)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+2019-03-17 14:38:52 INFO  Parking:103 - ParkingIsEmptyException has been thrown.
+2019-03-17 14:38:52 INFO  Parking:107 - Exception has been caught
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.ParkingIsEmptyException: Parking is empty
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:104)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.ParkingTest.testRemoveParkingIsEmptyException(ParkingTest.java:146)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+2019-03-17 14:38:52 INFO  Parking:99 - VehicleNotFoundException has been thrown.
+2019-03-17 14:38:52 INFO  Parking:107 - Exception has been caught
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.VehicleNotFoundException: Vehicle not found: Car {name = Volkswagen, price = 20000, seatsNumber = 4, bodyType = COUPE}
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:100)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.ParkingTest.testRemoveVehicleNotFoundException(ParkingTest.java:137)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+2019-03-17 14:39:30 INFO  VehicleCalculator:59 - Total seats has been calculated.
+2019-03-17 14:39:30 INFO  VehicleCalculator:59 - Total seats has been calculated.
+2019-03-17 14:39:30 INFO  VehicleCalculator:35 - Total price has been calculated.
+2019-03-17 14:39:30 INFO  VehicleCalculator:35 - Total price has been calculated.
+2019-03-17 14:40:36 INFO  VehicleCalculator:59 - Total seats has been calculated.
+2019-03-17 14:40:46 INFO  VehicleCalculator:59 - Total seats has been calculated.
+2019-03-17 14:41:22 INFO  VehicleCalculator:59 - Total seats has been calculated.
+2019-03-17 14:41:28 INFO  VehicleCalculator:59 - Total seats has been calculated.
+2019-03-17 14:41:28 INFO  VehicleCalculator:59 - Total seats has been calculated.
+2019-03-17 14:41:28 INFO  VehicleCalculator:35 - Total price has been calculated.
+2019-03-17 14:41:28 INFO  VehicleCalculator:35 - Total price has been calculated.
+2019-03-17 14:42:29 INFO  VehicleCalculator:59 - Total seats has been calculated.
+2019-03-17 14:42:29 INFO  VehicleCalculator:59 - Total seats has been calculated.
+2019-03-17 14:42:29 INFO  VehicleCalculator:35 - Total price has been calculated.
+2019-03-17 14:42:29 INFO  VehicleCalculator:35 - Total price has been calculated.
+2019-03-17 14:43:06 INFO  VehicleCalculator:59 - Total seats has been calculated.
+2019-03-17 14:43:06 INFO  VehicleCalculator:59 - Total seats has been calculated.
+2019-03-17 14:43:06 INFO  VehicleCalculator:35 - Total price has been calculated.
+2019-03-17 14:43:06 INFO  VehicleCalculator:35 - Total price has been calculated.
+2019-03-17 14:43:11 INFO  VehicleCalculator:59 - Total seats has been calculated.
+2019-03-17 14:43:11 INFO  VehicleCalculator:59 - Total seats has been calculated.
+2019-03-17 14:43:11 INFO  VehicleCalculator:35 - Total price has been calculated.
+2019-03-17 14:43:11 INFO  VehicleCalculator:35 - Total price has been calculated.
+2019-03-17 14:43:46 INFO  VehicleFinder:46 - The cheapest vehicle has been found
+2019-03-17 14:43:46 INFO  VehicleFinder:78 - The dearest vehicle has been found
+2019-03-17 14:46:38 INFO  VehicleFinder:46 - The cheapest vehicle has been found
+2019-03-17 14:46:38 INFO  VehicleFinder:78 - The dearest vehicle has been found
+2019-03-17 14:46:51 INFO  VehicleFinder:46 - The cheapest vehicle has been found
+2019-03-17 14:46:51 INFO  VehicleFinder:78 - The dearest vehicle has been found
+2019-03-17 14:47:05 INFO  VehicleFinder:46 - The cheapest vehicle has been found
+2019-03-17 14:47:05 INFO  VehicleFinder:78 - The dearest vehicle has been found
+2019-03-17 14:47:20 INFO  VehicleFinder:46 - The cheapest vehicle has been found
+2019-03-17 14:47:20 INFO  VehicleFinder:78 - The dearest vehicle has been found
+2019-03-17 14:47:28 INFO  VehicleFinder:46 - The cheapest vehicle has been found
+2019-03-17 14:47:28 INFO  VehicleFinder:78 - The dearest vehicle has been found
+2019-03-17 14:55:14 INFO  VehicleFinder:46 - The cheapest vehicle has been found
+2019-03-17 14:55:14 INFO  VehicleFinder:78 - The dearest vehicle has been found
+2019-03-17 14:56:01 INFO  VehicleFinder:46 - The cheapest vehicle has been found
+2019-03-17 14:56:01 INFO  VehicleFinder:78 - The dearest vehicle has been found
+2019-03-17 14:56:26 INFO  VehicleCalculator:58 - Total seats has been calculated.
+2019-03-17 14:56:26 INFO  VehicleCalculator:58 - Total seats has been calculated.
+2019-03-17 14:56:26 INFO  VehicleCalculator:35 - Total price has been calculated.
+2019-03-17 14:56:26 INFO  VehicleCalculator:35 - Total price has been calculated.
+2019-03-17 15:01:22 INFO  VehicleSorter:67 - Parking has been sorted by price.
+2019-03-17 15:02:11 INFO  VehicleSorter:67 - Parking has been sorted by price.
+2019-03-17 15:04:59 INFO  VehicleSorter:67 - Parking has been sorted by price.
+2019-03-17 15:05:12 INFO  VehicleSorter:67 - Parking has been sorted by price.
+2019-03-17 15:13:10 INFO  VehicleSorter:67 - Parking has been sorted by price.
+2019-03-17 15:15:04 INFO  VehicleSorter:67 - Parking has been sorted by price.
+2019-03-17 15:15:29 INFO  VehicleSorter:67 - Parking has been sorted by price.
+2019-03-17 15:15:42 INFO  VehicleSorter:67 - Parking has been sorted by price.
+2019-03-17 15:21:01 INFO  VehicleSorter:67 - Parking has been sorted by price.
+2019-03-17 15:22:58 INFO  VehicleSorter:67 - Parking has been sorted by price.
+2019-03-17 15:22:58 INFO  VehicleSorter:67 - Parking has been sorted by price.
+2019-03-17 15:24:17 INFO  VehicleSorter:67 - Parking has been sorted by price.
+2019-03-17 15:24:24 INFO  VehicleSorter:67 - Parking has been sorted by price.
+2019-03-17 15:24:47 INFO  VehicleSorter:67 - Parking has been sorted by price.
+2019-03-17 15:25:36 INFO  VehicleSorter:67 - Parking has been sorted by price.
+2019-03-17 15:26:24 INFO  VehicleSorter:67 - Parking has been sorted by price.
+2019-03-17 15:28:47 INFO  VehicleSorter:67 - Parking has been sorted by price.
+2019-03-17 15:59:35 INFO  VehicleSorter:67 - Parking has been sorted by price.
+2019-03-17 16:00:05 INFO  VehicleSorter:67 - Parking has been sorted by price.
+2019-03-17 16:00:44 INFO  VehicleSorter:67 - Parking has been sorted by price.
+2019-03-17 16:05:24 INFO  VehicleSorter:67 - Parking has been sorted by price.
+2019-03-17 16:07:14 INFO  VehicleSorter:87 - Parking has been sorted by name.
+2019-03-17 16:08:48 INFO  VehicleSorter:110 - Vehiles have been sorted by name and then by price.
+2019-03-17 16:08:55 INFO  VehicleSorter:87 - Parking has been sorted by name.
+2019-03-17 16:08:55 INFO  VehicleSorter:110 - Vehiles have been sorted by name and then by price.
+2019-03-17 16:08:55 INFO  VehicleSorter:67 - Parking has been sorted by price.
+2019-03-17 16:09:01 INFO  VehicleSorter:87 - Parking has been sorted by name.
+2019-03-17 16:09:01 INFO  VehicleSorter:110 - Vehiles have been sorted by name and then by price.
+2019-03-17 16:09:01 INFO  VehicleSorter:67 - Parking has been sorted by price.
+2019-03-17 16:10:19 INFO  VehicleSorter:87 - Parking has been sorted by name.
+2019-03-17 16:10:19 INFO  VehicleSorter:110 - Vehiles have been sorted by name and then by price.
+2019-03-17 16:10:19 INFO  VehicleSorter:67 - Parking has been sorted by price.
+2019-03-17 16:12:31 INFO  VehicleSorter:87 - Parking has been sorted by name.
+2019-03-17 16:12:31 INFO  VehicleSorter:110 - Vehiles have been sorted by name and then by price.
+2019-03-17 16:12:31 INFO  VehicleSorter:67 - Parking has been sorted by price.
+2019-03-17 16:13:14 INFO  VehicleSorter:87 - Parking has been sorted by name.
+2019-03-17 16:13:14 INFO  VehicleSorter:110 - Vehiles have been sorted by name and then by price.
+2019-03-17 16:13:14 INFO  VehicleSorter:67 - Parking has been sorted by price.
+2019-03-17 16:13:59 INFO  VehicleSorter:67 - Parking has been sorted by price.
+2019-03-17 16:14:43 INFO  Parking:103 - ParkingIsEmptyException has been thrown.
+2019-03-17 16:14:43 INFO  Parking:107 - Exception has been caught
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.ParkingIsEmptyException: Parking is empty
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:104)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.ParkingTest.testRemoveParkingIsEmptyException(ParkingTest.java:143)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+2019-03-17 16:14:43 INFO  Parking:103 - ParkingIsEmptyException has been thrown.
+2019-03-17 16:14:43 INFO  Parking:107 - Exception has been caught
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.ParkingIsEmptyException: Parking is empty
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:104)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.ParkingTest.testRemoveParkingIsEmptyException(ParkingTest.java:144)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+2019-03-17 16:14:43 INFO  Parking:103 - ParkingIsEmptyException has been thrown.
+2019-03-17 16:14:43 INFO  Parking:107 - Exception has been caught
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.ParkingIsEmptyException: Parking is empty
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:104)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.ParkingTest.testRemoveParkingIsEmptyException(ParkingTest.java:145)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+2019-03-17 16:14:43 INFO  Parking:103 - ParkingIsEmptyException has been thrown.
+2019-03-17 16:14:43 INFO  Parking:107 - Exception has been caught
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.ParkingIsEmptyException: Parking is empty
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:104)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.ParkingTest.testRemoveParkingIsEmptyException(ParkingTest.java:146)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+2019-03-17 16:14:43 INFO  Parking:99 - VehicleNotFoundException has been thrown.
+2019-03-17 16:14:43 INFO  Parking:107 - Exception has been caught
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.VehicleNotFoundException: Vehicle not found: Car {name = Volkswagen, price = 20000, seatsNumber = 4, bodyType = COUPE}
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:100)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.ParkingTest.testRemoveVehicleNotFoundException(ParkingTest.java:137)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+2019-03-17 16:14:43 INFO  VehicleCalculator:58 - Total seats has been calculated.
+2019-03-17 16:14:43 INFO  VehicleCalculator:58 - Total seats has been calculated.
+2019-03-17 16:14:43 INFO  VehicleCalculator:35 - Total price has been calculated.
+2019-03-17 16:14:43 INFO  VehicleCalculator:35 - Total price has been calculated.
+2019-03-17 16:14:43 INFO  VehicleFinder:46 - The cheapest vehicle has been found
+2019-03-17 16:14:43 INFO  VehicleFinder:78 - The dearest vehicle has been found
+2019-03-17 16:14:43 INFO  VehicleSorter:87 - Parking has been sorted by name.
+2019-03-17 16:14:43 INFO  VehicleSorter:110 - Vehiles have been sorted by name and then by price.
+2019-03-17 16:14:43 INFO  VehicleSorter:67 - Parking has been sorted by price.
+2019-03-17 16:15:55 INFO  VehicleSorter:87 - Parking has been sorted by name.
+2019-03-17 16:15:55 INFO  VehicleSorter:110 - Vehiles have been sorted by name and then by price.
+2019-03-17 16:15:55 INFO  VehicleSorter:67 - Parking has been sorted by price.
+2019-03-17 16:16:26 INFO  VehicleSorter:67 - Parking has been sorted by price.
+2019-03-17 16:17:06 INFO  VehicleSorter:87 - Parking has been sorted by name.
+2019-03-17 16:17:06 INFO  VehicleSorter:110 - Vehiles have been sorted by name and then by price.
+2019-03-17 16:17:06 INFO  VehicleSorter:67 - Parking has been sorted by price.
+2019-03-17 16:17:24 INFO  Main:42 - App has been launched.
+2019-03-17 16:17:24 INFO  PrinterCreator:36 - Printer has been created.
+2019-03-17 16:17:24 INFO  DataReader:35 - File has been read.
+2019-03-17 16:17:24 INFO  DataValidator:32 - Lines were checked.
+2019-03-17 16:17:24 INFO  ParkingCreator:47 - Parking has been created.
+2019-03-17 16:17:24 INFO  Parking:99 - VehicleNotFoundException has been thrown.
+2019-03-17 16:17:24 INFO  Parking:107 - Exception has been caught
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.VehicleNotFoundException: Vehicle not found: Truck {name = Volvo, price = 80000, cargoCapacity = 30000, bodyType = CABOVER}
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:100)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.controller.Main.main(Main.java:73)
+2019-03-17 16:17:24 INFO  VehicleSorter:67 - Parking has been sorted by price.
+2019-03-17 16:17:24 INFO  VehicleSorter:87 - Parking has been sorted by name.
+2019-03-17 16:17:24 INFO  VehicleSorter:110 - Vehiles have been sorted by name and then by price.
+2019-03-17 16:17:24 INFO  VehicleCalculator:35 - Total price has been calculated.
+2019-03-17 16:17:24 INFO  VehicleCalculator:58 - Total seats has been calculated.
+2019-03-17 16:17:24 INFO  VehicleFinder:78 - The dearest vehicle has been found
+2019-03-17 16:17:24 INFO  VehicleFinder:46 - The cheapest vehicle has been found
+2019-03-17 16:17:24 INFO  Parking:99 - VehicleNotFoundException has been thrown.
+2019-03-17 16:17:24 INFO  Parking:107 - Exception has been caught
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.VehicleNotFoundException: Vehicle not found: Car {name = BMW, price = 66000, seatsNumber = 4, bodyType = SEDAN}
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:100)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.controller.Main.main(Main.java:131)
+2019-03-17 16:17:24 INFO  VehicleFinder:78 - The dearest vehicle has been found
+2019-03-17 16:17:24 INFO  Main:135 - App has been completed successfully.
+2019-03-17 16:52:04 INFO  Main:39 - App has been launched.
+2019-03-17 16:52:04 INFO  PrinterCreator:36 - Printer has been created.
+2019-03-17 16:52:04 INFO  DataReader:35 - File has been read.
+2019-03-17 16:52:04 INFO  DataValidator:32 - Lines were checked.
+2019-03-17 16:52:04 INFO  ParkingCreator:47 - Parking has been created.
+2019-03-17 16:52:04 INFO  Parking:99 - VehicleNotFoundException has been thrown.
+2019-03-17 16:52:04 INFO  Parking:107 - Exception has been caught
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.VehicleNotFoundException: Vehicle not found: Truck {name = Volvo, price = 80000, cargoCapacity = 30000, bodyType = CABOVER}
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:100)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.controller.Main.main(Main.java:70)
+2019-03-17 16:52:04 INFO  VehicleSorter:67 - Parking has been sorted by price.
+2019-03-17 16:52:04 INFO  VehicleSorter:87 - Parking has been sorted by name.
+2019-03-17 16:52:04 INFO  VehicleSorter:110 - Vehiles have been sorted by name and then by price.
+2019-03-17 16:52:04 INFO  VehicleCalculator:35 - Total price has been calculated.
+2019-03-17 16:52:04 INFO  VehicleCalculator:58 - Total seats has been calculated.
+2019-03-17 16:52:04 INFO  VehicleFinder:78 - The dearest vehicle has been found
+2019-03-17 16:52:04 INFO  VehicleFinder:46 - The cheapest vehicle has been found
+2019-03-17 16:52:04 INFO  Parking:99 - VehicleNotFoundException has been thrown.
+2019-03-17 16:52:04 INFO  Parking:107 - Exception has been caught
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.VehicleNotFoundException: Vehicle not found: Car {name = BMW, price = 66000, seatsNumber = 4, bodyType = SEDAN}
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:100)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.controller.Main.main(Main.java:128)
+2019-03-17 16:52:04 INFO  VehicleFinder:78 - The dearest vehicle has been found
+2019-03-17 16:52:04 INFO  Main:132 - App has been completed successfully.
+2019-03-17 17:11:40 INFO  Main:39 - App has been launched.
+2019-03-17 17:11:40 INFO  PrinterCreator:36 - Printer has been created.
+2019-03-17 17:11:40 INFO  DataReader:35 - File has been read.
+2019-03-17 17:11:40 INFO  DataValidator:32 - Lines were checked.
+2019-03-17 17:11:40 INFO  ParkingCreator:47 - Parking has been created.
+2019-03-17 17:11:40 INFO  Parking:99 - VehicleNotFoundException has been thrown.
+2019-03-17 17:11:40 INFO  Parking:107 - Exception has been caught
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.VehicleNotFoundException: Vehicle not found: Truck {name = Volvo, price = 80000, cargoCapacity = 30000, bodyType = CABOVER}
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:100)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.controller.Main.main(Main.java:70)
+2019-03-17 17:11:40 INFO  VehicleSorter:67 - Parking has been sorted by price.
+2019-03-17 17:11:40 INFO  VehicleSorter:87 - Parking has been sorted by name.
+2019-03-17 17:11:40 INFO  VehicleSorter:110 - Vehiles have been sorted by name and then by price.
+2019-03-17 17:11:40 INFO  VehicleCalculator:35 - Total price has been calculated.
+2019-03-17 17:11:40 INFO  VehicleCalculator:58 - Total seats has been calculated.
+2019-03-17 17:11:40 INFO  VehicleFinder:78 - The dearest vehicle has been found
+2019-03-17 17:11:40 INFO  VehicleFinder:46 - The cheapest vehicle has been found
+2019-03-17 17:16:13 INFO  Main:39 - App has been launched.
+2019-03-17 17:16:13 INFO  PrinterCreator:36 - Printer has been created.
+2019-03-17 17:16:13 INFO  DataReader:35 - File has been read.
+2019-03-17 17:16:13 INFO  DataValidator:32 - Lines were checked.
+2019-03-17 17:16:13 INFO  ParkingCreator:47 - Parking has been created.
+2019-03-17 17:16:13 INFO  Parking:99 - VehicleNotFoundException has been thrown.
+2019-03-17 17:16:13 INFO  Parking:107 - Exception has been caught
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.VehicleNotFoundException: Vehicle not found: Truck {name = Volvo, price = 80000, cargoCapacity = 30000, bodyType = CABOVER}
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:100)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.controller.Main.main(Main.java:70)
+2019-03-17 17:16:13 INFO  VehicleSorter:67 - Parking has been sorted by price.
+2019-03-17 17:16:13 INFO  VehicleSorter:87 - Parking has been sorted by name.
+2019-03-17 17:16:13 INFO  VehicleSorter:110 - Vehiles have been sorted by name and then by price.
+2019-03-17 17:16:13 INFO  VehicleCalculator:35 - Total price has been calculated.
+2019-03-17 17:16:13 INFO  VehicleCalculator:58 - Total seats has been calculated.
+2019-03-17 17:16:13 INFO  VehicleFinder:78 - The dearest vehicle has been found
+2019-03-17 17:16:13 INFO  VehicleFinder:46 - The cheapest vehicle has been found
+2019-03-17 17:16:13 INFO  Parking:99 - VehicleNotFoundException has been thrown.
+2019-03-17 17:16:13 INFO  Parking:107 - Exception has been caught
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.VehicleNotFoundException: Vehicle not found: null
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:100)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.controller.Main.main(Main.java:122)
+2019-03-17 17:16:13 INFO  Parking:99 - VehicleNotFoundException has been thrown.
+2019-03-17 17:16:13 INFO  Parking:107 - Exception has been caught
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.VehicleNotFoundException: Vehicle not found: Car {name = BMW, price = 66000, seatsNumber = 4, bodyType = SEDAN}
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:100)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.controller.Main.main(Main.java:128)
+2019-03-17 17:16:13 INFO  VehicleFinder:78 - The dearest vehicle has been found
+2019-03-17 17:16:13 INFO  Main:132 - App has been completed successfully.
+2019-03-17 17:17:08 INFO  Main:39 - App has been launched.
+2019-03-17 17:17:08 INFO  PrinterCreator:36 - Printer has been created.
+2019-03-17 17:17:08 INFO  DataReader:35 - File has been read.
+2019-03-17 17:17:08 INFO  DataValidator:32 - Lines were checked.
+2019-03-17 17:17:08 INFO  ParkingCreator:47 - Parking has been created.
+2019-03-17 17:17:08 INFO  Parking:99 - VehicleNotFoundException has been thrown.
+2019-03-17 17:17:08 INFO  Parking:107 - Exception has been caught
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.VehicleNotFoundException: Vehicle not found: Truck {name = Volvo, price = 80000, cargoCapacity = 30000, bodyType = CABOVER}
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:100)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.controller.Main.main(Main.java:70)
+2019-03-17 17:17:08 INFO  VehicleSorter:67 - Parking has been sorted by price.
+2019-03-17 17:17:08 INFO  VehicleSorter:87 - Parking has been sorted by name.
+2019-03-17 17:17:08 INFO  VehicleSorter:110 - Vehiles have been sorted by name and then by price.
+2019-03-17 17:17:08 INFO  VehicleCalculator:35 - Total price has been calculated.
+2019-03-17 17:17:08 INFO  VehicleCalculator:58 - Total seats has been calculated.
+2019-03-17 17:17:08 INFO  VehicleFinder:78 - The dearest vehicle has been found
+2019-03-17 17:17:08 INFO  VehicleFinder:46 - The cheapest vehicle has been found
+2019-03-17 17:17:08 INFO  Parking:99 - VehicleNotFoundException has been thrown.
+2019-03-17 17:17:08 INFO  Parking:107 - Exception has been caught
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.VehicleNotFoundException: Vehicle not found: null
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:100)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.controller.Main.main(Main.java:122)
+2019-03-17 17:17:08 INFO  Parking:99 - VehicleNotFoundException has been thrown.
+2019-03-17 17:17:08 INFO  Parking:107 - Exception has been caught
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.VehicleNotFoundException: Vehicle not found: null
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:100)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.controller.Main.main(Main.java:123)
+2019-03-17 17:17:08 INFO  Parking:99 - VehicleNotFoundException has been thrown.
+2019-03-17 17:17:08 INFO  Parking:107 - Exception has been caught
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.VehicleNotFoundException: Vehicle not found: null
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:100)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.controller.Main.main(Main.java:124)
+2019-03-17 17:17:08 INFO  Parking:99 - VehicleNotFoundException has been thrown.
+2019-03-17 17:17:08 INFO  Parking:107 - Exception has been caught
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.VehicleNotFoundException: Vehicle not found: null
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:100)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.controller.Main.main(Main.java:125)
+2019-03-17 17:17:08 INFO  Parking:99 - VehicleNotFoundException has been thrown.
+2019-03-17 17:17:08 INFO  Parking:107 - Exception has been caught
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.VehicleNotFoundException: Vehicle not found: null
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:100)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.controller.Main.main(Main.java:126)
+2019-03-17 17:17:08 INFO  Parking:99 - VehicleNotFoundException has been thrown.
+2019-03-17 17:17:08 INFO  Parking:107 - Exception has been caught
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.VehicleNotFoundException: Vehicle not found: Car {name = BMW, price = 66000, seatsNumber = 4, bodyType = SEDAN}
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:100)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.controller.Main.main(Main.java:128)
+2019-03-17 17:17:08 INFO  VehicleFinder:78 - The dearest vehicle has been found
+2019-03-17 17:17:08 INFO  Main:132 - App has been completed successfully.
+2019-03-17 17:19:13 INFO  Main:39 - App has been launched.
+2019-03-17 17:19:13 INFO  PrinterCreator:36 - Printer has been created.
+2019-03-17 17:19:13 INFO  DataReader:35 - File has been read.
+2019-03-17 17:19:13 INFO  DataValidator:32 - Lines were checked.
+2019-03-17 17:19:13 INFO  ParkingCreator:47 - Parking has been created.
+2019-03-17 17:19:13 INFO  Parking:99 - VehicleNotFoundException has been thrown.
+2019-03-17 17:19:13 INFO  Parking:107 - Exception has been caught
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.VehicleNotFoundException: Vehicle not found: null
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:100)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.controller.Main.main(Main.java:71)
+2019-03-17 17:21:38 INFO  Main:39 - App has been launched.
+2019-03-17 17:21:38 INFO  PrinterCreator:36 - Printer has been created.
+2019-03-17 17:21:38 INFO  DataReader:35 - File has been read.
+2019-03-17 17:21:38 INFO  DataValidator:32 - Lines were checked.
+2019-03-17 17:21:38 INFO  ParkingCreator:47 - Parking has been created.
+2019-03-17 17:21:38 INFO  Parking:99 - VehicleNotFoundException has been thrown.
+2019-03-17 17:21:38 INFO  Parking:107 - Exception has been caught
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.VehicleNotFoundException: Vehicle not found: null
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:100)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.controller.Main.main(Main.java:70)
+2019-03-17 17:22:09 INFO  Main:39 - App has been launched.
+2019-03-17 17:22:09 INFO  PrinterCreator:36 - Printer has been created.
+2019-03-17 17:22:09 INFO  DataReader:35 - File has been read.
+2019-03-17 17:22:09 INFO  DataValidator:32 - Lines were checked.
+2019-03-17 17:22:09 INFO  ParkingCreator:47 - Parking has been created.
+2019-03-17 17:22:09 INFO  Parking:99 - VehicleNotFoundException has been thrown.
+2019-03-17 17:22:09 INFO  Parking:107 - Exception has been caught
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.VehicleNotFoundException: Vehicle not found: null
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:100)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.controller.Main.main(Main.java:70)
+2019-03-17 17:24:22 INFO  Main:39 - App has been launched.
+2019-03-17 17:24:22 INFO  PrinterCreator:36 - Printer has been created.
+2019-03-17 17:24:22 INFO  DataReader:35 - File has been read.
+2019-03-17 17:24:22 INFO  DataValidator:32 - Lines were checked.
+2019-03-17 17:24:22 INFO  ParkingCreator:47 - Parking has been created.
+2019-03-17 17:24:23 INFO  Parking:99 - VehicleNotFoundException has been thrown.
+2019-03-17 17:24:23 INFO  Parking:107 - Exception has been caught
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.VehicleNotFoundException: Vehicle not found: null
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:100)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.controller.Main.main(Main.java:70)
+2019-03-17 17:25:09 INFO  Main:42 - App has been launched.
+2019-03-17 17:25:09 INFO  PrinterCreator:36 - Printer has been created.
+2019-03-17 17:25:09 INFO  DataReader:35 - File has been read.
+2019-03-17 17:25:09 INFO  DataValidator:32 - Lines were checked.
+2019-03-17 17:25:09 INFO  ParkingCreator:47 - Parking has been created.
+2019-03-17 17:25:09 INFO  Parking:99 - VehicleNotFoundException has been thrown.
+2019-03-17 17:25:09 INFO  Parking:107 - Exception has been caught
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.VehicleNotFoundException: Vehicle not found: Truck {name = Volvo, price = 80000, cargoCapacity = 30000, bodyType = CABOVER}
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:100)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.controller.Main.main(Main.java:73)
+2019-03-17 17:25:09 INFO  VehicleSorter:67 - Parking has been sorted by price.
+2019-03-17 17:25:09 INFO  VehicleSorter:87 - Parking has been sorted by name.
+2019-03-17 17:25:09 INFO  VehicleSorter:110 - Vehiles have been sorted by name and then by price.
+2019-03-17 17:25:09 INFO  VehicleCalculator:35 - Total price has been calculated.
+2019-03-17 17:25:09 INFO  VehicleCalculator:58 - Total seats has been calculated.
+2019-03-17 17:25:09 INFO  VehicleFinder:78 - The dearest vehicle has been found
+2019-03-17 17:25:09 INFO  VehicleFinder:46 - The cheapest vehicle has been found
+2019-03-17 17:25:09 INFO  Parking:99 - VehicleNotFoundException has been thrown.
+2019-03-17 17:25:09 INFO  Parking:107 - Exception has been caught
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.VehicleNotFoundException: Vehicle not found: Car {name = BMW, price = 66000, seatsNumber = 4, bodyType = SEDAN}
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:100)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.controller.Main.main(Main.java:131)
+2019-03-17 17:25:09 INFO  VehicleFinder:78 - The dearest vehicle has been found
+2019-03-17 17:25:09 INFO  Main:135 - App has been completed successfully.
+2019-03-17 17:25:33 INFO  Main:42 - App has been launched.
+2019-03-17 17:25:33 INFO  PrinterCreator:36 - Printer has been created.
+2019-03-17 17:25:33 INFO  DataReader:35 - File has been read.
+2019-03-17 17:25:33 INFO  DataValidator:32 - Lines were checked.
+2019-03-17 17:25:33 INFO  ParkingCreator:47 - Parking has been created.
+2019-03-17 17:25:33 INFO  Parking:99 - VehicleNotFoundException has been thrown.
+2019-03-17 17:25:33 INFO  Parking:107 - Exception has been caught
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.VehicleNotFoundException: Vehicle not found: Truck {name = Volvo, price = 80000, cargoCapacity = 30000, bodyType = CABOVER}
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:100)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.controller.Main.main(Main.java:73)
+2019-03-17 17:25:33 INFO  VehicleSorter:67 - Parking has been sorted by price.
+2019-03-17 17:25:33 INFO  VehicleSorter:87 - Parking has been sorted by name.
+2019-03-17 17:25:33 INFO  VehicleSorter:110 - Vehiles have been sorted by name and then by price.
+2019-03-17 17:25:33 INFO  VehicleCalculator:35 - Total price has been calculated.
+2019-03-17 17:25:33 INFO  VehicleCalculator:58 - Total seats has been calculated.
+2019-03-17 17:25:33 INFO  VehicleFinder:78 - The dearest vehicle has been found
+2019-03-17 17:25:33 INFO  VehicleFinder:46 - The cheapest vehicle has been found
+2019-03-17 17:25:33 INFO  VehicleFinder:78 - The dearest vehicle has been found
+2019-03-17 17:25:33 INFO  Main:134 - App has been completed successfully.
+2019-03-17 17:25:56 INFO  Main:39 - App has been launched.
+2019-03-17 17:25:56 INFO  PrinterCreator:36 - Printer has been created.
+2019-03-17 17:25:56 INFO  DataReader:35 - File has been read.
+2019-03-17 17:25:56 INFO  DataValidator:32 - Lines were checked.
+2019-03-17 17:25:56 INFO  ParkingCreator:47 - Parking has been created.
+2019-03-17 17:25:56 INFO  Parking:99 - VehicleNotFoundException has been thrown.
+2019-03-17 17:25:56 INFO  Parking:107 - Exception has been caught
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.VehicleNotFoundException: Vehicle not found: Truck {name = Volvo, price = 80000, cargoCapacity = 30000, bodyType = CABOVER}
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:100)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.controller.Main.main(Main.java:70)
+2019-03-17 17:26:46 INFO  Main:39 - App has been launched.
+2019-03-17 17:26:46 INFO  PrinterCreator:36 - Printer has been created.
+2019-03-17 17:26:46 INFO  DataReader:35 - File has been read.
+2019-03-17 17:26:46 INFO  DataValidator:32 - Lines were checked.
+2019-03-17 17:26:46 INFO  ParkingCreator:47 - Parking has been created.
+2019-03-17 17:26:46 INFO  Parking:99 - VehicleNotFoundException has been thrown.
+2019-03-17 17:26:46 INFO  Parking:107 - Exception has been caught
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.VehicleNotFoundException: Vehicle not found: Truck {name = Volvo, price = 80000, cargoCapacity = 30000, bodyType = CABOVER}
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:100)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.controller.Main.main(Main.java:70)
+2019-03-17 17:27:25 INFO  Main:39 - App has been launched.
+2019-03-17 17:27:25 INFO  PrinterCreator:36 - Printer has been created.
+2019-03-17 17:27:25 INFO  DataReader:35 - File has been read.
+2019-03-17 17:27:25 INFO  DataValidator:32 - Lines were checked.
+2019-03-17 17:27:25 INFO  ParkingCreator:47 - Parking has been created.
+2019-03-17 17:27:25 INFO  Parking:99 - VehicleNotFoundException has been thrown.
+2019-03-17 17:27:25 INFO  Parking:107 - Exception has been caught
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.VehicleNotFoundException: Vehicle not found: Truck {name = Volvo, price = 80000, cargoCapacity = 30000, bodyType = CABOVER}
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:100)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.controller.Main.main(Main.java:70)
+2019-03-17 17:27:25 INFO  VehicleSorter:67 - Parking has been sorted by price.
+2019-03-17 17:27:25 INFO  VehicleSorter:87 - Parking has been sorted by name.
+2019-03-17 17:27:25 INFO  VehicleSorter:110 - Vehiles have been sorted by name and then by price.
+2019-03-17 17:27:25 INFO  VehicleCalculator:35 - Total price has been calculated.
+2019-03-17 17:27:25 INFO  VehicleCalculator:58 - Total seats has been calculated.
+2019-03-17 17:27:25 INFO  VehicleFinder:78 - The dearest vehicle has been found
+2019-03-17 17:27:25 INFO  VehicleFinder:46 - The cheapest vehicle has been found
+2019-03-17 17:27:25 INFO  VehicleFinder:78 - The dearest vehicle has been found
+2019-03-17 17:27:25 INFO  Main:130 - App has been completed successfully.
+2019-03-17 17:28:15 INFO  Main:39 - App has been launched.
+2019-03-17 17:28:15 INFO  PrinterCreator:36 - Printer has been created.
+2019-03-17 17:28:15 INFO  DataReader:35 - File has been read.
+2019-03-17 17:28:15 INFO  DataValidator:32 - Lines were checked.
+2019-03-17 17:28:15 INFO  ParkingCreator:47 - Parking has been created.
+2019-03-17 17:28:15 INFO  Parking:99 - VehicleNotFoundException has been thrown.
+2019-03-17 17:28:15 INFO  Parking:107 - Exception has been caught
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.VehicleNotFoundException: Vehicle not found: Truck {name = Volvo, price = 80000, cargoCapacity = 30000, bodyType = CABOVER}
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:100)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.controller.Main.main(Main.java:70)
+2019-03-17 17:28:15 INFO  VehicleSorter:67 - Parking has been sorted by price.
+2019-03-17 17:28:15 INFO  VehicleSorter:87 - Parking has been sorted by name.
+2019-03-17 17:28:15 INFO  VehicleSorter:110 - Vehiles have been sorted by name and then by price.
+2019-03-17 17:28:15 INFO  VehicleCalculator:35 - Total price has been calculated.
+2019-03-17 17:28:15 INFO  VehicleCalculator:58 - Total seats has been calculated.
+2019-03-17 17:28:15 INFO  VehicleFinder:78 - The dearest vehicle has been found
+2019-03-17 17:28:15 INFO  VehicleFinder:46 - The cheapest vehicle has been found
+2019-03-17 17:28:15 INFO  VehicleFinder:78 - The dearest vehicle has been found
+2019-03-17 17:28:15 INFO  Main:130 - App has been completed successfully.
+2019-03-17 17:28:31 INFO  Main:39 - App has been launched.
+2019-03-17 17:28:31 INFO  PrinterCreator:36 - Printer has been created.
+2019-03-17 17:28:31 INFO  DataReader:35 - File has been read.
+2019-03-17 17:28:31 INFO  DataValidator:32 - Lines were checked.
+2019-03-17 17:28:31 INFO  ParkingCreator:47 - Parking has been created.
+2019-03-17 17:28:31 INFO  Parking:99 - VehicleNotFoundException has been thrown.
+2019-03-17 17:28:31 INFO  Parking:107 - Exception has been caught
+by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.VehicleNotFoundException: Vehicle not found: Truck {name = Volvo, price = 80000, cargoCapacity = 30000, bodyType = CABOVER}
+	at by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking.removeVehicle(Parking.java:100)
+	at by.epam.javawebtraining.stanislaupalaukou.task01.controller.Main.main(Main.java:70)
+2019-03-17 17:28:31 INFO  VehicleSorter:67 - Parking has been sorted by price.
+2019-03-17 17:28:31 INFO  VehicleSorter:87 - Parking has been sorted by name.
+2019-03-17 17:28:31 INFO  VehicleSorter:110 - Vehiles have been sorted by name and then by price.
+2019-03-17 17:28:31 INFO  VehicleCalculator:35 - Total price has been calculated.
+2019-03-17 17:28:31 INFO  VehicleCalculator:58 - Total seats has been calculated.
+2019-03-17 17:28:31 INFO  VehicleFinder:78 - The dearest vehicle has been found
+2019-03-17 17:28:31 INFO  VehicleFinder:46 - The cheapest vehicle has been found
+2019-03-17 17:28:31 INFO  VehicleFinder:78 - The dearest vehicle has been found
+2019-03-17 17:28:31 INFO  Main:130 - App has been completed successfully.

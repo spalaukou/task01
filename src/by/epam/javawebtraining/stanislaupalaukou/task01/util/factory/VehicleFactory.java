@@ -33,20 +33,25 @@ public class VehicleFactory {
       Vehicle toReturn = null;
 
       switch (type) {
+        case BIKE:
+          toReturn = new Bike(name, price, localField, Bike.BodyType.valueOf(bodyTypeString));
+          break;
+        case BUS:
+          toReturn = new Bus(name, price, localField, Bus.BodyType.valueOf(bodyTypeString));
+          break;
         case CAR:
-          for (Car.BodyType bodyType : Car.BodyType.values()) {
-            if (bodyTypeString.toUpperCase().equals(bodyType.name())) {
-              toReturn = new Car(name, price, localField, bodyType);
-            }
-          }
+          toReturn = new Car(name, price, localField, Car.BodyType.valueOf(bodyTypeString));
+          break;
         case TRUCK:
-          for (Truck.BodyType bodyType : Truck.BodyType.values()) {
-            if (bodyTypeString.toUpperCase().equals(bodyType.name())) {
-              toReturn = new Truck(name, price, localField, bodyType);
-            }
-          }
+          toReturn = new Truck(name, price, localField, Truck.BodyType.valueOf(bodyTypeString));
+          break;
+        case VAN:
+          toReturn = new Van(name, price, localField, Van.BodyType.valueOf(bodyTypeString));
+          break;
+        case DUMPTRUCK:
+          toReturn = new DumpTruck(name, price, localField, DumpTruck.BodyType.valueOf(bodyTypeString));
+          break;
         default:
-
       }
       return toReturn;
 
