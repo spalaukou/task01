@@ -100,16 +100,17 @@ public class Main {
             printer.print("The dearest vehicle in the parking lot: " + VehicleFinder.findTheDearestVehicle(parking));
             printer.print("The cheapest vehicle in the parking lot: " + VehicleFinder.findTheCheapestVehicle(parking));
 
+            VehicleFinder vehicleFinder = new VehicleFinder();
             printer.print("----------------------");
             printer.print("Strategy Pattern");
             printer.print("----------------------");
             printer.print("The Cheapest Vehicle");
-            parking.setFindingBehavior(new TheCheapestVehicle());
-            printer.print(parking.executeFindingBehavior());
+            vehicleFinder.setFindingBehavior(new TheCheapestVehicle());
+            printer.print(vehicleFinder.executeFindingBehavior(parking));
             printer.print("----------------------");
             printer.print("The Dearest Vehicle");
-            parking.setFindingBehavior(new TheDearestVehicle());
-            printer.print(parking.executeFindingBehavior());
+            vehicleFinder.setFindingBehavior(new TheDearestVehicle());
+            printer.print(vehicleFinder.executeFindingBehavior(parking));
             printer.print("----------------------");
 
             //Removing all vehicles from the parking and demonstrating ParkingIsEmptyException

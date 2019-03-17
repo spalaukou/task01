@@ -5,6 +5,7 @@ import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.Vehicle;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.NullParkingException;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.NullVehicleException;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.VehicleArrayException;
+import by.epam.javawebtraining.stanislaupalaukou.task01.model.logic.pattern.strategy.FindingBehavior;
 import org.apache.log4j.Logger;
 
 /**
@@ -18,6 +19,16 @@ import org.apache.log4j.Logger;
 public class VehicleFinder {
 
   private static final Logger logger = Logger.getLogger(VehicleFinder.class);
+
+  private FindingBehavior findingBehavior;
+
+  public void setFindingBehavior(FindingBehavior findingBehavior) {
+    this.findingBehavior = findingBehavior;
+  }
+
+  public Vehicle executeFindingBehavior(Parking parking) throws NullParkingException {
+    return findingBehavior.find(parking.getVehicles());
+  }
 
   /**
    * The method finds the cheapest Vehicle
