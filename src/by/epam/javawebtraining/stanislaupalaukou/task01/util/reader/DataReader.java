@@ -21,13 +21,12 @@ public class DataReader {
 
     private static final Logger logger = Logger.getLogger(DataReader.class);
 
-    private final static String SEPARATOR = File.separator;
-    private final static String path = "input" + SEPARATOR + "inputData.txt";
+    private final static String FILE_PATH = "input/inputData.txt";
     private static List<String> linesArray = new ArrayList<>();
 
     public List<String> readFileStrings() throws TechnicalException {
 
-        try (BufferedReader br = new BufferedReader(new FileReader(path))) {
+        try (BufferedReader br = new BufferedReader(new FileReader(FILE_PATH))) {
             String currentLine;
             while ((currentLine = br.readLine()) != null) {
                 linesArray.add(currentLine.trim());

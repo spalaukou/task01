@@ -15,7 +15,7 @@ import java.util.Arrays;
  * @project Task 01
  */
 
-public class Parking implements AbstractContainer<Vehicle[]> {
+public class Parking {
 
     private static final Logger logger = Logger.getLogger(Parking.class);
 
@@ -43,12 +43,10 @@ public class Parking implements AbstractContainer<Vehicle[]> {
         }
     }
 
-    @Override
     public Vehicle[] getVehicles() {
         return vehicles;
     }
 
-    @Override
     public void setVehicles(Vehicle[] vehicles) throws NullParkingException {
         if (vehicles != null) {
             this.vehicles = vehicles;
@@ -65,7 +63,6 @@ public class Parking implements AbstractContainer<Vehicle[]> {
         return findingBehavior.find(vehicles);
     }
 
-    @Override
     public void addVehicle(Vehicle vehicle) throws NullVehicleException {
         if (vehicle != null && !isOnPlace(vehicle)) {
             Vehicle[] newVehicles = new Vehicle[vehicles.length + 1];
@@ -81,7 +78,6 @@ public class Parking implements AbstractContainer<Vehicle[]> {
         }
     }
 
-    @Override
     public void removeVehicle(Vehicle vehicle) {
         try {
             if (vehicles != null && vehicles.length != 0) {
