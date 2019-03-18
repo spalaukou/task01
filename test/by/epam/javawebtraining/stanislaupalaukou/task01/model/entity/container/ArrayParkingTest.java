@@ -14,7 +14,7 @@ import static org.testng.Assert.assertEquals;
  * @project Task 01
  */
 
-public class ParkingTest {
+public class ArrayParkingTest {
     private Vehicle car1;
     private Vehicle car2;
     private Vehicle car3;
@@ -24,13 +24,15 @@ public class ParkingTest {
     private Vehicle[] vehicles2;
     private Vehicle[] vehicles3;
 
-    private Parking parking;
-    private Parking parking1;
-    private Parking parking2;
+    private ArrayParking parking;
+    private ArrayParking parking1;
+    private ArrayParking parking2;
 
     @BeforeTest
     public void setUpVehicles()
-            throws SeatsNumberException, VehiclePriceException, VehicleNameException, CarBodyTypeException, VehicleArrayException {
+            throws SeatsNumberException, VehiclePriceException,
+            VehicleNameException, CarBodyTypeException, VehicleArrayException {
+
         car1 = new Car("BMW", 66_000, 4, Car.BodyType.SEDAN);
         car2 = new Car("Renault", 15_000, 4, Car.BodyType.SEDAN);
         car3 = new Car("Volkswagen", 20_000, 4, Car.BodyType.COUPE);
@@ -41,49 +43,49 @@ public class ParkingTest {
         vehicles3 = new Vehicle[]{car1, car2, car3};
 
         parking = null;
-        parking1 = new Parking();
-        parking2 = new Parking(vehicles2);
+        parking1 = new ArrayParking();
+        parking2 = new ArrayParking(vehicles2);
     }
 
     @Test
     public void testDefaultConstructor() {
-        Parking actual = new Parking();
-        Parking expected = parking1;
+        ArrayParking actual = new ArrayParking();
+        ArrayParking expected = parking1;
 
         Assert.assertEquals(expected, actual);
     }
 
     @Test
     public void testConstructor() throws VehicleArrayException {
-        Parking expected = parking2;
-        Parking actual = new Parking(new Vehicle[]{car1, car2});
+        ArrayParking expected = parking2;
+        ArrayParking actual = new ArrayParking(new Vehicle[]{car1, car2});
 
         Assert.assertEquals(expected, actual);
     }
 
     @Test (expectedExceptions = VehicleArrayException.class)
     public void testConstructorException() throws VehicleArrayException {
-        new Parking(vehicles);
+        new ArrayParking(vehicles);
     }
 
     @Test
     public void testCopyConstructor() throws NullParkingException {
-        Parking expected = parking2;
-        Parking actual = new Parking(expected);
+        ArrayParking expected = parking2;
+        ArrayParking actual = new ArrayParking(expected);
 
         Assert.assertEquals(expected, actual);
     }
 
     @Test (expectedExceptions = NullParkingException.class)
     public void testCopyConstructorException() throws NullParkingException {
-        new Parking(parking);
+        new ArrayParking(parking);
     }
 
     @Test
     public void testGetVehicles() throws VehicleArrayException {
         Vehicle[] expected = vehicles1;
 
-        Parking parking = new Parking(vehicles1);
+        ArrayParking parking = new ArrayParking(vehicles1);
         Vehicle[] actual = parking.getVehicles();
 
         assertEquals(expected, actual);
@@ -91,7 +93,7 @@ public class ParkingTest {
 
     @Test
     public void testSetVehicles() throws NullParkingException {
-        Parking actualParking = new Parking();
+        ArrayParking actualParking = new ArrayParking();
         Vehicle[] expected = vehicles1;
         actualParking.setVehicles(vehicles1);
         Vehicle[] actual = actualParking.getVehicles();
@@ -101,14 +103,14 @@ public class ParkingTest {
 
     @Test (expectedExceptions = NullParkingException.class)
     public void testSetVehiclesException() throws NullParkingException {
-        Parking parking = new Parking();
+        ArrayParking parking = new ArrayParking();
         parking.setVehicles(vehicles);
     }
 
     @Test
     public void testAddVehicle() throws NullVehicleException, VehicleArrayException {
-        Parking expected = new Parking(vehicles3);
-        Parking actual = new Parking(vehicles2);
+        ArrayParking expected = new ArrayParking(vehicles3);
+        ArrayParking actual = new ArrayParking(vehicles2);
 
         actual.addVehicle(car3);
 
@@ -117,15 +119,15 @@ public class ParkingTest {
 
     @Test (expectedExceptions = NullVehicleException.class)
     public void testAddVehicleException() throws NullVehicleException, VehicleArrayException {
-        Parking parking = new Parking();
+        ArrayParking parking = new ArrayParking();
 
         parking.addVehicle(null);
     }
 
     @Test
     public void testRemoveVehicle() throws VehicleArrayException {
-        Parking expected = new Parking(vehicles2);
-        Parking actual = new Parking(vehicles3);
+        ArrayParking expected = new ArrayParking(vehicles2);
+        ArrayParking actual = new ArrayParking(vehicles3);
 
         actual.removeVehicle(car3);
 
@@ -139,7 +141,7 @@ public class ParkingTest {
 
     @Test
     public void testRemoveParkingIsEmptyException() throws VehicleArrayException {
-        Parking actual = new Parking(vehicles1);
+        ArrayParking actual = new ArrayParking(vehicles1);
         actual.removeVehicle(car3);
         actual.removeVehicle(car2);
         actual.removeVehicle(car1);

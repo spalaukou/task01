@@ -14,17 +14,17 @@ import java.util.Arrays;
  * @project Task 01
  */
 
-public class Parking {
+public class ArrayParking implements AbstractContainer<Vehicle[]> {
 
-    private static final Logger logger = Logger.getLogger(Parking.class);
+    private static final Logger logger = Logger.getLogger(ArrayParking.class);
 
     private Vehicle[] vehicles;
 
-    public Parking() {
+    public ArrayParking() {
         vehicles = new Vehicle[0];
     }
 
-    public Parking(Vehicle[] vehicle) throws VehicleArrayException {
+    public ArrayParking(Vehicle[] vehicle) throws VehicleArrayException {
         if (vehicle != null) {
             this.vehicles = vehicle;
         } else {
@@ -32,7 +32,7 @@ public class Parking {
         }
     }
 
-    public Parking(Parking parking) throws NullParkingException {
+    public ArrayParking(ArrayParking parking) throws NullParkingException {
         if(parking != null) {
             this.vehicles = parking.vehicles;
         } else {
@@ -86,7 +86,7 @@ public class Parking {
                 }
             } else {
                 logger.info("ParkingIsEmptyException has been thrown.");
-                throw new ParkingIsEmptyException("Parking is empty");
+                throw new ParkingIsEmptyException("ArrayParking is empty");
             }
         } catch (ParkingIsEmptyException | VehicleNotFoundException e) {
             logger.info("Exception has been caught", e);
@@ -109,7 +109,7 @@ public class Parking {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Parking parking = (Parking) o;
+        ArrayParking parking = (ArrayParking) o;
         return Arrays.equals(vehicles, parking.vehicles);
     }
 
@@ -121,7 +121,7 @@ public class Parking {
     @Override
     public String toString() {
         if (vehicles != null) {
-            return "Parking " +
+            return "ArrayParking " +
                     Arrays.toString(vehicles);
         }
 

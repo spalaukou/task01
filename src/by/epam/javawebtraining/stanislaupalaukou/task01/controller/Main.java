@@ -1,11 +1,12 @@
 package by.epam.javawebtraining.stanislaupalaukou.task01.controller;
 
-import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking;
+import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.ArrayParking;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.Car;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.Truck;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.Vehicle;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.ParkingTaskException;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.technical.TechnicalException;
+import by.epam.javawebtraining.stanislaupalaukou.task01.model.logic.serializator.MySerializator;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.logic.VehicleCalculator;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.logic.VehicleFinder;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.logic.VehicleSorter;
@@ -56,7 +57,7 @@ public class Main {
             printer.print(validLines);
 
             //Filling parking with factory
-            Parking parking = ParkingCreator.create(validLines);
+            ArrayParking parking = ParkingCreator.create(validLines);
 
             printer.print(parking);
             //Adding vehicles to parking from app
@@ -115,6 +116,10 @@ public class Main {
 
             //Removing all vehicles from the parking and demonstrating ParkingIsEmptyException
             parking.removeVehicle(car1);
+
+            MySerializator.write(car2);
+            MySerializator.read();
+
             parking.removeVehicle(car2);
             parking.removeVehicle(car3);
             parking.removeVehicle(car4);

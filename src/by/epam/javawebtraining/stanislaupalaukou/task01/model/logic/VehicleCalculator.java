@@ -1,7 +1,8 @@
 package by.epam.javawebtraining.stanislaupalaukou.task01.model.logic;
 
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.Car;
-import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking;
+import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.AbstractContainer;
+import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.ArrayParking;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.PassengerTransport;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.Vehicle;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.NullParkingException;
@@ -25,11 +26,11 @@ public class VehicleCalculator {
      * @param parking of vehicles
      * @return total price of all the Vehicles
      */
-    public static int totalPrice(Parking parking) throws NullParkingException {
+    public static int totalPrice(AbstractContainer parking) throws NullParkingException {
         if (parking != null) {
 
             int totalPrice = 0;
-            for (Vehicle vehicle : parking.getVehicles()) {
+            for (Vehicle vehicle : (Vehicle[]) parking.getVehicles()) {
                 totalPrice += vehicle.getPrice();
             }
             logger.info("Total price has been calculated.");
@@ -47,10 +48,10 @@ public class VehicleCalculator {
      * @param parking of vehicles
      * @return total number of seats of all the vehicles
      */
-    public static int totalSeats(Parking parking) throws NullParkingException {
+    public static int totalSeats(AbstractContainer parking) throws NullParkingException {
         if (parking != null) {
             int totalSeats = 0;
-            for (Vehicle vehicle : parking.getVehicles()) {
+            for (Vehicle vehicle : (Vehicle[]) parking.getVehicles()) {
                 if (vehicle.getClass() == Car.class) {
                     totalSeats += ((PassengerTransport) vehicle).getSeatsNumber();
                 }

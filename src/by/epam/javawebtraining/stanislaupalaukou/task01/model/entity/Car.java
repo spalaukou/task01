@@ -5,6 +5,7 @@ import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.VehicleNameException;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.VehiclePriceException;
 
+import java.io.Serializable;
 import java.util.Objects;
 
 /**
@@ -15,7 +16,7 @@ import java.util.Objects;
  * @project Task 01
  */
 
-public class Car extends PassengerTransport {
+public class Car extends PassengerTransport implements Serializable {
 
     private BodyType bodyType;
 

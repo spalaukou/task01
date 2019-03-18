@@ -3,6 +3,7 @@ package by.epam.javawebtraining.stanislaupalaukou.task01.model.entity;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.VehicleNameException;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.VehiclePriceException;
 
+import java.io.Serializable;
 import java.util.Objects;
 
 /**
@@ -13,7 +14,7 @@ import java.util.Objects;
  * @project Task 01
  */
 
-public abstract class Vehicle {
+public abstract class Vehicle implements Serializable {
 
     private String name;
     private int price;

@@ -1,9 +1,8 @@
 package by.epam.javawebtraining.stanislaupalaukou.task01.model.logic;
 
-import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.Vehicle;
+import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.ArrayParking;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.NullParkingException;
-import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.NullVehicleException;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.VehicleArrayException;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.logic.pattern.strategy.FindingBehavior;
 import org.apache.log4j.Logger;
@@ -26,7 +25,7 @@ public class VehicleFinder {
     this.findingBehavior = findingBehavior;
   }
 
-  public Vehicle executeFindingBehavior(Parking parking) throws NullParkingException {
+  public Vehicle executeFindingBehavior(ArrayParking parking) throws NullParkingException {
     return findingBehavior.find(parking.getVehicles());
   }
 
@@ -37,11 +36,11 @@ public class VehicleFinder {
    * @param parking
    * @return
    */
-  public static Vehicle findTheCheapestVehicle(Parking parking) throws NullParkingException, VehicleArrayException {
+  public static Vehicle findTheCheapestVehicle(ArrayParking parking) throws NullParkingException, VehicleArrayException {
 
     if (parking != null) {
 
-      Vehicle theCheapest = null;
+      Vehicle theCheapest;
       if (parking.getVehicles() != null && parking.getVehicles().length != 0) {
         theCheapest = parking.getVehicles()[0];
         for (int i = 0; i < parking.getVehicles().length; i++) {
@@ -69,11 +68,11 @@ public class VehicleFinder {
    * @param parking
    * @return
    */
-  public static Vehicle findTheDearestVehicle(Parking parking) throws NullParkingException, VehicleArrayException {
+  public static Vehicle findTheDearestVehicle(ArrayParking parking) throws NullParkingException, VehicleArrayException {
 
     if (parking != null) {
 
-      Vehicle theDearest = null;
+      Vehicle theDearest;
       if (parking.getVehicles() != null && parking.getVehicles().length != 0) {
         theDearest = parking.getVehicles()[0];
         for (int i = 0; i < parking.getVehicles().length; i++) {

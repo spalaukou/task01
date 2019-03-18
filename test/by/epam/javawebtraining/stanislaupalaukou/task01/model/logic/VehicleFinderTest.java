@@ -1,6 +1,6 @@
 package by.epam.javawebtraining.stanislaupalaukou.task01.model.logic;
 
-import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking;
+import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.ArrayParking;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.Car;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.Truck;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.Vehicle;
@@ -15,9 +15,9 @@ import org.testng.annotations.Test;
  */
 
 public class VehicleFinderTest {
-    private Parking parking1;
-    private Parking parking2;
-    private Parking parking3;
+    private ArrayParking parking1;
+    private ArrayParking parking2;
+    private ArrayParking parking3;
     private Vehicle car1;
     private Vehicle car2;
     private Vehicle car3;
@@ -37,8 +37,8 @@ public class VehicleFinderTest {
         Vehicle[] vehicles1 = {car1, car2, car3, car4, truck};
         Vehicle[] vehicles2 = {};
 
-        parking1 = new Parking(vehicles1);
-        parking2 = new Parking(vehicles2);
+        parking1 = new ArrayParking(vehicles1);
+        parking2 = new ArrayParking(vehicles2);
         parking3 = null;
     }
 

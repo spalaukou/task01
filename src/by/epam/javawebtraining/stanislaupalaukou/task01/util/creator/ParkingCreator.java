@@ -1,6 +1,7 @@
 package by.epam.javawebtraining.stanislaupalaukou.task01.util.creator;
 
-import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking;
+import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.AbstractContainer;
+import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.ArrayParking;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.Vehicle;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.VehicleType;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.*;
@@ -10,7 +11,7 @@ import org.apache.log4j.Logger;
 import java.util.List;
 
 /**
- * The util class creates Parking of Vehicles,
+ * The util class creates ArrayParking of Vehicles,
  * uses Vehicle Factory.
  *
  * @see
@@ -23,18 +24,18 @@ public class ParkingCreator {
 
     private static final Logger logger = Logger.getLogger(ParkingCreator.class);
 
-    public static Parking create() {
-        return new Parking();
+    public static ArrayParking create() {
+        return new ArrayParking();
     }
 
-    public static Parking create(Vehicle[] vehicles) throws VehicleArrayException {
-        return new Parking(vehicles);
+    public static ArrayParking create(Vehicle[] vehicles) throws VehicleArrayException {
+        return new ArrayParking(vehicles);
     }
 
-    public static Parking create(List<String> validLines)
+    public static ArrayParking create(List<String> validLines)
             throws LogicalException {
         
-        Parking parking = new Parking();
+        ArrayParking parking = new ArrayParking();
         for (String validString : validLines) {
             String[] splitted = validString.split(" ");
             for(VehicleType type : VehicleType.values()) {
@@ -44,7 +45,7 @@ public class ParkingCreator {
                 }
             }
         }
-        logger.info("Parking has been created.");
+        logger.info("ArrayParking has been created.");
         return parking;
     }
 }

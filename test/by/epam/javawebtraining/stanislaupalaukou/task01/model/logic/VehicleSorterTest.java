@@ -3,13 +3,11 @@ package by.epam.javawebtraining.stanislaupalaukou.task01.model.logic;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.Car;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.Truck;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.Vehicle;
-import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.Parking;
+import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.ArrayParking;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.*;
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-
-import java.util.Arrays;
 
 /**
  * @author Stanislau Palaukou on 24.02.2019
@@ -22,9 +20,9 @@ public class VehicleSorterTest {
     private Vehicle car3;
     private Vehicle car4;
     private Vehicle truck;
-    private Parking parking1;
-    private Parking parking2;
-    private Parking parking3;
+    private ArrayParking parking1;
+    private ArrayParking parking2;
+    private ArrayParking parking3;
 
     @BeforeTest
     public void setUpParking()
@@ -39,15 +37,15 @@ public class VehicleSorterTest {
         Vehicle[] vehicles1 = new Vehicle[]{car1, car2, car3, car4, truck};
         Vehicle[] vehicles2 = {};
 
-        parking1 = new Parking(vehicles1);
+        parking1 = new ArrayParking(vehicles1);
         parking2 = null;
-        parking3 = new Parking(vehicles2);
+        parking3 = new ArrayParking(vehicles2);
     }
 
     @Test
     public void testSortByPrice() throws NullParkingException, VehicleArrayException {
         Vehicle[] sorted = {car2, car3, car1, truck, car4};
-        Parking expected = new Parking(sorted);
+        ArrayParking expected = new ArrayParking(sorted);
 
         VehicleSorter.sortByPrice(parking1);
 
@@ -71,7 +69,7 @@ public class VehicleSorterTest {
     @Test
     public void testSortByName() throws NullParkingException, VehicleArrayException {
         Vehicle[] sorted = {car1, car2, car4, truck, car3};
-        Parking expected = new Parking(sorted);
+        ArrayParking expected = new ArrayParking(sorted);
 
         VehicleSorter.sortByName(parking1);
 
@@ -88,7 +86,7 @@ public class VehicleSorterTest {
     @Test
     public void testSortByNameByPrice() throws VehicleArrayException, NullParkingException {
         Vehicle[] sorted = {car1, car2, truck, car4, car3};
-        Parking expected = new Parking(sorted);
+        ArrayParking expected = new ArrayParking(sorted);
 
         VehicleSorter.sortByNameByPrice(parking1);
 
