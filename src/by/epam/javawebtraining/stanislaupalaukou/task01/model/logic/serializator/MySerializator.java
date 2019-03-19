@@ -1,7 +1,5 @@
 package by.epam.javawebtraining.stanislaupalaukou.task01.model.logic.serializator;
 
-import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.Vehicle;
-
 import java.io.*;
 
 /**
@@ -9,10 +7,10 @@ import java.io.*;
  * @project Task 01
  */
 
-public class MySerializator {
+public class MySerializator<T> {
   private static final String FILE_NAME = "output/serialized.txt";
 
-  public static void write(Vehicle vehicle) {
+  public void write(T t) {
 
 
     try (ObjectOutputStream objectOutputStream =
@@ -20,26 +18,25 @@ public class MySerializator {
                     new BufferedOutputStream(
                             new FileOutputStream(FILE_NAME))))) {
 
-      objectOutputStream.writeObject(vehicle);
+      objectOutputStream.writeObject(t);
 
     } catch (IOException e) {
       e.printStackTrace();
     }
   }
 
-  public static void read() {
-
-    Vehicle vehicle;
+  public void read() {
 
     try (ObjectInputStream objectInputStream =
                  new ObjectInputStream((
                          new BufferedInputStream(
                                  new FileInputStream(FILE_NAME))))) {
 
-        vehicle = (Vehicle) objectInputStream.readObject();
+
+        T t = (T) objectInputStream.readObject();
 
         System.out.println("Deserialized object:");
-        System.out.println(vehicle);
+        System.out.println(t);
 
     } catch (IOException | ClassNotFoundException e) {
       e.printStackTrace();

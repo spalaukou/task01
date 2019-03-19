@@ -117,8 +117,11 @@ public class Main {
             //Removing all vehicles from the parking and demonstrating ParkingIsEmptyException
             parking.removeVehicle(car1);
 
-            MySerializator.write(car2);
-            MySerializator.read();
+            MySerializator mySerializator = new MySerializator();
+            mySerializator.write(car2);
+            mySerializator.read();
+            mySerializator.write(parking);
+            mySerializator.read();
 
             parking.removeVehicle(car2);
             parking.removeVehicle(car3);

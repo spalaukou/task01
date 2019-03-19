@@ -4,6 +4,7 @@ import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.Vehicle;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.*;
 import org.apache.log4j.Logger;
 
+import java.io.Serializable;
 import java.util.Arrays;
 
 /**
@@ -14,7 +15,7 @@ import java.util.Arrays;
  * @project Task 01
  */
 
-public class ArrayParking implements AbstractContainer<Vehicle[]> {
+public class ArrayParking implements AbstractContainer<Vehicle[]>, Serializable {
 
     private static final Logger logger = Logger.getLogger(ArrayParking.class);
 
