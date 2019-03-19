@@ -1,9 +1,11 @@
 package by.epam.javawebtraining.stanislaupalaukou.task01.model.entity;
 
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.*;
-import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+
+import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertTrue;
 
 /**
  * @author Stanislau Palaukou on 17.03.2019
@@ -13,50 +15,81 @@ import org.testng.annotations.Test;
 public class VanTest {
     private Van van;
     private Van expected;
+    private Van actual;
 
     @BeforeTest
-    public void setUpVan()
-            throws VanBodyTypeException, VehiclePriceException, CargoCapacityException, VehicleNameException {
-        van = new Van ("Iveco", 40_000, 3_500, Van.BodyType.BOX);
-        expected = new Van ("Iveco", 40_000, 3_500, Van.BodyType.BOX);
+    public void setUpVan() {
+        try {
+            van = new Van("Iveco", 40_000, 3_500, Van.BodyType.BOX);
+            expected = new Van("Iveco", 40_000, 3_500, Van.BodyType.BOX);
+            actual = new Van();
+        } catch (LogicalException e) {
+
+        }
     }
 
     @Test
-    public void testDefaultConstructorVan() {
-        Van actual = new Van();
-
+    public void testDefaultConstructorNameVan() {
         String expectedName = null;
+
+        assertEquals(expectedName, actual.getName());
+    }
+
+    @Test
+    public void testDefaultConstructorPriceVan() {
         int expectedPrice = 0;
+
+        assertEquals(expectedPrice, actual.getPrice());
+    }
+
+    @Test
+    public void testDefaultConstructorCargoVan() {
         int expectedCargoCapacity = 0;
+
+        assertEquals(expectedCargoCapacity, actual.getCargoCapacity());
+    }
+
+    @Test
+    public void testDefaultConstructorBodyVan() {
         Truck.BodyType expectedBodyType = null;
 
-        Assert.assertEquals(expectedName, actual.getName());
-        Assert.assertEquals(expectedPrice, actual.getPrice());
-        Assert.assertEquals(expectedCargoCapacity, actual.getCargoCapacity());
-        Assert.assertEquals(expectedBodyType, actual.getBodyType());
+        assertEquals(expectedBodyType, actual.getBodyType());
     }
 
     @Test
-    public void testConstructorVan() {
+    public void testConstructorNameVan() {
         String expectedName = "Iveco";
-        int expectedPrice = 40_000;
-        int expectedCargoCapacity = 3_500;
-        Van.BodyType expectedBodyType = Van.BodyType.BOX;
-
         String actualName = van.getName();
+
+        assertEquals(expectedName, actualName);
+    }
+
+    @Test
+    public void testConstructorPriceVan() {
+        int expectedPrice = 40_000;
         int actualPrice = van.getPrice();
+
+        assertEquals(expectedPrice, actualPrice);
+    }
+
+    @Test
+    public void testConstructorCargoVan() {
+        int expectedCargoCapacity = 3_500;
         int actualCargoCapacity = van.getCargoCapacity();
+
+        assertEquals(expectedCargoCapacity, actualCargoCapacity);
+    }
+
+    @Test
+    public void testConstructorBodyVan() {
+        Van.BodyType expectedBodyType = Van.BodyType.BOX;
         Van.BodyType actualBodyType = van.getBodyType();
 
-        Assert.assertEquals(expectedName, actualName);
-        Assert.assertEquals(expectedPrice, actualPrice);
-        Assert.assertEquals(expectedCargoCapacity, actualCargoCapacity);
-        Assert.assertEquals(expectedBodyType, actualBodyType);
+        assertEquals(expectedBodyType, actualBodyType);
     }
 
     @Test (expectedExceptions = VanBodyTypeException.class)
-    public void testConstructorVanException()
-            throws CargoCapacityException, VehiclePriceException, VehicleNameException, VanBodyTypeException {
+    public void testConstructorVanException() throws LogicalException {
         new Van ("Iveco", 40_000, 3_500, null);
     }
 
@@ -65,7 +98,7 @@ public class VanTest {
             throws VehiclePriceException, VehicleNameException, CargoCapacityException, VanBodyTypeException {
         Van expectedVan = new Van(van);
 
-        Assert.assertEquals(expectedVan, van);
+        assertEquals(expectedVan, van);
     }
 
     @Test
@@ -75,7 +108,7 @@ public class VanTest {
         van.setBodyType(Van.BodyType.MULTISTOP);
         Van.BodyType actualBodyType = van.getBodyType();
 
-        Assert.assertEquals(expectedBodyType, actualBodyType);
+        assertEquals(expectedBodyType, actualBodyType);
     }
 
     @Test (expectedExceptions = VanBodyTypeException.class)
@@ -86,20 +119,19 @@ public class VanTest {
 
     @Test
     public void testEquals() {
-        Assert.assertTrue(van.equals(expected));
+        assertTrue(van.equals(expected));
     }
 
     @Test
     public void testHashCode() {
-        Assert.assertEquals(expected.hashCode(), van.hashCode());
+        assertEquals(expected.hashCode(), van.hashCode());
     }
 
     @Test
     public void testToString() {
         String expectedString = "Van {name = Iveco, price = 40000, cargoCapacity = 3500, bodyType = BOX}";
-        System.out.println(expected);
 
-        Assert.assertEquals(expectedString, expected.toString());
+        assertEquals(expectedString, expected.toString());
     }
 
 }

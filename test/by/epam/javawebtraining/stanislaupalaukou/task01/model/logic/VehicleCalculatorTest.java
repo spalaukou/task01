@@ -5,9 +5,11 @@ import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.Car;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.Truck;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.Vehicle;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.*;
-import org.testng.Assert;
+
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+
+import static org.testng.Assert.assertEquals;
 
 /**
  * @author Stanislau Palaukou on 24.02.2019
@@ -17,7 +19,6 @@ import org.testng.annotations.Test;
 public class VehicleCalculatorTest {
     private ArrayParking parking1;
     private ArrayParking parking2;
-    private ArrayParking parking3;
 
     @BeforeTest
     public void setUpParking()
@@ -34,7 +35,6 @@ public class VehicleCalculatorTest {
 
         parking1 = new ArrayParking(vehicles1);
         parking2 = new ArrayParking(vehicles2);
-        parking3 = null;
     }
 
     @Test
@@ -42,7 +42,7 @@ public class VehicleCalculatorTest {
         int expected = 199_000;
         int actual = VehicleCalculator.totalPrice(parking1);
 
-        Assert.assertEquals(expected, actual);
+        assertEquals(expected, actual);
     }
 
     @Test
@@ -50,32 +50,32 @@ public class VehicleCalculatorTest {
         int expected = 0;
         int actual = VehicleCalculator.totalPrice(parking2);
 
-        Assert.assertEquals(expected, actual);
+        assertEquals(expected, actual);
     }
 
     @Test (expectedExceptions = NullParkingException.class)
     public void testTotalPriceParkingIsNullException() throws NullParkingException {
-        VehicleCalculator.totalPrice(parking3);
+        VehicleCalculator.totalPrice(null);
     }
 
     @Test
-    public void TestTotalSeats() throws NullParkingException {
+    public void testTotalSeats() throws NullParkingException {
         int expected = 16;
         int actual = VehicleCalculator.totalSeats(parking1);
 
-        Assert.assertEquals(expected, actual);
+        assertEquals(expected, actual);
     }
 
     @Test
-    public void TestTotalSeatsParkingIsEmpty() throws NullParkingException {
+    public void testTotalSeatsParkingIsEmpty() throws NullParkingException {
         int expected = 0;
         int actual = VehicleCalculator.totalSeats(parking2);
 
-        Assert.assertEquals(expected, actual);
+        assertEquals(expected, actual);
     }
 
     @Test (expectedExceptions = NullParkingException.class)
-    public void TestTotalSeatsParkingIsNullException() throws NullParkingException {
-        VehicleCalculator.totalSeats(parking3);
+    public void testTotalSeatsParkingIsNullException() throws NullParkingException {
+        VehicleCalculator.totalSeats(null);
     }
 }

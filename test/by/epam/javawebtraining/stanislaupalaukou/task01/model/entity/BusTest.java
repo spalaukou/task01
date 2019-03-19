@@ -1,9 +1,11 @@
 package by.epam.javawebtraining.stanislaupalaukou.task01.model.entity;
 
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.*;
-import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+
+import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertTrue;
 
 /**
  * @author Stanislau Palaukou on 17.03.2019
@@ -13,45 +15,74 @@ import org.testng.annotations.Test;
 public class BusTest {
     private Bus bus;
     private Bus expected;
+    private Bus actual;
 
     @BeforeTest
     public void setUpBus()
             throws SeatsNumberException, VehiclePriceException, VehicleNameException, BusBodyTypeException {
         bus = new Bus ("Scania", 60_000, 45, Bus.BodyType.TOURIST);
         expected = new Bus ("Scania", 60_000, 45, Bus.BodyType.TOURIST);
+        actual = new Bus();
     }
 
     @Test
-    public void testDefaultConstructorBus() {
-        Bus actual = new Bus();
-
+    public void testDefaultConstructorNameBus() {
         String expectedName = null;
+
+        assertEquals(expectedName, actual.getName());
+    }
+
+    @Test
+    public void testDefaultConstructorPriceBus() {
         int expectedPrice = 0;
+
+        assertEquals(expectedPrice, actual.getPrice());
+    }
+
+    @Test
+    public void testDefaultConstructorSeatsBus() {
         int expectedSeatsNumber = 0;
+
+        assertEquals(expectedSeatsNumber, actual.getSeatsNumber());
+    }
+
+    @Test
+    public void testDefaultConstructorBodyBus() {
         Bus.BodyType expectedBodyType = null;
 
-        Assert.assertEquals(expectedName, actual.getName());
-        Assert.assertEquals(expectedPrice, actual.getPrice());
-        Assert.assertEquals(expectedSeatsNumber, actual.getSeatsNumber());
-        Assert.assertEquals(expectedBodyType, actual.getBodyType());
+        assertEquals(expectedBodyType, actual.getBodyType());
     }
 
     @Test
-    public void testConstructorBus() {
+    public void testConstructorNameBus() {
         String expectedName = "Scania";
-        int expectedPrice = 60_000;
-        int expectedSeatsNumber = 45;
-        Bus.BodyType expectedBodyType = Bus.BodyType.TOURIST;
-
         String actualName = bus.getName();
+
+        assertEquals(expectedName, actualName);
+    }
+
+    @Test
+    public void testConstructorPriceBus() {
+        int expectedPrice = 60_000;
         int actualPrice = bus.getPrice();
+
+        assertEquals(expectedPrice, actualPrice);
+    }
+
+    @Test
+    public void testConstructorSeatsBus() {
+        int expectedSeatsNumber = 45;
         int actualSeatsNumber = bus.getSeatsNumber();
+
+        assertEquals(expectedSeatsNumber, actualSeatsNumber);
+    }
+
+    @Test
+    public void testConstructorBodyBus() {
+        Bus.BodyType expectedBodyType = Bus.BodyType.TOURIST;
         Bus.BodyType actualBodyType = bus.getBodyType();
 
-        Assert.assertEquals(expectedName, actualName);
-        Assert.assertEquals(expectedPrice, actualPrice);
-        Assert.assertEquals(expectedSeatsNumber, actualSeatsNumber);
-        Assert.assertEquals(expectedBodyType, actualBodyType);
+        assertEquals(expectedBodyType, actualBodyType);
     }
 
     @Test (expectedExceptions = BusBodyTypeException.class)
@@ -65,7 +96,7 @@ public class BusTest {
             throws SeatsNumberException, VehiclePriceException, VehicleNameException, BusBodyTypeException {
         Bus expectedBus = new Bus(bus);
 
-        Assert.assertEquals(expectedBus, bus);
+        assertEquals(expectedBus, bus);
     }
 
     @Test
@@ -75,7 +106,7 @@ public class BusTest {
         bus.setBodyType(Bus.BodyType.TOURIST);
         Bus.BodyType actualBodyType = bus.getBodyType();
 
-        Assert.assertEquals(expectedBodyType, actualBodyType);
+        assertEquals(expectedBodyType, actualBodyType);
     }
 
     @Test (expectedExceptions = BusBodyTypeException.class)
@@ -85,20 +116,19 @@ public class BusTest {
 
     @Test
     public void testEquals() {
-        Assert.assertTrue(bus.equals(expected));
+        assertTrue(bus.equals(expected));
     }
 
     @Test
     public void testHashCode() {
-        Assert.assertEquals(expected.hashCode(), bus.hashCode());
+        assertEquals(expected.hashCode(), bus.hashCode());
     }
 
     @Test
     public void testToString() {
         String expectedString = "Bus {name = Scania, price = 60000, seatsNumber = 45, bodyType = TOURIST}";
 
-        System.out.println(expected);
-        Assert.assertEquals(expectedString, expected.toString());
+        assertEquals(expectedString, expected.toString());
     }
 
 }

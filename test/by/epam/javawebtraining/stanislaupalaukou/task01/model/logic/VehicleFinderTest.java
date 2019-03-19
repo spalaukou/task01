@@ -5,9 +5,11 @@ import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.Car;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.Truck;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.Vehicle;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.*;
-import org.testng.Assert;
+
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+
+import static org.testng.Assert.assertEquals;
 
 /**
  * @author Stanislau Palaukou on 24.02.2019
@@ -17,7 +19,6 @@ import org.testng.annotations.Test;
 public class VehicleFinderTest {
     private ArrayParking parking1;
     private ArrayParking parking2;
-    private ArrayParking parking3;
     private Vehicle car1;
     private Vehicle car2;
     private Vehicle car3;
@@ -39,7 +40,6 @@ public class VehicleFinderTest {
 
         parking1 = new ArrayParking(vehicles1);
         parking2 = new ArrayParking(vehicles2);
-        parking3 = null;
     }
 
     @Test
@@ -47,12 +47,12 @@ public class VehicleFinderTest {
         Vehicle expected = car2;
         Vehicle actual = VehicleFinder.findTheCheapestVehicle(parking1);
 
-        Assert.assertEquals(expected, actual);
+        assertEquals(expected, actual);
     }
 
     @Test (expectedExceptions = NullParkingException.class)
     public void testFindTheCheapestVehicleNullParkingException() throws NullParkingException, VehicleArrayException {
-        VehicleFinder.findTheCheapestVehicle(parking3);
+        VehicleFinder.findTheCheapestVehicle(null);
     }
 
     @Test (expectedExceptions = VehicleArrayException.class)
@@ -65,12 +65,12 @@ public class VehicleFinderTest {
         Vehicle expected = truck;
         Vehicle actual = VehicleFinder.findTheDearestVehicle(parking1);
 
-        Assert.assertEquals(expected, actual);
+        assertEquals(expected, actual);
     }
 
     @Test (expectedExceptions = NullParkingException.class)
     public void testFindTheDearestVehicleNullParkingException() throws NullParkingException, VehicleArrayException {
-        VehicleFinder.findTheDearestVehicle(parking3);
+        VehicleFinder.findTheDearestVehicle(null);
     }
 
     @Test (expectedExceptions = VehicleArrayException.class)

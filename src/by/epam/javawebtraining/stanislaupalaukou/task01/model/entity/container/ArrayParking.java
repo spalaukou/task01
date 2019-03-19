@@ -15,7 +15,7 @@ import java.util.Arrays;
  * @project Task 01
  */
 
-public class ArrayParking implements AbstractContainer<Vehicle[]>, Serializable {
+public class ArrayParking implements AbstractContainer<Vehicle>, Serializable {
 
     private static final Logger logger = Logger.getLogger(ArrayParking.class);
 
@@ -41,10 +41,12 @@ public class ArrayParking implements AbstractContainer<Vehicle[]>, Serializable 
         }
     }
 
+    @Override
     public Vehicle[] getVehicles() {
         return vehicles;
     }
 
+    @Override
     public void setVehicles(Vehicle[] vehicles) throws NullParkingException {
         if (vehicles != null) {
             this.vehicles = vehicles;
@@ -53,6 +55,7 @@ public class ArrayParking implements AbstractContainer<Vehicle[]>, Serializable 
         }
     }
 
+    @Override
     public void addVehicle(Vehicle vehicle) throws NullVehicleException {
         if (vehicle != null && !isOnPlace(vehicle)) {
             Vehicle[] newVehicles = new Vehicle[vehicles.length + 1];
@@ -68,6 +71,7 @@ public class ArrayParking implements AbstractContainer<Vehicle[]>, Serializable 
         }
     }
 
+    @Override
     public void removeVehicle(Vehicle vehicle) {
         try {
             if (vehicles != null && vehicles.length != 0) {

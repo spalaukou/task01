@@ -1,9 +1,11 @@
 package by.epam.javawebtraining.stanislaupalaukou.task01.model.entity;
 
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.*;
-import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+
+import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertTrue;
 
 /**
  * @author Stanislau Palaukou on 17.03.2019
@@ -13,45 +15,74 @@ import org.testng.annotations.Test;
 public class DumpTruckTest {
     private DumpTruck dumpTruck;
     private DumpTruck expected;
+    private DumpTruck actual;
 
     @BeforeTest
     public void setUpDumpTruck()
             throws DumpTruckBodyTypeException, VehiclePriceException, CargoCapacityException, VehicleNameException {
         dumpTruck = new DumpTruck ("MAZ", 55_000, 20_000, DumpTruck.BodyType.CONSTRUCTION);
         expected = new DumpTruck ("MAZ", 55_000, 20_000, DumpTruck.BodyType.CONSTRUCTION);
+        actual = new DumpTruck();
     }
 
     @Test
-    public void testDefaultConstructorDumpTruck() {
-        DumpTruck actual = new DumpTruck();
-
+    public void testDefaultConstructorNameDumpTruck() {
         String expectedName = null;
+
+        assertEquals(expectedName, actual.getName());
+    }
+
+    @Test
+    public void testDefaultConstructorPriceDumpTruck() {
         int expectedPrice = 0;
+
+        assertEquals(expectedPrice, actual.getPrice());
+    }
+
+    @Test
+    public void testDefaultConstructorCargoDumpTruck() {
         int expectedCargoCapacity = 0;
+
+        assertEquals(expectedCargoCapacity, actual.getCargoCapacity());
+    }
+
+    @Test
+    public void testDefaultConstructorBodyDumpTruck() {
         DumpTruck.BodyType expectedBodyType = null;
 
-        Assert.assertEquals(expectedName, actual.getName());
-        Assert.assertEquals(expectedPrice, actual.getPrice());
-        Assert.assertEquals(expectedCargoCapacity, actual.getCargoCapacity());
-        Assert.assertEquals(expectedBodyType, actual.getBodyType());
+        assertEquals(expectedBodyType, actual.getBodyType());
     }
 
     @Test
-    public void testConstructorDumpTruck() {
+    public void testConstructorNameDumpTruck() {
         String expectedName = "MAZ";
-        int expectedPrice = 55_000;
-        int expectedCargoCapacity = 20_000;
-        DumpTruck.BodyType expectedBodyType = DumpTruck.BodyType.CONSTRUCTION;
-
         String actualName = dumpTruck.getName();
+
+        assertEquals(expectedName, actualName);
+    }
+
+    @Test
+    public void testConstructorPriceDumpTruck() {
+        int expectedPrice = 55_000;
         int actualPrice = dumpTruck.getPrice();
+
+        assertEquals(expectedPrice, actualPrice);
+    }
+
+    @Test
+    public void testConstructorCargoDumpTruck() {
+        int expectedCargoCapacity = 20_000;
         int actualCargoCapacity = dumpTruck.getCargoCapacity();
+
+        assertEquals(expectedCargoCapacity, actualCargoCapacity);
+    }
+
+    @Test
+    public void testConstructorBodyDumpTruck() {
+        DumpTruck.BodyType expectedBodyType = DumpTruck.BodyType.CONSTRUCTION;
         DumpTruck.BodyType actualBodyType = dumpTruck.getBodyType();
 
-        Assert.assertEquals(expectedName, actualName);
-        Assert.assertEquals(expectedPrice, actualPrice);
-        Assert.assertEquals(expectedCargoCapacity, actualCargoCapacity);
-        Assert.assertEquals(expectedBodyType, actualBodyType);
+        assertEquals(expectedBodyType, actualBodyType);
     }
 
     @Test (expectedExceptions = DumpTruckBodyTypeException.class)
@@ -65,7 +96,7 @@ public class DumpTruckTest {
             throws VehiclePriceException, VehicleNameException, CargoCapacityException, DumpTruckBodyTypeException {
         DumpTruck expectedDumpTruck = new DumpTruck(dumpTruck);
 
-        Assert.assertEquals(expectedDumpTruck, dumpTruck);
+        assertEquals(expectedDumpTruck, dumpTruck);
     }
 
     @Test
@@ -75,7 +106,7 @@ public class DumpTruckTest {
         dumpTruck.setBodyType(DumpTruck.BodyType.GARBAGE);
         DumpTruck.BodyType actualBodyType = dumpTruck.getBodyType();
 
-        Assert.assertEquals(expectedBodyType, actualBodyType);
+        assertEquals(expectedBodyType, actualBodyType);
     }
 
     @Test (expectedExceptions = DumpTruckBodyTypeException.class)
@@ -86,20 +117,19 @@ public class DumpTruckTest {
 
     @Test
     public void testEquals() {
-        Assert.assertTrue(dumpTruck.equals(expected));
+        assertTrue(dumpTruck.equals(expected));
     }
 
     @Test
     public void testHashCode() {
-        Assert.assertEquals(expected.hashCode(), dumpTruck.hashCode());
+        assertEquals(expected.hashCode(), dumpTruck.hashCode());
     }
 
     @Test
     public void testToString() {
         String expectedString = "DumpTruck {name = MAZ, price = 55000, cargoCapacity = 20000, bodyType = CONSTRUCTION}";
-        System.out.println(expected);
 
-        Assert.assertEquals(expectedString, expected.toString());
+        assertEquals(expectedString, expected.toString());
     }
 
 }

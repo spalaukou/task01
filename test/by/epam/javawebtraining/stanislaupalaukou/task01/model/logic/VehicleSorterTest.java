@@ -5,9 +5,10 @@ import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.Truck;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.Vehicle;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container.ArrayParking;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.*;
-import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+
+import static org.testng.Assert.assertEquals;
 
 /**
  * @author Stanislau Palaukou on 24.02.2019
@@ -21,7 +22,6 @@ public class VehicleSorterTest {
     private Vehicle car4;
     private Vehicle truck;
     private ArrayParking parking1;
-    private ArrayParking parking2;
     private ArrayParking parking3;
 
     @BeforeTest
@@ -38,7 +38,6 @@ public class VehicleSorterTest {
         Vehicle[] vehicles2 = {};
 
         parking1 = new ArrayParking(vehicles1);
-        parking2 = null;
         parking3 = new ArrayParking(vehicles2);
     }
 
@@ -49,14 +48,14 @@ public class VehicleSorterTest {
 
         VehicleSorter.sortByPrice(parking1);
 
-        Assert.assertEquals(expected, parking1);
+        assertEquals(expected, parking1);
     }
 
     @Test (expectedExceptions = NullParkingException.class)
     public void testSortByPriceNullParkingException()
             throws NullParkingException, VehicleArrayException {
 
-        VehicleSorter.sortByPrice(parking2);
+        VehicleSorter.sortByPrice(null);
     }
 
     @Test (expectedExceptions = VehicleArrayException.class)
@@ -73,14 +72,14 @@ public class VehicleSorterTest {
 
         VehicleSorter.sortByName(parking1);
 
-        Assert.assertEquals(expected, parking1);
+        assertEquals(expected, parking1);
     }
 
     @Test (expectedExceptions = NullParkingException.class)
     public void testSortByNameNullParkingException()
             throws NullParkingException, VehicleArrayException {
 
-        VehicleSorter.sortByName(parking2);
+        VehicleSorter.sortByName(null);
     }
 
     @Test
@@ -90,14 +89,14 @@ public class VehicleSorterTest {
 
         VehicleSorter.sortByNameByPrice(parking1);
 
-        Assert.assertEquals(expected, parking1);
+        assertEquals(expected, parking1);
     }
 
     @Test (expectedExceptions = NullParkingException.class)
     public void testSortByNameByPriceNullParkingException()
             throws NullParkingException, VehicleArrayException {
 
-        VehicleSorter.sortByNameByPrice(parking2);
+        VehicleSorter.sortByNameByPrice(null);
     }
 
 

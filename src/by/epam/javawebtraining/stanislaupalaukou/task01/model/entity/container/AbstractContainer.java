@@ -1,6 +1,5 @@
 package by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.container;
 
-import by.epam.javawebtraining.stanislaupalaukou.task01.model.entity.Vehicle;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.NullParkingException;
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.NullVehicleException;
 
@@ -13,12 +12,12 @@ import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.
 
 public interface AbstractContainer<T> {
 
-  T getVehicles();
+  T[] getVehicles();
 
-  void setVehicles(T t) throws NullParkingException;
+  void setVehicles(T[] t) throws NullParkingException;
 
-  void addVehicle(Vehicle vehicle) throws NullVehicleException;
+  void addVehicle(T t) throws NullVehicleException;
 
-  void removeVehicle(Vehicle vehicle);
+  void removeVehicle(T t);
 
 }

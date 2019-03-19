@@ -14,7 +14,7 @@ import java.util.Objects;
  * @project Task 01
  */
 
-public abstract class CargoTransport extends Vehicle {
+public class CargoTransport extends Vehicle {
 
     private int cargoCapacity;
 

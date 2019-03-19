@@ -15,7 +15,7 @@ import java.util.Objects;
  * @project Task 01
  */
 
-public abstract class PassengerTransport extends Vehicle implements Serializable {
+public class PassengerTransport extends Vehicle implements Serializable {
 
     private int seatsNumber;
 

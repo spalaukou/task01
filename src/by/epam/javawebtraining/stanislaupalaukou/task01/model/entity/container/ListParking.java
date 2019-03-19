@@ -5,6 +5,7 @@ import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.NullVehicleException;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Objects;
 
@@ -16,7 +17,7 @@ import java.util.Objects;
  * @project Task 01
  */
 
-public class ListParking implements AbstractContainer<List<Vehicle>> {
+public class ListParking implements AbstractContainer<Vehicle> {
 
   private List<Vehicle> vehicleList;
 
@@ -29,22 +30,21 @@ public class ListParking implements AbstractContainer<List<Vehicle>> {
   }
 
   public ListParking(ListParking parkingList) {
-    vehicleList = parkingList.getVehicles();
+    vehicleList = Arrays.asList(parkingList.getVehicles());
   }
 
   @Override
-  public List<Vehicle> getVehicles() {
-    return vehicleList;
+  public Vehicle[] getVehicles() {
+    return (Vehicle[]) vehicleList.toArray();
   }
 
   @Override
-  public void setVehicles(List<Vehicle> vehicles) throws NullParkingException {
+  public void setVehicles(Vehicle[] vehicles) throws NullParkingException {
     if (vehicles != null) {
-      vehicleList = vehicles;
+      vehicleList = Arrays.asList(vehicles);
     } else {
       throw new NullParkingException();
     }
-
   }
 
   @Override

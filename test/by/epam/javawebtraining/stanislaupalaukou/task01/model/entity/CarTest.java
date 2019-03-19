@@ -1,9 +1,11 @@
 package by.epam.javawebtraining.stanislaupalaukou.task01.model.entity;
 
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.*;
-import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+
+import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertTrue;
 
 /**
  * @author Stanislau Palaukou on 24.02.2019
@@ -13,45 +15,74 @@ import org.testng.annotations.Test;
 public class CarTest {
     private Car car;
     private Car expected;
+    private Car actual;
 
     @BeforeTest
     public void setUpCar()
             throws SeatsNumberException, VehiclePriceException, VehicleNameException, CarBodyTypeException {
         car = new Car ("BMW", 66_000, 4, Car.BodyType.SEDAN);
         expected = new Car ("BMW", 66_000, 4, Car.BodyType.SEDAN);
+        actual = new Car();
     }
 
     @Test
-    public void testDefaultConstructorCar() {
-        Car actual = new Car();
-
+    public void testDefaultConstructorNameCar() {
         String expectedName = null;
+
+        assertEquals(expectedName, actual.getName());
+    }
+
+    @Test
+    public void testDefaultConstructorPriceCar() {
         int expectedPrice = 0;
+
+        assertEquals(expectedPrice, actual.getPrice());
+    }
+
+    @Test
+    public void testDefaultConstructorSeatsCar() {
         int expectedSeatsNumber = 0;
+
+        assertEquals(expectedSeatsNumber, actual.getSeatsNumber());
+    }
+
+    @Test
+    public void testDefaultConstructorBodyCar() {
         Car.BodyType expectedBodyType = null;
 
-        Assert.assertEquals(expectedName, actual.getName());
-        Assert.assertEquals(expectedPrice, actual.getPrice());
-        Assert.assertEquals(expectedSeatsNumber, actual.getSeatsNumber());
-        Assert.assertEquals(expectedBodyType, actual.getBodyType());
+        assertEquals(expectedBodyType, actual.getBodyType());
     }
 
     @Test
-    public void testConstructorCar() {
+    public void testConstructorNameCar() {
         String expectedName = "BMW";
-        int expectedPrice = 66000;
-        int expectedSeatsNumber = 4;
-        Car.BodyType expectedBodyType = Car.BodyType.SEDAN;
-
         String actualName = car.getName();
+
+        assertEquals(expectedName, actualName);
+    }
+
+    @Test
+    public void testConstructorPriceCar() {
+        int expectedPrice = 66000;
         int actualPrice = car.getPrice();
+
+        assertEquals(expectedPrice, actualPrice);
+    }
+
+    @Test
+    public void testConstructorSeatsCar() {
+        int expectedSeatsNumber = 4;
         int actualSeatsNumber = car.getSeatsNumber();
+
+        assertEquals(expectedSeatsNumber, actualSeatsNumber);
+    }
+
+    @Test
+    public void testConstructorBodyCar() {
+        Car.BodyType expectedBodyType = Car.BodyType.SEDAN;
         Car.BodyType actualBodyType = car.getBodyType();
 
-        Assert.assertEquals(expectedName, actualName);
-        Assert.assertEquals(expectedPrice, actualPrice);
-        Assert.assertEquals(expectedSeatsNumber, actualSeatsNumber);
-        Assert.assertEquals(expectedBodyType, actualBodyType);
+        assertEquals(expectedBodyType, actualBodyType);
     }
 
     @Test (expectedExceptions = CarBodyTypeException.class)
@@ -83,7 +114,7 @@ public class CarTest {
             throws SeatsNumberException, VehiclePriceException, VehicleNameException, CarBodyTypeException {
         Car expectedCar = new Car(car);
 
-        Assert.assertEquals(expectedCar, car);
+        assertEquals(expectedCar, car);
     }
 
     @Test (expectedExceptions = SeatsNumberException.class)
@@ -109,7 +140,7 @@ public class CarTest {
         String expectedName = "Volvo";
         car.setName("Volvo");
 
-        Assert.assertEquals(expectedName, car.getName());
+        assertEquals(expectedName, car.getName());
     }
 
     @Test (expectedExceptions = VehicleNameException.class)
@@ -122,7 +153,7 @@ public class CarTest {
         int expectedPrice = 12_000;
         car.setPrice(12_000);
 
-        Assert.assertEquals(expectedPrice, car.getPrice());
+        assertEquals(expectedPrice, car.getPrice());
     }
 
     @Test (expectedExceptions = VehiclePriceException.class)
@@ -137,7 +168,7 @@ public class CarTest {
         car.setBodyType(Car.BodyType.HATCHBACK);
         Car.BodyType actualBodyType = car.getBodyType();
 
-        Assert.assertEquals(expectedBodyType, actualBodyType);
+        assertEquals(expectedBodyType, actualBodyType);
     }
 
     @Test (expectedExceptions = CarBodyTypeException.class)
@@ -150,7 +181,7 @@ public class CarTest {
         car.setSeatsNumber(3);
         int expectedSeatsNumber = 3;
 
-        Assert.assertEquals(expectedSeatsNumber, car.getSeatsNumber());
+        assertEquals(expectedSeatsNumber, car.getSeatsNumber());
     }
 
     @Test (expectedExceptions = SeatsNumberException.class)
@@ -163,24 +194,24 @@ public class CarTest {
         int expected = 4;
         int actual = car.getSeatsNumber();
 
-        Assert.assertEquals(expected, actual);
+        assertEquals(expected, actual);
     }
 
     @Test
     public void testEquals() {
-        Assert.assertTrue(car.equals(expected));
+        assertTrue(car.equals(expected));
     }
 
     @Test
     public void testHashCode() {
-        Assert.assertEquals(expected.hashCode(), car.hashCode());
+        assertEquals(expected.hashCode(), car.hashCode());
     }
 
     @Test
     public void testToString() {
         String expectedString = "Car {name = BMW, price = 66000, seatsNumber = 4, bodyType = SEDAN}";
 
-        Assert.assertEquals(expectedString, expected.toString());
+        assertEquals(expectedString, expected.toString());
     }
 
 }

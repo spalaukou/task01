@@ -32,7 +32,7 @@ public class VehicleSorter {
      * @param comparator - param, by which vehicles will be sorted
      * @return sorted array of vehicles
      */
-    private static Vehicle[] sort(Vehicle[] vehicles, Comparator<Vehicle> comparator) throws VehicleArrayException {
+    private static void sort(Vehicle[] vehicles, Comparator<Vehicle> comparator) throws VehicleArrayException {
 
         if(vehicles != null && vehicles.length > 0) {
             
@@ -45,8 +45,6 @@ public class VehicleSorter {
                     }
                 }
             }
-            return vehicles;
-
         } else {
             throw new VehicleArrayException();
         }

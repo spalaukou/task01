@@ -52,7 +52,7 @@ public class ArrayParkingTest {
         ArrayParking actual = new ArrayParking();
         ArrayParking expected = parking1;
 
-        Assert.assertEquals(expected, actual);
+        assertEquals(expected, actual);
     }
 
     @Test
@@ -60,7 +60,7 @@ public class ArrayParkingTest {
         ArrayParking expected = parking2;
         ArrayParking actual = new ArrayParking(new Vehicle[]{car1, car2});
 
-        Assert.assertEquals(expected, actual);
+        assertEquals(expected, actual);
     }
 
     @Test (expectedExceptions = VehicleArrayException.class)
@@ -73,7 +73,7 @@ public class ArrayParkingTest {
         ArrayParking expected = parking2;
         ArrayParking actual = new ArrayParking(expected);
 
-        Assert.assertEquals(expected, actual);
+        assertEquals(expected, actual);
     }
 
     @Test (expectedExceptions = NullParkingException.class)
@@ -118,7 +118,7 @@ public class ArrayParkingTest {
     }
 
     @Test (expectedExceptions = NullVehicleException.class)
-    public void testAddVehicleException() throws NullVehicleException, VehicleArrayException {
+    public void testAddVehicleException() throws NullVehicleException {
         ArrayParking parking = new ArrayParking();
 
         parking.addVehicle(null);

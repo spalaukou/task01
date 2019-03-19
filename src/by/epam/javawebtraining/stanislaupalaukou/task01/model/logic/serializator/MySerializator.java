@@ -11,8 +11,6 @@ public class MySerializator<T> {
   private static final String FILE_NAME = "output/serialized.txt";
 
   public void write(T t) {
-
-
     try (ObjectOutputStream objectOutputStream =
             new ObjectOutputStream((
                     new BufferedOutputStream(
@@ -26,17 +24,16 @@ public class MySerializator<T> {
   }
 
   public void read() {
-
     try (ObjectInputStream objectInputStream =
                  new ObjectInputStream((
                          new BufferedInputStream(
                                  new FileInputStream(FILE_NAME))))) {
 
+      T t;
+      t = (T) objectInputStream.readObject();
 
-        T t = (T) objectInputStream.readObject();
-
-        System.out.println("Deserialized object:");
-        System.out.println(t);
+      System.out.println("Deserialized object:");
+      System.out.println(t);
 
     } catch (IOException | ClassNotFoundException e) {
       e.printStackTrace();

@@ -14,7 +14,7 @@ import java.util.Objects;
  * @project Task 01
  */
 
-public abstract class Vehicle implements Serializable {
+public class Vehicle implements Serializable {
 
     private String name;
     private int price;

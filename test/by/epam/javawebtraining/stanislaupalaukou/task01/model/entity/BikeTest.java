@@ -1,9 +1,11 @@
 package by.epam.javawebtraining.stanislaupalaukou.task01.model.entity;
 
 import by.epam.javawebtraining.stanislaupalaukou.task01.model.exception.logical.*;
-import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+
+import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertTrue;
 
 /**
  * @author Stanislau Palaukou on 17.03.2019
@@ -12,6 +14,7 @@ import org.testng.annotations.Test;
 
 public class BikeTest {
     private Bike bike;
+    private Bike actual;
     private Bike expected;
 
     @BeforeTest
@@ -19,39 +22,67 @@ public class BikeTest {
             throws SeatsNumberException, VehiclePriceException, VehicleNameException, BikeBodyTypeException {
         bike = new Bike ("BMW", 25_000, 1, Bike.BodyType.SPORT);
         expected = new Bike ("BMW", 25_000, 1, Bike.BodyType.SPORT);
+        actual = new Bike();
     }
 
     @Test
-    public void testDefaultConstructorBike() {
-        Bike actual = new Bike();
-
+    public void testDefaultConstructorNameBike() {
         String expectedName = null;
+
+        assertEquals(expectedName, actual.getName());
+    }
+
+    @Test
+    public void testDefaultConstructorPriceBike() {
         int expectedPrice = 0;
+
+        assertEquals(expectedPrice, actual.getPrice());
+    }
+
+    @Test
+    public void testDefaultConstructorSeatsBike() {
         int expectedSeatsNumber = 0;
+
+        assertEquals(expectedSeatsNumber, actual.getSeatsNumber());
+    }
+
+    @Test
+    public void testDefaultConstructorBodyBike() {
         Bike.BodyType expectedBodyType = null;
 
-        Assert.assertEquals(expectedName, actual.getName());
-        Assert.assertEquals(expectedPrice, actual.getPrice());
-        Assert.assertEquals(expectedSeatsNumber, actual.getSeatsNumber());
-        Assert.assertEquals(expectedBodyType, actual.getBodyType());
+        assertEquals(expectedBodyType, actual.getBodyType());
     }
 
     @Test
-    public void testConstructorBike() {
+    public void testConstructorNameBike() {
         String expectedName = "BMW";
-        int expectedPrice = 25000;
-        int expectedSeatsNumber = 1;
-        Bike.BodyType expectedBodyType = Bike.BodyType.SPORT;
-
         String actualName = bike.getName();
+
+        assertEquals(expectedName, actualName);
+    }
+
+    @Test
+    public void testConstructorPriceBike() {
+        int expectedPrice = 25000;
         int actualPrice = bike.getPrice();
+
+        assertEquals(expectedPrice, actualPrice);
+    }
+
+    @Test
+    public void testConstructorSeatsBike() {
+        int expectedSeatsNumber = 1;
         int actualSeatsNumber = bike.getSeatsNumber();
+
+        assertEquals(expectedSeatsNumber, actualSeatsNumber);
+    }
+
+    @Test
+    public void testConstructorBodyBike() {
+        Bike.BodyType expectedBodyType = Bike.BodyType.SPORT;
         Bike.BodyType actualBodyType = bike.getBodyType();
 
-        Assert.assertEquals(expectedName, actualName);
-        Assert.assertEquals(expectedPrice, actualPrice);
-        Assert.assertEquals(expectedSeatsNumber, actualSeatsNumber);
-        Assert.assertEquals(expectedBodyType, actualBodyType);
+        assertEquals(expectedBodyType, actualBodyType);
     }
 
     @Test (expectedExceptions = BikeBodyTypeException.class)
@@ -65,7 +96,7 @@ public class BikeTest {
             throws SeatsNumberException, VehiclePriceException, VehicleNameException, BikeBodyTypeException {
         Bike expectedBike = new Bike(bike);
 
-        Assert.assertEquals(expectedBike, bike);
+        assertEquals(expectedBike, bike);
     }
 
     @Test
@@ -75,7 +106,7 @@ public class BikeTest {
         bike.setBodyType(Bike.BodyType.SPORT);
         Bike.BodyType actualBodyType = bike.getBodyType();
 
-        Assert.assertEquals(expectedBodyType, actualBodyType);
+        assertEquals(expectedBodyType, actualBodyType);
     }
 
     @Test (expectedExceptions = BikeBodyTypeException.class)
@@ -85,20 +116,19 @@ public class BikeTest {
 
     @Test
     public void testEquals() {
-        Assert.assertTrue(bike.equals(expected));
+        assertTrue(bike.equals(expected));
     }
 
     @Test
     public void testHashCode() {
-        Assert.assertEquals(expected.hashCode(), bike.hashCode());
+        assertEquals(expected.hashCode(), bike.hashCode());
     }
 
     @Test
     public void testToString() {
         String expectedString = "Bike {name = BMW, price = 25000, seatsNumber = 1, bodyType = SPORT}";
 
-        System.out.println(expected);
-        Assert.assertEquals(expectedString, expected.toString());
+        assertEquals(expectedString, expected.toString());
     }
 
 }
