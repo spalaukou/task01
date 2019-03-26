@@ -1,4 +1,6 @@
 # Task01 OOP
+The program represents the hierarchy of vehicles  including cargo and passenger vehicles, located in the parking lot
+ 
 Паркинг. Определить иерархию легковых и грузовых автомобилей. Создать
 паркинг. Посчитать стоимость всех машин находящихся на паркинге. Провести
 сортировку автомобилей парка по цене, марке и другим значимым характери
